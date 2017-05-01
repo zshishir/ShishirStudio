@@ -980,7 +980,15 @@ table,th,td{border:none}.w3-table-all{border:1px solid #ccc}
 /********* Table **********/
 
 /** *Helper Line ****/
-
+.helper {
+   
+    line-height: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 0px;
+     clear: both;
+    box-sizing: border-box;
+}
 
 .helper-line {
     background: url(../images/line.png) no-repeat center;
@@ -1678,8 +1686,6 @@ animation: spinAround 2s linear infinite;
 /* ==============================
   Price Table Section
    ============================== */
-
-
 .timeline {
     position: relative;
     width: 100%;
@@ -2354,6 +2360,7 @@ clear: both;
 z-index: 1;
 position:relative;
 top: 0;
+box-sizing: border-box;
 }
 .banner-fullscreen-wrapper {
  display:table;
@@ -2807,6 +2814,10 @@ padding: 0px 10px;
     margin: 0px;
 
 
+}
+.col07 img{
+    width: 100%;
+    height: 100%;
 }
 
 /* ==============================
