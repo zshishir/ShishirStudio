@@ -20,7 +20,7 @@ if(isAndroid){
 
 
 
-function adjustAndResize(){
+/*function adjustAndResize(){
 	var sliderHeight, sliderWidth, windowHeight, windowWidth, heightRatio, widthRatio, scaleValue, calcValue, wrapper, wrapperMarginLeft, content, contentHeight;
 
 	wrapper 	 = $('.wrapper');
@@ -80,7 +80,7 @@ window.addEventListener('resize',adjustAndResize);
 
 
 
-
+*/
 
 
 
