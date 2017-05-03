@@ -1,0 +1,554 @@
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+       height: 100%;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+    height: 100%;
+}
+.owl-item{
+  	width: 100%;
+    height: 100%;  
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+float: left;
+
+}
+.home__carousel{
+overflow: hidden;
+margin: 5px;
+box-sizing: border-box;
+}
+.home__carousel img {
+    width:100%;
+    overflow: hidden;
+}
+
+.home__carousel h1{
+
+	text-align:left;
+	font-weight:800;	
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+  
+}
+.home__carousel h3{
+
+	text-align:left;
+	font-weight:800;	
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+  
+}
+.home__carousel p{
+
+	text-align:left;
+	font-weight:400;	
+    text-transform:capitalize;
+    letter-spacing: 2px;
+    font-size: 1em;
+    
+    
+}
+
+.imgs{
+	width: 100% !important;
+	height:700px;
+	height: auto;
+	max-height:700px;
+	overflow:hidden;
+    box-sizing:border-box;
+
+}
+
+.imgs-800{
+	width: 100% !important;
+	height:800px;
+	height: auto;
+	max-height:700px;
+	overflow:hidden;
+    box-sizing:border-box;
+
+}
+
+.img-full{
+	width: 100% !important;
+	height:100%;
+	height: auto;
+	overflow:hidden;
+    
+
+}
+
+
+.owl-item .carousel-text {
+    width: 100%;
+    color: #000;
+    display: block;
+    top: 30%;
+    transition: all 0.5s ease-in-out 0s;
+    position: absolute;
+    text-align: center;
+	box-sizing:border-box;
+   
+}
+.owl-item .carousel-text h1{
+	font-size:60px;
+	text-align:center;
+	font-weight:900;
+	line-height:60px;	
+    text-transform: uppercase;
+
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 15px;
+    color: #ffffff;
+
+ 
+}
+
+.animated {
+
+  animation-duration: 5s;
+
+  animation-fill-mode: both;
+    animation-name: color_change;
+}
+.animated-btn {
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+  animation-name: bounce;
+}
+
+
+@keyframes bounce {
+0%   {opacity: 0.0}
+50%  {opacity: 0.5}
+100% {opacity: 1}
+}
+
+
+
+.text-ani-reset{
+    color: #ff0 !important;
+}
+.text-ani{
+    animation-name: color_change;
+	animation-duration: 5s;
+ -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+	/*animation-iteration-count: infinite;*/
+}
+@keyframes alpha-tranjaction {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes color_change {
+	from {color: #232122; }
+	to { color: #eaeaea; }
+}
+	
+	
+.owl-item .carousel-text p{
+	font-size:1em;
+	text-align:center;
+
+	margin-top:20px;
+	color:#FFF;	
+     text-transform:capitalize;
+    padding: 0px 60px;
+    
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.owl-item .carousel-text > button{
+padding: 10px 20px;
+border:none;
+color: #111;
+cursor: pointer;
+display:inline-block;
+font-size:14px;
+text-transform:uppercase;
+background:rgba(234,234,234,0.5);
+margin-top:40px;
+}	
+.owl-item .carousel-text > button:hover{	
+background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0%;
+color: #FFF;
+cursor: pointer;
+transition: background 0.3s ease 0s;
+
+}	
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+
+
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon 
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}*/
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility:    hidden;
+	-ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+.owl-theme .owl-controls{
+
+	text-align: center;
+ 
+}
+
+.owl-theme .owl-controls{
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+#owl-demo2 > .owl-controls{
+top: -50px;
+position: relative;
+    
+}
+
+  #owl-demo3{
+        width: 100%;
+        height: 100%;
+        }
+
+.owl-theme .owl-controls .owl-buttons div{
+	color: #FFF;
+	display: inline-block;
+	zoom: 1;
+	margin: 5px;
+	padding: 3px 10px;
+	font-size: .755em;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: rgba(134,151,145, 0.9);
+
+
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	opacity: 1;
+	text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+
+	*display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);/*IE7 fix*/
+	opacity: 0.5;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	filter: Alpha(Opacity=100);/*IE7 fix*/
+	opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+	height: auto;
+	width: auto;
+	color: #FFF;
+	padding: 2px 10px;
+	font-size: 12px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/* preloading images */
+/*.owl-item.loading{
+	min-height: 150px;
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+*/
+.slider-arrow-left{
+	position:absolute;
+	top:45%;
+	left:0;
+	border-radius:50%;
+	background:rgba(255,255,255,0.5);
+	padding:12px 20px;
+	cursor:pointer;
+	color:#111;
+	font-size:24px;
+	font-weight:600;
+    z-index: 888;
+}
+
+.slider-arrow-right{
+	position:absolute;
+	top:45%;
+	right:0;
+    border-radius:50%;
+	background:rgba(255,255,255,0.5);
+	padding:12px 20px;
+	cursor:pointer;
+	color:#111;
+	font-size:24px;
+	font-weight:600;
+    
+        z-index: 888;
+}
+
+
+.slider-arrow-left-small{
+	position:absolute;
+	top:40%;
+	left:0;
+    background-color: rgba(255,255,255,0.8);
+    border-radius:50%;
+	padding:0px 10px;
+	cursor:pointer;
+    color: #111;
+	font-size:.755em;
+}
+.slider-arrow-right-small{
+	position:absolute;
+	top:40%;
+	right:0;
+    background-color: rgba(255,255,255,0.8);
+    border-radius:50%;
+	padding:0px 10px;
+	cursor:pointer;
+    color: #111;
+	font-size:.755em;
+}
+
+@media all and (max-width : 1280px) {
+.owl-item .carousel-text h1 {font-size:45px;}	
+}
+
+@media all and (max-width : 1024px) {
+.owl-item .carousel-text h1 {font-size:36px;}	
+}
+
+
+
+	
+@media all and (max-width : 640px) {
+    
+   	.owl-item .carousel-text {
+ 		top: 10%;
+    }
+.owl-item .carousel-text h1{
+
+	line-height: 40px;
+    letter-spacing: 10px;
+	
+   
+}
+    
+     .slider-arrow-left{
+	
+	padding:3px 12px;
+	font-size:12px;
+}
+
+.slider-arrow-right{
+
+
+	padding:3px 12px;
+	font-size:12px;
+} 
+.owl-theme .owl-controls .owl-buttons div{
+	padding: 5px;
+	font-size: .755em;
+
+
+
+}
+}
+#owl-demo p{
+padding:0px 2px;
+font-weight:400;
+ 
+}
+
+@media all and (max-width : 800px) {
+    
+.owl-item span {top: 10%;}
+		 
+ .slider-arrow-left{
+padding:2px 12px;
+font-size:.75em;
+}
+.owl-theme .owl-controls .owl-buttons div{
+	padding: 3px;
+	font-size: .755em;
+
+
+
+}
+.slider-arrow-right{
+position:absolute;
+padding:2px 12px;
+font-size:.75em;
+}  
+.owl-item .carousel-text h1{
+line-height: 24px;
+letter-spacing: 1px;
+   
+}
+    
+    .slider-arrow-left{
+
+	top:40%;
+
+}
+
+.slider-arrow-right{
+
+	top:40%;
+
+    
+        z-index: 888;
+}
+}
+@media all and (max-width : 480px) {
+    
+    .owl-item .carousel-text {
+    top: 10%;  
+}
+.owl-item .carousel-text h1{
+	font-size:1.5em;
+	line-height: 24px;
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+	
+	}
+    
+    .owl-item .carousel-text p{
+	font-size:12px;
+	margin-top:0px;
+    line-height: 15px;
+        color: #FFFFFF;
+	}
+    
+    .owl-item .carousel-text > button{
+padding: 5px 10px;
+margin-top:15px;
+font-size:12px;
+        
+}
+.slider-arrow-left{
+	
+	padding:0px 12px;
+	font-size:12px;
+}
+
+.slider-arrow-right{
+	padding:0px 12px;
+	font-size:12px;
+}
+    #owl-demo2 > .owl-controls{
+top: 0px;
+
+    
+}
+    
+}
+
+    
+ #sync1 .item{
+ color: #000;
+text-align: center;
+}
+#sync2{
+ margin-left: 15px !important;
+color: #FFF;
+text-align: center;
+cursor: pointer;
+}
+
+#sync2 .item h1{
+  font-size: 18px;
+}
+#sync2 .synced .item{
+background: #fff;
+}
+#owl-demo > .clickable	{
+display:none !important;
+}
+#sync1 > .clickable	{
+display:none !important;
+}
+
+.thumb-item{
+margin:10px 10px 0px 0px;
+}   
+
