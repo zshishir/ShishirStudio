@@ -18,7 +18,7 @@ var transitionDuration = 1;
 var slideDuration = 15000;
 var slideWidth = 1024;
 var nav = $$('.carouselnav li');
-var tl1, tl2, tl3, tl4, tl5, tl6, tl7, tl8, tl9, tl10, tl11;
+var tl1, tl2, tl3, tl4;
 var allTimeLine;
 
 var transitionType = {
@@ -158,62 +158,62 @@ function pageAnimationDefinition(){
 	tl4.from('.slide4-content .slide4-copy2', 1, { opacity: 0, delay:.25});
 
 	// Slide5
-	tl5 = new TimelineMax();
-	tl5.pause();
-	tl5.from('.slide5-content', .5, { opacity: 0, x: 100}, "slide5");
-	tl5.from('.slide5-pie-chart', .5, { scale: 0});
-	tl5.from(['.slide5-content .slide5-copy1', '.slide5-content .slide5-copy2', '.slide5-content .content-title'], .8, { opacity: 0});
-	tl5.staggerTo(['.slide5-leaf1','.slide5-leaf4','.slide5-leaf2','.slide5-leaf5','.slide5-leaf3'], 8, { top: '95%', rotation: 360, ease: Power1.easeIn},3, "slide5");
+	//tl5 = new TimelineMax();
+	//tl5.pause();
+	//tl5.from('.slide5-content', .5, { opacity: 0, x: 100}, "slide5");
+	//tl5.from('.slide5-pie-chart', .5, { scale: 0});
+	//tl5.from(['.slide5-content .slide5-copy1', '.slide5-content .slide5-copy2', '.slide5-content .content-title'], .8, { opacity: 0});
+	//tl5.staggerTo(['.slide5-leaf1','.slide5-leaf4','.slide5-leaf2','.slide5-leaf5','.slide5-leaf3'], 8, { top: '95%', rotation: 360, ease: Power1.easeIn},3, "slide5");
 
 	// Slide6
-	tl6 = new TimelineMax();
-	tl6.pause();
-	tl6.from('.slide6-header', 1 , { opacity: 0});
-	tl6.staggerFrom(['.slide6-cloud1','.slide6-cloud2','.slide6-cloud3','.slide6-cloud4'], .8, { scale: 0}, 1.6);
-	tl6.staggerTo(['.slide6-cloud1','.slide6-cloud2','.slide6-cloud3','.slide6-cloud4'], .5, { scale: 0, delay: 2.8}, 0);
-	tl6.staggerFrom(['.slide6-cloud5','.slide6-cloud6','.slide6-cloud7','.slide6-cloud8'], .8, { scale: 0, delay: .5}, 1.6);
-	tl6.staggerTo(['.slide6-cloud5','.slide6-cloud6','.slide6-cloud7','.slide6-cloud8'], .5, { scale: 0, delay: 2.8}, 0);
-	tl6.to('.slide6-header', .5 , { opacity: 0});
-	tl6.from(['.slide6-pie-chart','.slide6-pie-chart-inner'], 1, { scale: 0}, 'slide6');
-	tl6.to('.slide6-pie-chart', 1, { rotation: 180}, 'slide6+=1');
-	tl6.from('.slide6-content', 1, { opacity: 0, x: 100}, 'slide6');
+	//tl6 = new TimelineMax();
+	//tl6.pause();
+	//tl6.from('.slide6-header', 1 , { opacity: 0});
+	//tl6.staggerFrom(['.slide6-cloud1','.slide6-cloud2','.slide6-cloud3','.slide6-cloud4'], .8, { scale: 0}, 1.6);
+	//tl6.staggerTo(['.slide6-cloud1','.slide6-cloud2','.slide6-cloud3','.slide6-cloud4'], .5, { scale: 0, delay: 2.8}, 0);
+	//tl6.staggerFrom(['.slide6-cloud5','.slide6-cloud6','.slide6-cloud7','.slide6-cloud8'], .8, { scale: 0, delay: .5}, 1.6);
+	//tl6.staggerTo(['.slide6-cloud5','.slide6-cloud6','.slide6-cloud7','.slide6-cloud8'], .5, { scale: 0, delay: 2.8}, 0);
+	//tl6.to('.slide6-header', .5 , { opacity: 0});
+	//tl6.from(['.slide6-pie-chart','.slide6-pie-chart-inner'], 1, { scale: 0}, 'slide6');
+	//tl6.to('.slide6-pie-chart', 1, { rotation: 180}, 'slide6+=1');
+	//tl6.from('.slide6-content', 1, { opacity: 0, x: 100}, 'slide6');
 
 	// Slide7
-	tl7 = new TimelineMax();
-	tl7.pause();
-	tl7.from('.slide7-content', .5, { opacity: 0, x: -100, delay: .5});
-	tl7.from('.slide7-pie-chart', 1, { opacity: 0, x: -100, rotation: 360});
-	tl7.from(['.slide7-content .content-title', '.slide7-content .content-copy'], .5, { opacity: 0});
+	//tl7 = new TimelineMax();
+	//tl7.pause();
+	//tl7.from('.slide7-content', .5, { opacity: 0, x: -100, delay: .5});
+	//tl7.from('.slide7-pie-chart', 1, { opacity: 0, x: -100, rotation: 360});
+	//tl7.from(['.slide7-content .content-title', '.slide7-content .content-copy'], .5, { opacity: 0});
 
 	// Slide8
-	tl8 = new TimelineMax();
-	tl8.pause();
-	tl8.from('.slide8-pie-chart', 1 , {scale: 0}, 'slide8');
-	tl8.from('.slide8-content', 1 , {y: -100, opacity: 0,  ease: Bounce.easeOut});
-	tl8.to('.slide8-bg-cloud', 15, { x: '-30%'}, 'slide8');
+	//tl8 = new TimelineMax();
+	//tl8.pause();
+	//tl8.from('.slide8-pie-chart', 1 , {scale: 0}, 'slide8');
+	//tl8.from('.slide8-content', 1 , {y: -100, opacity: 0,  ease: Bounce.easeOut});
+	//tl8.to('.slide8-bg-cloud', 15, { x: '-30%'}, 'slide8');
 
 	// Slide9
-	tl9 = new TimelineMax();
-	tl9.pause();
-	tl9.staggerFrom(['.slide9-content','.slide9-pie-chart','.slide9-content .content-copy','.slide9-content .content-title'], .7,  {y: -100, opacity: 0,  ease: Bounce.easeOut, delay: .5},.7 );
+	//tl9 = new TimelineMax();
+	//tl9.pause();
+	//tl9.staggerFrom(['.slide9-content','.slide9-pie-chart','.slide9-content .content-copy','.slide9-content .content-title'], .7,  {y: -100, opacity: 0,  ease: Bounce.easeOut, delay: .5},.7 );
 
 	// Slide10
-	tl10 = new TimelineMax();
-	tl10.pause();
-	tl10.from('.content-header', 1, { opacity: 0});
-	tl10.staggerFrom($$('.slide10-list-item i'), .5, { opacity: 0, x: -50}, 2, 'slide10');
-	tl10.staggerTo($$('.slide10-list-item .mask'), 1.5, { width: 0}, 2, 'slide10+=.5');
+	//tl10 = new TimelineMax();
+	//tl10.pause();
+	//tl10.from('.content-header', 1, { opacity: 0});
+	//tl10.staggerFrom($$('.slide10-list-item i'), .5, { opacity: 0, x: -50}, 2, 'slide10');
+	//tl10.staggerTo($$('.slide10-list-item .mask'), 1.5, { width: 0}, 2, 'slide10+=.5');
 
 	// Slide11
-	tl11 = new TimelineMax();
-	tl11.pause();
-	tl11.staggerFrom($$('.slide11-list-item'), 1, {opacity: 0}, 3, "slide11")
-	tl11.staggerFrom($$('.slide11-list-item i'), 1, { scale: 0, ease: Back.easeOut.config(3)}, 3, "slide11+=1");
-	tl11.staggerFrom($$('.slide11-list-item p'), 1, { opacity: 0}, 3, "slide11+=2");
-	tl11.staggerFrom($$('.slide11-list-item a'), 1, { opacity: 0}, 3, "slide11+=2");
+	//tl11 = new TimelineMax();
+	//tl11.pause();
+	//tl11.staggerFrom($$('.slide11-list-item'), 1, {opacity: 0}, 3, "slide11")
+	//tl11.staggerFrom($$('.slide11-list-item i'), 1, { scale: 0, ease: Back.easeOut.config(3)}, 3, "slide11+=1");
+	//tl11.staggerFrom($$('.slide11-list-item p'), 1, { opacity: 0}, 3, "slide11+=2");
+	//tl11.staggerFrom($$('.slide11-list-item a'), 1, { opacity: 0}, 3, "slide11+=2");
 
 
-	allTimeLine = [tl1, tl2, tl3, tl4, tl5, tl6, tl7, tl8, tl9, tl10, tl11];
+	allTimeLine = [tl1, tl2, tl3, tl4];
 }
 
 // Run Page Animation
@@ -239,27 +239,7 @@ function runPageAnimation(){
 	    case 4:
 	        tl4.play();
 	        break;
-	    case 5:
-	        tl5.play();
-	        break;
-	    case 6:
-	        tl6.play();
-	        break;
-	    case 7:
-	        tl7.play();
-	        break;
-	    case 8:
-	        tl8.play();
-	        break;
-	    case 9:
-	        tl9.play();
-	        break;
-	    case 10:
-	        tl10.play();
-	        break;
-	    case 11:
-	        tl11.play();
-	        break;
+
 	}
 }
 
