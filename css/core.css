@@ -2325,7 +2325,7 @@ background-position: center center;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
-z-index: 1;
+
 
 }
 
@@ -2361,6 +2361,7 @@ position:relative;
 top: 0;
 box-sizing: border-box;
 }
+
 .banner-fullscreen-wrapper {
  display:table;
 position:absolute;
@@ -2887,6 +2888,9 @@ col15
    ==============================  */
 .col15-bgcolor{
 position: relative;
+    height: 100%;
+    width: 100%;
+    display: block;
 }
 
 .col15-bgcolor::after {
