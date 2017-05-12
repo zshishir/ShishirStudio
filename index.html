@@ -378,7 +378,7 @@
     <div class="helper-emty">
         
     </div>
-     <div class="container">
+     <div  id="shishir" class="container">
 
                 <div class="col-4 card">
                     
@@ -1605,9 +1605,20 @@
 
     
 
-        <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>
+   
+    
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
+    
+    
 	<script src="js/utility.js"></script>
-	<script src="js/infographic.js"></script>  
+	<script src="js/infographic.js"></script> 
+    <script src="js/custom.js"></script> 
      <script src="js/owl.carousel.js"></script>
         <script src="js/carousel.js"></script>
 
@@ -1631,24 +1642,7 @@ $(window).bind('resize orientationchange', function() {
 	
 });
     </script>
-    
-    <script>
 
-        
-    $("document").ready(function(){
-      $(".accordion h3:first").addClass("active");
-        $(".accordion p:not(:first)").hide();
-        $(".accordion h3").click(function(){
-            $(this).next("p").slideToggle("slow")
-            .siblings("p:visible").slideUp("slow");
-		$(this).toggleClass("active");
-		$(this).siblings("h3").removeClass("active");
-	});
-
-});
-    
-    </script>
-    
     
     <script>
     
@@ -1674,21 +1668,7 @@ $(window).scroll(function(){
 //Sticky nav Section // 
     
     </script>
-   <script>
-    $(document).ready(function() {
-$(".accordion section h2").click(function(e) {
-$(this).parents().siblings("section").addClass("ac_hidden");
 
-$(this).parents("section").removeClass("ac_hidden");
-
-e.preventDefault();
-});
-});
-       
-       
-       
-       
-    </script>
     
        <script>
 //Accordion Section // 
@@ -1705,104 +1685,11 @@ $(window).scroll(function(){
     </script> 
     
     
-    
-    
-    <script>
-    
-    //Bar Progress Section // 
 
-$(document).ready(function(){
-$('.skillbar').each(function(){
-$(this).find('.skillbar-bar').animate({
-width:$(this).attr('data-percent')
-},5000);
-});
-});
-//Bar Progress Section // 
-    </script>
-    
+
    
-<script>
 
-$(document).ready(function() {	
-
-if($(window).width() > 640){
-
-// Hide all but first tab content on larger viewports
-$('.tab-menu_content:not(:first)').hide();
-
-// Activate first tab
-$('.tab-menu_title:first-child').show();
-
-} else {
   
-// Hide all content items on narrow viewports
-$('.tab-menu_content').hide();
-    $('.tab-selected').show();
-    
-};
-//End Tab Menu section // 
-   
-//End Top Menu section // 
-$('.tab-menu_title').on('click', function() {
-$('.tab-menu_content').hide();
-$(this).next().show().prev().addClass('tab-active').siblings().removeClass('tab-active');
-});
-});
-
-//End Tab Menu section // 
-
-</script>
-   
-
-  <script>
-// Get the modal
-/* var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}*/
-var searchBox = document.getElementById("searchBox");
-var searchBtn =  document.getElementsByClassName("searchBtn")[0];
-var closeBtn = document.getElementsByClassName("close")[0];
-      
-      searchBtn.onclick = function(){
-          searchBox.style.display = "block";
-          searchBox.style.zIndex = 999;
-          
-      }
-      
-      closeBtn.onclick = function(){
-          searchBox.style.display = "none";
-          
-}
-      window.onclick = function(){
-          if(event.target == searchBox){
-              searchBox.style.display = "none";
-          }
-      }
-      
-      
-</script>  
     <script>
         
         //Sticky nav Section // 
