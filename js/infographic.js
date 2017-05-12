@@ -124,8 +124,8 @@ function pageAnimationDefinition(){
 	// slide1
 	tl1 = new TimelineMax();
 	tl1.pause();
-	tl1.to('.slide1-jump', 3, { scale: 1, y: 100},'a');
-	tl1.to('.slide1-bg', 3, { scale: 1.1},'a');
+	//tl1.to('.slide1-jump', 3, { scale: 1, y: 100},'a');
+	tl1.to('.slide1-bg', 6, { scale: 2.1, ease: Bounce.easeOut});
 	tl1.add(slideTransition, 2.5); 
 
 	// Slide2
