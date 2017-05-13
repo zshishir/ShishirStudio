@@ -125,9 +125,17 @@ function pageAnimationDefinition(){
 	tl1 = new TimelineMax();
 	tl1.pause();
 	//tl1.to('.slide1-jump', 3, { scale: 1, y: 100},'a');
-	tl1.to('.slide1-bg', 6, { scale: 2.1, ease: Bounce.easeOut});
-	tl1.add(slideTransition, 2.5); 
-
+	//tl1.to('.slide1-bg', 6, { scale: 2.1, ease: Bounce.easeOut});
+	//.add(slideTransition, 2.5); 
+    
+    tl1.from('.cloud', 1, {alpha: 0});
+	tl1.to('.rocket-wrapper', 3, { y: -400, ease:Expo.easeIn });
+	tl1.to('.cloud', 3, { attr:{ cy: 185}, ease:Expo.easeIn }, "-=3");
+	tl1.set('.cloud', {clearProps:"all"});
+	tl1.set('.rocket-wrapper', { y: 450 });
+	tl1.to('.rocket-wrapper', 4, { y:0, ease:Elastic.easeOut.config(0.5, 0.4) });
+	tl1.to('.trail-wrapper', 2.5, { scaleX:0.5, scaleY:0, alpha:0, ease:Expo.easeOut }, "-=2.0");
+   //.add(slideTransition, 2.5); 
 	// Slide2
 	//tl2 = new TimelineMax();
 	//tl2.pause();
