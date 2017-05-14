@@ -13,9 +13,9 @@ var skillAnimation = new TimelineMax()
         
  new ScrollMagic.Scene({
     triggerElement:'#shishir',
-   // triggerHook:1,
-    duration:0,    // the scene should last for a scroll distance of 100px
-    offset: 400        // start this scene after scrolling for 50px
+      // start this scene after scrolling for 50px
+   //  duration:'100%',
+     triggerHook:0.7,
         
         
     })
@@ -24,8 +24,9 @@ var skillAnimation = new TimelineMax()
 
            
         
-     .setTween(skillAnimation)
-       .addTo(controller);  
+    .setTween(skillAnimation)
+     .addIndicators()
+     .addTo(controller)  
     
     
 });
