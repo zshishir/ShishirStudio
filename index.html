@@ -16,6 +16,7 @@
    <link rel="stylesheet" href="css/infographic.css" media="all">
  <link rel="stylesheet" href="css/owl.carousel.css" media="all">
      <link rel="stylesheet" href="css/owl.transitions.css" media="all">
+    <link rel="stylesheet" href="css/colorbox.css" media="all">
 
 
 </head>
@@ -492,8 +493,19 @@
           <div id="owl-demo3">
                 <div class="item">                      
     
-  
-                    <img src="images/banner01.jpg" alt="scalless" title="scalless" class="imggal">
+          
+                  
+                    
+                          <div class="img-hover-effect img-hover-effect-first">
+                     <img src="images/banner01.jpg" alt="scalless" title="scalless" class="imggal">
+                     <div class="mask">
+                        <h2>Theme</h2>
+                        <p>PSD</p>
+                        <a class="group1" href="http://www.shishirstudio.com/webDevelopment/psdTemplate01/template01_home.jpg"><img src="images/galleryimg.svg" alt="ShishirStudio" title="ShishirStudio" ></a>
+                     </div>
+                  </div>
+                    
+                    
                      <img src="images/banner01.jpg" alt="scalless" title="scalless" class="imggal">
                     
         </div>
@@ -591,9 +603,9 @@
                                 <div class="flag-wrapper">
                                    
                                     <span class="flag">Sr. WEB DEVELOPER | TEAM LEAD</span>
-                                    <span class="time-wrapper"><span class="time">GraphicPeople | Software people</span></span>
+                                    <span class="time-wrapper"><span class="time">2009 Till Now</span></span>
                                 </div>
-                                <span class="test" style="display:block">2016</span>
+                                <span class="companyName">GraphicPeople | Software people</span>
                                 <div class="desc">Working with a reputed digital production hub as Sr. Web Developer,
 leading a team ensuring each knows and executes his or her
 role, feels empowered and supported in the role. I have been
@@ -618,7 +630,11 @@ Opencart.</div>
                                 <div class="flag-wrapper">
                                     <span class="flag">Google Inc</span>
                                     <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+                                    
                                 </div>
+                           
+                                 <span class="companyName">GraphicPeople | Software people</span>
+                            
                                 <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
                             </div>
                         </li>
@@ -629,6 +645,8 @@ Opencart.</div>
                                     <span class="flag">Lifetime</span>
                                     <span class="time-wrapper"><span class="time">2013 - 2015</span></span>
                                 </div>
+                                
+                                 <span class="companyName">GraphicPeople | Software people</span>
                                 <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
                             </div>
                         </li>
@@ -1674,9 +1692,44 @@ Opencart.</div>
 	<script src="js/utility.js"></script>
 	<script src="js/infographic.js"></script> 
     <script src="js/custom.js"></script> 
-     <script src="js/owl.carousel.js"></script>
-        <script src="js/carousel.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/jquery.colorbox.js"></script>
 
+    
+ <script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+       
+    
+    
     <script>
 var ww = document.body.clientWidth;
 $(document).ready(function() {		
