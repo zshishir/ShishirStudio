@@ -2420,6 +2420,7 @@ display: block;
 clear: both;
 z-index: 1;
 position:relative;
+
 top: 0;
 box-sizing: border-box;
 }
@@ -2948,6 +2949,32 @@ col08
 /* ==============================
 col15
    ==============================  */
+
+.col16-bgcolor{
+position: relative;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.col16-bgcolor::after {
+background-attachment: fixed;
+background-color: transparent !important;
+background-image: url("../images/slide1-bg.jpg");
+background-position: 50% 0 !important;
+background-repeat: no-repeat;
+background-size: cover;
+bottom: 0;
+content: "";
+left: 0;
+opacity: 1;
+position: absolute;
+right: 0;
+top: 0;
+z-index: -1;
+}
+
+
 .col15-bgcolor{
 position: relative;
     height: 100%;
@@ -2958,14 +2985,14 @@ position: relative;
 .col15-bgcolor::after {
 background-attachment: fixed;
 background-color: transparent !important;
-background-image: url("../images/col15-bg-scrollar.jpg");
+background-image: url("../images/bg011.svg");
 background-position: 50% 0 !important;
 background-repeat: no-repeat;
 background-size: cover;
 bottom: 0;
 content: "";
 left: 0;
-opacity: 0.2;
+opacity: 1;
 position: absolute;
 right: 0;
 top: 0;
