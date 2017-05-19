@@ -18,7 +18,7 @@ var transitionDuration = 1;
 var slideDuration = 15000;
 var slideWidth = 1024;
 var nav = $$('.carouselnav li');
-var tl1;
+var tl1, tl2, tl3;
 var allTimeLine;
 
 var transitionType = {
@@ -128,25 +128,25 @@ function pageAnimationDefinition(){
 	//tl1.to('.slide1-bg', 6, { scale: 2.1, ease: Bounce.easeOut});
 	//.add(slideTransition, 2.5); 
     
-    tl1.from('.cloud', 1, {alpha: 0});
-	tl1.to('.rocket-wrapper', 3, { y: -400, ease:Expo.easeIn });
-	tl1.to('.cloud', 3, { attr:{ cy: 185}, ease:Expo.easeIn }, "-=3");
-	tl1.set('.cloud', {clearProps:"all"});
-	tl1.set('.rocket-wrapper', { y: 450 });
-	tl1.to('.rocket-wrapper', 4, { y:0, ease:Elastic.easeOut.config(0.5, 0.4) });
-	tl1.to('.trail-wrapper', 2.5, { scaleX:0.5, scaleY:0, alpha:0, ease:Expo.easeOut }, "-=2.0");
-   //.add(slideTransition, 2.5); 
+   // tl1.from('.cloud', 1, {alpha: 0});
+	//tl1.to('.rocket-wrapper', 3, { y: -400, ease:Expo.easeIn });
+	//tl1.to('.cloud', 3, { attr:{ cy: 185}, ease:Expo.easeIn }, "-=3");
+	//tl1.set('.cloud', {clearProps:"all"});
+	//tl1.set('.rocket-wrapper', { y: 450 });
+	//tl1.to('.rocket-wrapper', 4, { y:0, ease:Elastic.easeOut.config(0.5, 0.4) });
+	//tl1.to('.trail-wrapper', 2.5, { scaleX:0.5, scaleY:0, alpha:0, ease:Expo.easeOut }, "-=2.0");
+ //  .add(slideTransition, 2.5); 
 	// Slide2
-	//tl2 = new TimelineMax();
-	//tl2.pause();
+	tl2 = new TimelineMax();
+	tl2.pause();
 	//tl2.fromTo('.slide2-selected-country',.5, { opacity: 0}, { opacity: 1, delay: .5});
 	//tl2.fromTo(['.slide2-selected-country-name', '.slide2-selected-red'],1, { opacity: 0}, { opacity: 1});
 	//tl2.fromTo('.pie-chart-plus', .5, { scale: 0}, { scale: 1});
 	//tl2.from('.slide2-content', .5, { opacity: 0, x: 100, ease: Power2.easeOut});
 
 	// Slide3
-	//tl3 = new TimelineMax();
-	//tl3.pause();
+	tl3 = new TimelineMax();
+	tl3.pause();
 	//tl3.to('.slide3-bg-mask', .5, { opacity: 0, yoyo: true, repeat: -1, ease: Power0.easeNone}, 'slide3');
 	//tl3.from('.slide3-pie-chart', .5, { scale: 0}, 'slide3+=1');
 	//tl3.from('.slide3-pie-chart-heart', .5, { scale: 0}, 'slide3+=1.5');
@@ -238,12 +238,12 @@ function runPageAnimation(){
 	    case 1:
 	        tl1.play();
 	        break;
-	   // case 2:
-	     //   tl2.play();
-	      //  break;
-	    //case 3:
-	      //  tl3.play();
-	      //  break;
+	    case 2:
+	       tl2.play();
+	     break;
+	    case 3:
+	        tl3.play();
+	        break;
 	   // case 4:
 	       // tl4.play();
 	      //  break;

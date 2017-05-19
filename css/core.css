@@ -423,19 +423,16 @@ background-repeat: no-repeat;
 
 }
 
-.wrapper  {
-    max-width: 1170px;
-    display: block;
+.wrappers  {
+    max-width: 90%;
     margin: auto;
     clear: both;
-
     display: block !important;
     margin: 0px auto;
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0px 15px;
     clear: both;
     
 
