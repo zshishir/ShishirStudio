@@ -343,6 +343,9 @@ position: relative;
 	background:rgba(1,1,1,0.5);
 	padding:20px;
 	cursor:pointer;
+    color:#FFFFFF;
+    font-weight:900;
+
 
 }
 
@@ -352,7 +355,12 @@ position: relative;
 	right:0;
 	background:rgba(1,1,1,0.5);
 	padding:20px;
-	cursor:pointer;
+    cursor:pointer;
+    color:#FFFFFF;
+    font-weight: 900;
+    text-indent: 0;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: all .3s;
 
 }
 

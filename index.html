@@ -91,6 +91,18 @@
 </head>
 
 <body>
+        <!-- Loader  -->
+    <div class="loader-content">
+        <img src="images/loader.gif" alt="Loading" title="Loading">
+    </div>
+
+    <script>
+        window.onload = function() {
+            finishLoading();
+        };
+    </script>
+
+    <div class="is-showing">
     <header class="header">
          
   
@@ -99,10 +111,11 @@
                 <div class="wrapper">
                    <div class="container">
         <div class="col-10-1">
-                <div class="logos">
-                                <a href="index.html"><img src="images/logo.svg" alt="scalless logo" title="scalless logo">
-                                </a>
+                <div id="logos">
+                  
+                        
                             </div>
+            
                     
                    
                 
@@ -115,30 +128,19 @@
 <nav>
 <div class="toggleMenu"></div>
 <ul class="main">
-<li><a href="#">HOME</a>
+<li><a href="#intro">Intro</a></li>
 
-                                    </li>
+<li><a href="#whatido">What I Do</a></li>
                                     <li>
-                                        <a href="#">Pages</a>
-                                 
-                                    </li>
-                                    <li>
-                                        <a href="#">ELEMENTS</a>
-                                        
-                                    </li>
-                                    <li>
-                                        <a href="#">PORTFOLIO</a>
+                                        <a href="#portfolio">Portfolio</a>
                                       
                                     </li>
                                     <li>
-                                        <a href="#">Blog</a>
+                                        <a href="#about">About</a>
                                        
                                     </li>
-                                    <li>
-                                        <a href="#">Shop</a>
-                                     
-                                    </li>
-                                    <li><a href="#">Contact</a>
+                              
+                                    <li><a href="#hello">Say Hello</a>
                                        
                                     </li>
                                 </ul>
@@ -157,9 +159,9 @@
      </div>
     </header>
     
- <div class="panel1 biography">
+ <div class="panel1 biography" >
 
-
+<div id="intro" class="slides fs"></div>
 
        
        
@@ -178,9 +180,18 @@
 				<li class="slide slide1">
                     
                  
-                        
-<img src="images/bg01.svg" alt="">
-        
+                  
+
+        <div class="home-section fullwidth-slider">
+      <section class="home-section" data-background="images/bg01.svg" style="background-image: url(&quot;images/bg01.svg&quot;);">
+                    
+                </section>   
+
+            </div>
+                    
+                    
+                    
+                    
 
 
 
@@ -244,12 +255,24 @@
 				</li> 
 				<!-- Slide 2 -->
 			<li class="slide slide2">
-				<img src="images/bg02.svg" alt="">
+		
+        <div class="home-section fullwidth-slider">
+      <section class="home-section" data-background="images/bg02.svg" style="background-image: url(&quot;images/bg02.svg&quot;);">
+                    
+                </section>   
+
+            </div>
 				</li> 
 
 				<!-- Slide 3 -->
 				<li class="slide slide3">
-<img src="images/bg03.svg" alt="">
+
+        <div class="home-section fullwidth-slider">
+      <section class="home-section" data-background="images/bg03.svg" style="background-image: url(&quot;images/bg03.svg&quot;);">
+                    
+                </section>   
+
+            </div>
 				</li> 
 
 				<!-- Slide 4 -->
@@ -433,8 +456,8 @@
 				<li class="is-active"></li>
 				<li></li>
 				<li></li>
-				<li></li>
-				<li></li>
+				
+			
 				
 				<div class="go-after"></div>
 			</ul>
@@ -460,7 +483,7 @@
    
 
 <div id="shishir" class="panel1 whatIDo">
-
+<div id="whatido" class="slides fs"></div>
 <div class="wrapper">
    <div class="child">
  
@@ -516,7 +539,7 @@
                 </div>
 	</div>
         </div>   
-      
+<div id="portfolio" class="slides fs"></div>    
           <div id="banner-fullscreen">
     <div class="col16-bgcolor" >
     <div class="panel1 biography">
@@ -531,7 +554,7 @@
           <div class="tests">
                   
                     
-                          <div class="img-hover-effect img-hover-effect-first">
+                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="images/banner01.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
                         <h2>Theme</h2>
@@ -557,7 +580,7 @@
                   
                     
                           <div class="img-hover-effect img-hover-effect-first">
-                     <img src="images/banner01.jpg" alt="scalless" title="scalless" class="imggal">
+                     <img src="images/col15-bg-scrollar.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
                         <h2>Theme</h2>
                         <p>PSD</p>
@@ -663,8 +686,8 @@
           </div>             
                 
             <div>
-                <a class="prevs slider-arrow-left">||</a>
-                <a class="nexts slider-arrow-right">||</a>
+                <a class="prevs slider-arrow-left">&#8592;</a>
+                <a class="nexts slider-arrow-right">&#8594;</a>
             </div>   
             
                
@@ -688,7 +711,7 @@
         
         
         
-        
+  <div id="about" class="slides fs"></div>          
   <div class="container">
               <div class="helper-line">
                 <h1>Sr. WEB DEVELOPER | TEAM LEAD</h1>
@@ -7123,6 +7146,7 @@ Opencart.</div>
     
     
     <div class="wrapper">
+        <div id="hello" class="slides fs"></div>    
         <div class="container">
             <div class="col-4">1st</div>
               <div class="col-4">2st</div>
@@ -7138,13 +7162,12 @@ Opencart.</div>
     
 
    
-    
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-
+ <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
     
     
@@ -7214,42 +7237,31 @@ $(window).bind('resize orientationchange', function() {
     <script>
     
 //Sticky nav Section // 
+        
 var offset = $('#sticky-nav').offset();
+         $('#logos').addClass('logoWhite');
 $(window).scroll(function(){
    //$('#mine').text($(document).scrollTop());
   $('#sticky-nav').addClass('fixed-nav');
+  $('#logos').addClass('logoblack');
+  
+
   if($(document).scrollTop() < 90){
-         $('#sticky-nav').removeClass('fixed-nav');
-  }
+       $('#sticky-nav').removeClass('fixed-nav');
+       $('#logos').removeClass('logoblack');
+      $('#logos').addClass('logoWhite');
+}
+    
 });
 
-var offset = $('#sticky-nav-black').offset();
-$(window).scroll(function(){
-   //$('#mine').text($(document).scrollTop());
-  $('#sticky-nav-black').addClass('fixed-nav-black');
-  if($(document).scrollTop() < 90){
-         $('#sticky-nav-black').removeClass('fixed-nav-black');
-  }
-});
+
 
 //Sticky nav Section // 
     
     </script>
 
     
-       <script>
-//Accordion Section // 
 
-//Sticky nav Section // 
-var offset = $('#sticky-nav').offset();
-$(window).scroll(function(){
-   //$('#mine').text($(document).scrollTop());
-  $('#sticky-nav').addClass('fixed-nav');
-  if($(document).scrollTop() < 90){
-         $('#sticky-nav').removeClass('fixed-nav');
-  }
-});
-    </script> 
     
     
 
@@ -7258,26 +7270,7 @@ $(window).scroll(function(){
 
   
     <script>
-        
-        //Sticky nav Section // 
-var offset = $('#sticky-nav').offset();
-$(window).scroll(function(){
-   //$('#mine').text($(document).scrollTop());
-  $('#sticky-nav').addClass('fixed-nav');
-  if($(document).scrollTop() < 90){
-         $('#sticky-nav').removeClass('fixed-nav');
-  }
-});
-
-var offset = $('#sticky-nav-black').offset();
-$(window).scroll(function(){
-   //$('#mine').text($(document).scrollTop());
-  $('#sticky-nav-black').addClass('fixed-nav-black');
-  if($(document).scrollTop() < 90){
-         $('#sticky-nav-black').removeClass('fixed-nav-black');
-  }
-});
-        
+                
     var pageSection = $(".home-section");
     pageSection.each(function(indx){
         
@@ -7309,6 +7302,72 @@ $(window).scroll(function(){
     }(jQuery);
     
     </script>
+        
+           <script>
+   $('document').ready(function(){
+    
+ var controller = new ScrollMagic.Controller();
+    
+ 
+    
+    
+        
+
+      
+
+    
+
+var introTl = new TimelineMax();
+
+	    introTl
+	    	.to($('#intro'), 0.2, {autoAlpha: 0, ease:Power1.easeNone})
+	    	.to($('#intro'), 1.4, {y: '20%', ease:Power1.easeOut}, '-=0.2')
+	    	.to($('#intro'), 0.7, {autoAlpha: 0.5, ease:Power1.easeNone}, '-=1.4');
+
+		var introScene = new ScrollMagic.Scene({
+	        triggerElement: '#intro', 
+	        triggerHook: 0,
+	        duration: "100%"
+	    })
+	    .setTween(introTl)
+	    .addTo(controller);
+      // .addIndicators() // add indicators (requires plugin)
+
+        
+
+	    // change behaviour of controller to animate scroll instead of jump
+		controller.scrollTo(function (newpos) {
+			TweenMax.to(window, 1, {scrollTo: {y: newpos}, ease:Power1.easeInOut});
+		});
+
+		//  bind scroll to anchor links
+		$(document).on("click", "a[href^='#']", function (e) {
+			var id = $(this).attr("href");
+			if ($(id).length > 0) {
+				e.preventDefault();
+
+				// trigger scroll
+				controller.scrollTo(id);
+
+					// if supported by the browser we can even update the URL.
+				if (window.history && window.history.pushState) {
+					history.pushState("", document.title, id);
+				}
+			}
+		});
+   
+   
+    
+
+    
+    
+    
+    
+ 
+});
+
+        </script>
+    </div>
 </body>
 
 </html>
