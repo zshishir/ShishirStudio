@@ -546,3 +546,49 @@
   display: block;
   margin-bottom: -8px;
   margin-top: -4px; }
+
+
+
+
+    .contentSlide01{
+        
+        bottom:-10px;
+        width: 60% !important;
+        height: auto;
+        margin: 0 auto;
+        left: 20%;
+        position: absolute;
+        
+        
+    }
+
+.windmills{
+    
+    bottom: 45%;
+    width: 10% !important;
+    height: auto;
+    margin: 0 auto;
+    right: 246px;
+    position: absolute;
+    z-index: 999;              
+}
+
+.sun{
+   top: 0%;
+    width: 10% !important;
+    height: auto;
+    margin: 0 auto;
+    left: 246px;
+    position: absolute;
+    z-index: 999;     
+}
+
+.cloud{
+   top: 0%;
+    width: 10% !important;
+    height: auto;
+    margin: 0 auto;
+    left: 246px;
+    position: absolute;
+    z-index: 999;     
+}
