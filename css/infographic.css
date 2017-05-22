@@ -1,24 +1,21 @@
 
 .carouselnav {
   position: absolute;
-right:50%;
-bottom: 10%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  z-index: 10; }
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 10; }
 
 .carouselnav li {
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background-color: rgba(0,0,0,.0);
-    margin: 5px 2px;
+    background-color: #626469;
+    margin: 5px 0;
     cursor: pointer;
-    border: 2px solid #ffffff; 
-  display: inline-block;
-  transition: background-color 0.6s ease;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -o-transition: all .5s;
