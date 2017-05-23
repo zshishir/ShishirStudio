@@ -37,7 +37,7 @@ var transitionType = {
 }
 
 var slideDurationArr = {
-	1: slideDuration,
+	1: 23000,
 	2: 13000,
 	3: slideDuration,
 	4: 11000,
@@ -132,7 +132,7 @@ function pageAnimationDefinition(){
     tl1.from('#slideTxt01', 2,{opacity:0, y:-50}, 0.1, "begin");
 	//tl1.to('.slide1-jump', 3, { scale: 1, y: 100},'a');
 	//tl1.to('.slide1-bg', 6, { scale: 2.1, ease: Bounce.easeOut});
-	//.add(slideTransition, 2.5); 
+	//tl1.add(slideTransition, 5.5); 
     
    // tl1.from('.cloud', 1, {alpha: 0});
 	//tl1.to('.rocket-wrapper', 3, { y: -400, ease:Expo.easeIn });
@@ -141,8 +141,9 @@ function pageAnimationDefinition(){
 	//tl1.set('.rocket-wrapper', { y: 450 });
 	//tl1.to('.rocket-wrapper', 4, { y:0, ease:Elastic.easeOut.config(0.5, 0.4) });
 	//tl1.to('.trail-wrapper', 2.5, { scaleX:0.5, scaleY:0, alpha:0, ease:Expo.easeOut }, "-=2.0");
-tl1.add(slideTransition, 2.5); 
-	// Slide2
+//tl1.add(slideTransition, 2.5); 
+	
+    // Slide2
 	tl2 = new TimelineMax();
 	tl2.pause();
        tl2.to('.rocket', 20,{opacity:1, x:-800, y:-900, ease: Power1.easeIn});
