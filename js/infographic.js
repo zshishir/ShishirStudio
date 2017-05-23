@@ -18,9 +18,10 @@ var transitionDuration = 1;
 var slideDuration = 15000;
 var slideWidth = 1024;
 var nav = $$('.carouselnav li');
-var tl1;
+var tl1, tl2;
 var allTimeLine;
-
+var smoke = $("#smoke circle, #smoke path");
+var gear = $("#gear1, #gear2, #gear3, #gear4, #gear5");
 var transitionType = {
 	1: 'fade-out',
 	2: 'fade-out',
@@ -124,6 +125,11 @@ function pageAnimationDefinition(){
 	// slide1
 	tl1 = new TimelineMax();
 	tl1.pause();
+    
+     tl1.staggerFromTo(smoke, 1, {opacity:1,scale: 0}, {scale: 1}, 0.1, "begin")
+    tl1.staggerFromTo(smoke, 1, {opacity: 0.6, y: 10}, {opacity: 0,y: -80,repeat: -1,repeatDelay: -2,ease: Circ.easeOut}, 0.1, "begin")
+    tl1.to(gear, 1, {transformOrigin: "50% 50%",rotation: 360,repeat: -1,ease: Linear.easeNone}, 0.1, "begin") ;
+    tl1.from('#slideTxt01', 2,{opacity:0, y:-50}, 0.1, "begin");
 	//tl1.to('.slide1-jump', 3, { scale: 1, y: 100},'a');
 	//tl1.to('.slide1-bg', 6, { scale: 2.1, ease: Bounce.easeOut});
 	//.add(slideTransition, 2.5); 
@@ -135,13 +141,15 @@ function pageAnimationDefinition(){
 	//tl1.set('.rocket-wrapper', { y: 450 });
 	//tl1.to('.rocket-wrapper', 4, { y:0, ease:Elastic.easeOut.config(0.5, 0.4) });
 	//tl1.to('.trail-wrapper', 2.5, { scaleX:0.5, scaleY:0, alpha:0, ease:Expo.easeOut }, "-=2.0");
- //  .add(slideTransition, 2.5); 
+tl1.add(slideTransition, 2.5); 
 	// Slide2
-	//tl2 = new TimelineMax();
-	//tl2.pause();
+	tl2 = new TimelineMax();
+	tl2.pause();
+       tl2.to('.rocket', 20,{opacity:1, x:-800, y:-900, ease: Power1.easeIn});
 	//tl2.fromTo('.slide2-selected-country',.5, { opacity: 0}, { opacity: 1, delay: .5});
 	//tl2.fromTo(['.slide2-selected-country-name', '.slide2-selected-red'],1, { opacity: 0}, { opacity: 1});
-	//tl2.fromTo('.pie-chart-plus', .5, { scale: 0}, { scale: 1});
+	//tl2.from('#rocket', 3, { opacity: 1});
+    //tl2.from('.rocket', 1,{opacity:0, y:-50});
 	//tl2.from('.slide2-content', .5, { opacity: 0, x: 100, ease: Power2.easeOut});
 
 	// Slide3
@@ -221,7 +229,7 @@ function pageAnimationDefinition(){
 	//tl11.staggerFrom($$('.slide11-list-item a'), 1, { opacity: 0}, 3, "slide11+=2");
 
 
-	allTimeLine = [tl1];
+	allTimeLine = [tl1, tl2];
 }
 
 // Run Page Animation
@@ -235,8 +243,12 @@ function runPageAnimation(){
 	}
 
 	switch(activeSlide) {
-	    case 1:
+	
+	     case 1:
 	        tl1.play();
+	        break;
+	    case 2:
+	        tl2.play();
 	        break;
 
 

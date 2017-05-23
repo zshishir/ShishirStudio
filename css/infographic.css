@@ -59,7 +59,7 @@
 ---------------------------------------------------*/
 
 .slide1 {
-  background: #db0011; 
+  background: #7fc0ea; 
 }
 
 .slide1-bg {
@@ -87,7 +87,7 @@
 ** Slide 2
 ---------------------------------------------------*/
 .slide2 {
-  background: #f9f9f9; }
+  background: #093547; }
 
 .slide2-bg {
   width: 100%; }
@@ -552,30 +552,40 @@
 
     .contentSlide01{
         
-        bottom:-10px;
-        width: 60% !important;
+        bottom:-30px;
+        width: 100% !important;
         height: auto;
         margin: 0 auto;
-        left: 20%;
+   
         position: absolute;
-        
-        
+  
     }
 
-.windmills{
+
+    .contentSlide02{
+        
+        bottom:10%;
+        width: 100% !important;
+        height: auto;
+        margin: 0 auto;
+        position: absolute;
+  
+    }
+
+#slideTxt01{
     
-    bottom: 45%;
-    width: 10% !important;
-    height: auto;
-    margin: 0 auto;
-    right: 246px;
+    top: 30%;
+    width: 100%;
+    opacity: 0;
+
     position: absolute;
-    z-index: 999;              
+ 
+    z-index: 999;
 }
 
 .sun{
-   top: 0%;
-    width: 10% !important;
+   top: 10%;
+    width: 6% !important;
     height: auto;
     margin: 0 auto;
     left: 246px;
@@ -583,12 +593,12 @@
     z-index: 999;     
 }
 
-.cloud{
-   top: 0%;
-    width: 10% !important;
+.clouds{
+   top: 19%;
+    width: 12% !important;
     height: auto;
     margin: 0 auto;
-    left: 246px;
+    left: 340px;
     position: absolute;
     z-index: 999;     
 }
