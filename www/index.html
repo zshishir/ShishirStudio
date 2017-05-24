@@ -16,7 +16,10 @@
     <meta name="MobileOptimized" content="320">
     <link rel="stylesheet" href="css/style.css" media="all">
     <link rel="stylesheet" href="css/grid-style.css" media="all">
-       <link rel="stylesheet" href="css/infographic.css" media="all">
+    <link rel="stylesheet" href="css/infographic.css" media="all">
+    <link rel="stylesheet" href="css/colorbox.css" media="all">
+    <link rel="stylesheet" href="css/colorbox.css" media="all">
+    <link rel="stylesheet" href="css/colorbox.css" media="all">
     <style>
     
      .panel1 {
@@ -66,7 +69,24 @@
         padding: 0px;
         
     }
-    
+        
+          .contentSlide01{
+        
+        bottom:-20px;
+        width: 100% !important;
+        height: auto;
+        margin: 0 auto;
+   
+        position: absolute;
+  
+    }
+        .noMerginPadding{
+            margin: 0 !important;
+            padding: 0px !important;
+        }
+        .whatdoicon{
+            width: 50%;
+        }
     </style>
 </head>
 
@@ -91,7 +111,7 @@
                     <div class="section group">
                         <div class="logo-container">
                             <div class="logos">
-                                <a href="index.html"><img src="images/logo-scalless-w.png" alt="scalless logo" title="scalless logo">
+                                <a href="index.html"><img src="images/logo.svg" alt="scalless logo" title="scalless logo">
                                 </a>
                             </div>
                         </div>
@@ -99,20 +119,17 @@
                                <nav>
                                 <div class="toggleMenu"></div>
                                 <ul class="main">
-                                    <li><a href="#">HOME</a>
+                                    <li><a href="#con01">Intro</a>
                                     </li>
-                                    <li><a href="#con01">Pages</a>
-                                    </li>
-                                    <li><a href="#con02">ELEMENTS</a>
+                                    <li><a href="#con02">What We Do</a>
                                     </li>
                                     <li><a href="#con03">PORTFOLIO</a>
                                     </li>
-                                    <li><a href="#con04">Blog</a>
+                                    <li><a href="#con04">About</a>
                                     </li>
-                                    <li><a href="#con05">Shop</a>
+                                    <li><a href="#con05">Contact</a>
                                     </li>
-                                    <li><a href="#con06">Contact</a>
-                                    </li>
+                                    
                                 </ul>
                             </nav>
                         </div>
@@ -133,7 +150,7 @@
         
         
         
-<div class="panel1 biography" >        
+<div id="con01" class="panel1 biography" >        
         
         <!-- End Header Section  -->
 
@@ -2907,7 +2924,7 @@
                     
 				</li> 
 				<!-- Slide 2 -->
-			<li class="slide slide2">
+		<!--	<li class="slide slide2">
 
       <div class="home-section fullwidth-slider">
            <section class="home-section" data-background="images/bgSlide02.svg"></section>  
@@ -4594,7 +4611,7 @@
               
 
             </div>
-				</li>  
+				</li>  -->
 
 			<!-- Slide 3 -->
 				<!--	<li class="slide slide3">
@@ -4805,53 +4822,54 @@
 
         <!-- Body Section  -->
         <div class="clear"></div>
-<div class="wrapper">
+<div id="con02" class="wrapper">
+      <div class="cleargap"></div>
             <div class="clear line">
                 <h1>WHAT WE OFFER</h1>
                 <p>We create interactive</p>
             </div>
 
-            <div class="section group">
+            <div id="shishir" class="section group">
                 <div class="col grid_2_of_2">
                     <div class="feature-box clearfix">
                         <div class="container clearfix">
 
-                            <div class="container-left col07" id="con03">
-                                <i class="fa fa-apple icon"></i>
+                            <div class="container-left col07">
+                               <img src="images/graphicDesign.svg" class="whatdoicon">
 
-                                <h1>Parallax Area</h1>
-                                <p>Create a website that you are gonna be proud of. Be it Business, Portfolio, Agency, Photography, eCommerce & much more.</p>
+                                <h1>GRAPHIC DESIGN</h1>
+                                <p>I Designed Beautiful Things That Communicate Effectively In Order To Achieve Optimal Results.</p>
                             </div>
 
                             <div class="container-middle col07">
-                                <i class="fa fa-bug icon"></i>
-                                <h1>RESPONSIVE LAYOUT</h1>
-                                <p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
+                               <img src="images/fontend.svg" class="whatdoicon">
+                                <h1>FRONT END DEVELOPMENT</h1>
+                                <p>Fuent In Html, Css And Continuous In Learning Javascript. I Used Sass And Have A Good Understanding Of Php.</p>
                             </div>
 
                             <div class="container-right col07">
-                                <i class="fa fa-briefcase icon"></i>
-                                <h1>POWERFUL PERFORMANCE</h1>
-                                <p>Studio includes tons of optimized code that are completely customizable and deliver unmatched fast performance.</p>
+                                 <img src="images/uxui.svg" class="whatdoicon">
+                                <h1>UX/UI DESIGN</h1>
+                                <p>User Experience Takes Precedence Throughout My Entire Process From Reaserch Through Wireframes To Design.</p>
                             </div>
                         </div>
 
                         <div class="container-left col07">
-                            <i class="fa fa-firefox icon"></i>
-                            <h1>CUSTOMIZABLE FONTS</h1>
-                            <p>Use any Font you like from Google Web Fonts, Typekit or other Web Fonts. They will blend in perfectly.</p>
+                      <img src="images/webdevelopment.svg" class="whatdoicon">
+                            <h1>WEB DESIGN</h1>
+                            <p>I am A Passionate Responsive Web Designer That Focuses On Functionality And Visual Appeal.</p>
                         </div>
 
                         <div class="container-middle col07">
-                            <i class="fa fa-life-ring icon"></i>
-                            <h1>UNLIMITED COLOR OPTIONS</h1>
-                            <p>Change the color scheme of the Theme in a flash just by changing the 6-digit HEX code in the colors.php file.</p>
+                          <img src="images/typogtaphy.svg" class="whatdoicon">
+                            <h1>TYPOGRAPHY</h1>
+                            <p>Typography Is The Intricate Art Of Letter Design And Can Be An Important Aspect Of Visual Appeal.</p>
                         </div>
 
                         <div class="container-right col07">
-                            <i class="fa fa-paper-plane-o icon"></i>
-                            <h1>PREMIUM SLIDERS INCLUDED</h1>
-                            <p>Studio included 20+ custom designed Slider Pages with Premium Sliders like Layer, Revolution, Swiper & others.</p>
+                           <img src="images/printmedia.svg" class="whatdoicon">
+                            <h1>ILLUSTRATION</h1>
+                            <p>I Illustrate Beautiful Works From Digital To Fine Arts In A Diverse Range Of Unique Styles.</p>
                         </div>
 
                     </div>
@@ -4859,367 +4877,114 @@
             </div>
       
         </div>
-        <!-- Start wrapper  -->
-        <div class="wrapper">
-
-            <!--==  Start col01 ==-->
+ 
 
 
-
-            <!--==  End col01 ==-->
-
-
-            <div class="clear line">
-                <h1>WHAT PEOPLE SAY ABOUT US</h1>
-                <p>We create interactive</p>
-            </div>
-
-            <!--==  Start col02 ==-->
-
-
-            <div class="section group">
-                <div class="col grid_3_of_5 col02">
-                    <h1> <i class="round-shape-icon effect-1 fa fa-laptop"></i> MORE THAN RESPONSIVE</h1>
-                    <p>Outstanding concepts and designs are crucial, but worthless if they can't be delivered.I know how to make it work for you.I have the expertise and passion needed to ensure that every detail will be delivered perfectly.</p>
-                    <div class="btn">Read More <i class="fa fa-arrow-circle-o-right"></i>
-                    </div>
-                </div>
-
-                <div class="col grid_4_of_10 col02">
-                    <img src="images/about-us-portfolio.jpg" alt="scalless" title="scalless">
-                    <h3><i class="fa fa-quote-left"></i>Creativity often consists of merely turning up what is already there.<i class="fa fa-quote-right"></i></h3>
-                    <h4> -Zakareir Kabir</h4>
-                </div>
-
-            </div>
-
-            <!--==  End col02 ==-->
-
-
-
-            <div class="clear"></div>
-        </div>
-        <!-- End wrapper  -->
-
-        <!--==  Start col03 ==-->
-   
-    
-        <!-- End wrapper  -->
-
-        <!-- Start Full Width Gallery  -->
-        <ul class="image--gallery">
-
-            <li>
-                <figure class="photo-gallery--image">
-                    <a href="images/full-width-gallery.jpg" class="photo">
-                        <div>
-                            <h3>RECENT PROJECTS | 10 January</h3>
-                            <h2>Fashionable figures</h2>
-                            <p><i class="fa fa-search-plus"></i>
-                            </p>
-                        </div>
-                        <img src="images/full-width-gallery.jpg" alt="scalless" title="scalless">
-                    </a>
-                </figure>
-            </li>
-
-            <li>
-                <figure class="photo-gallery--image">
-                    <a href="images/full-width-gallery01.jpg" class="photo">
-                        <div>
-                            <h3>RECENT PROJECTS | 05 January</h3>
-                            <h2>Comprehensive </h2>
-                            <p><i class="fa fa-search-plus"></i>
-                            </p>
-                        </div>
-                        <img src="images/full-width-gallery01.jpg" alt="scalless" title="scalless">
-                    </a>
-                </figure>
-            </li>
-
-            <li>
-                <figure class="photo-gallery--image">
-                    <a href="images/full-width-gallery02.jpg" class="photo">
-                        <div>
-                            <h3>RECENT PROJECTS | 30 February</h3>
-                            <h2>NEW WEB DESIGN TRENDS</h2>
-                            <p><i class="fa fa-search-plus"></i>
-                            </p>
-                        </div>
-                        <img src="images/full-width-gallery02.jpg" alt="scalless" title="scalless">
-                    </a>
-                </figure>
-            </li>
-
-            <li>
-                <figure class="photo-gallery--image">
-                    <a href="images/full-width-gallery03.jpg" class="photo">
-                        <div>
-                            <h3>RECENT PROJECTS | 22 January</h3>
-                            <h2>characters for culturally </h2>
-                            <p><i class="fa fa-search-plus"></i>
-                            </p>
-                        </div>
-                        <img src="images/full-width-gallery03.jpg" alt="scalless" title="scalless">
-                    </a>
-                </figure>
-            </li>
-
-            <li>
-                <figure class="photo-gallery--image">
-                    <a href="images/full-width-gallery04.jpg" class="photo">
-                        <div>
-                            <h3>RECENT PROJECTS | 10 October</h3>
-                            <h2>correct creations</h2>
-                            <p><i class="fa fa-search-plus"></i>
-                            </p>
-                        </div>
-                        <img src="images/full-width-gallery04.jpg" alt="scalless" title="scalless">
-                    </a>
-                </figure>
-            </li>
-
-            <li>
-                <figure class="photo-gallery--image">
-                    <a href="images/full-width-gallery05.jpg" class="photo">
-                        <div>
-                            <h3>RECENT PROJECTS | 26 March</h3>
-                            <h2>populist peloton</h2>
-                            <p><i class="fa fa-search-plus"></i>
-                            </p>
-                        </div>
-                        <img src="images/full-width-gallery05.jpg" alt="scalless" title="scalless">
-                    </a>
-
-                </figure>
-            </li>
-            <li>
-                <figure class="photo-gallery--image">
-                    <a href="images/full-width-gallery06.jpg" class="photo">
-                        <div>
-                            <h3>RECENT PROJECTS | 10 January</h3>
-                            <h2>break away </h2>
-                            <p><i class="fa fa-search-plus"></i>
-                            </p>
-                        </div>
-                        <img src="images/full-width-gallery06.jpg" alt="scalless" title="scalless">
-                    </a>
-                </figure>
-            </li>
-
-
-            <li>
-                <figure class="photo-gallery--image">
-                    <a href="images/full-width-gallery07.jpg" class="photo">
-                        <div>
-                            <h3>RECENT PROJECTS | 16 April</h3>
-                            <h2>STYLE IN WEB</h2>
-                            <p><i class="fa fa-search-plus"></i>
-                            </p>
-                        </div>
-                        <img src="images/full-width-gallery07.jpg" alt="scalless" title="scalless">
-                    </a>
-                </figure>
-            </li>
-
-        </ul>
-
-        <!-- End Full Width Gallery  -->
-
-        <!-- Include this for gallery to appear -->
-
-        <div id="PhotoViewer" class="photo-viewer ">
-            <div class="photo-viewer-bg">
-                <header class="photo-viewer--title">
-                    <h1 id="PhotoViewerTitle">Image Title</h1>
-                    <div id="PhotoViewerClose" class="photo-viewer--close"><a href="#">X</a>
-                    </div>
-                </header>
-                <div class="photo-viewer--container">
-                    <figure class="photo-viewer--current-image" id="PhotoViewerCurrentImageContainer">
-                        <img src="images/transparent.png" id="PhotoViewerCurrentImage" alt="" title="">
-                    </figure>
-                </div>
-                <div class="photo-viewer--controls">
-                    <div id="PhotoViewerPreviousImage" class="photo-viewer--previous-image"><a href="#">&laquo; Previous</a>
-                    </div>
-
-                    <div id="PhotoViewerNextImage" class="photo-viewer--next-image"><a href="#">Next &raquo;</a>
-                    </div>
-
-                </div>
-                <div class="photo-viewer--countcontrols">
-                    <div id="PhotoViewerCount" class="photo-viewer--count">1/10</div>
-                </div>
-            </div>
-        </div>
-        <!-- Include this for gallery to appear -->
-
-        <!-- Start wrapper  -->
-      
-        <!-- End wrapper  -->
-
-
-   
         <!--==  End col07 ==-->
 
         <!--==  Start col08 ==-->
-        <div class="wrapper">
+        <div id="con03" class="wrapper">
+          <div class="cleargap"></div>
+                <div class="wrapper">
             <div class="clear line">
-                <h1>WHAT PEOPLE SAY ABOUT US</h1>
+                <h1>WHAT WE OFFER</h1>
                 <p>We create interactive</p>
             </div>
+                </div>
+           
             <div class="section group">
                 <div class="col grid_2_of_2">
 
                     <dl class="tab-menu">
-                        <dt class="tab-menu_title title-home "><i class="fa fa-safari"></i>Portfolio</dt>
+                        <dt class="tab-menu_title title-home "><i class="fa fa-safari"></i>Web Development</dt>
                         <dd class="tab-menu_content one tab-selected">
 
 
-                            <figure class="photo-gallery--image">
-                                <div class="gallery-feature gallery-feature--fourcol">
-
+                            <figure>
+    <div class="section group">
+                                <div class="col grid_1_of_5 noMerginPadding">
                                     <div class="img-hover-effect img-hover-effect-first">
-                                        <div class="gallery-feature date">
-                                            <div class="day">15</div>
-                                            <div class="month">Jun</div>
-                                        </div>
-
-                                        <a href="images/carousel01.jpg" class="photo"><span></span><img src="images/carousel01.jpg" alt="scalless" title="scalless"></a>
-
-
-
-                                    </div>
-                                    <h2>Background Video</h2>
-                                    <p>Javascript</p>
-                                </div>
-
-                                <div class="gallery-feature gallery-feature--fourcol">
-
+                     <img src="images/banner01.jpg" alt="scalless" title="scalless" class="imggal">
+                     <div class="mask">
+                        <h2>Theme</h2>
+                        <p>PSD</p>
+                        <a class="group1" href="http://www.shishirstudio.com/webDevelopment/psdTemplate01/template01_home.jpg"><img src="images/galleryimg.svg" alt="ShishirStudio" title="ShishirStudio" ></a>
+                     </div>
+             
+                    </div>
+                                 </div>
+        <div class="col grid_1_of_5 noMerginPadding">
                                     <div class="img-hover-effect img-hover-effect-first">
-                                        <div class="gallery-feature date">
-                                            <div class="day">05</div>
-                                            <div class="month">JAN</div>
-                                        </div>
-
-                                        <a href="images/carousel02.jpg" class="photo"><span></span><img src="images/carousel02.jpg" alt="scalless" title="scalless"></a>
-
-
-
-                                    </div>
-                                    <h2>24/7 Support</h2>
-                                    <p>HTML5</p>
+                     <img src="images/banner01.jpg" alt="scalless" title="scalless" class="imggal">
+                     <div class="mask">
+                        <h2>Theme</h2>
+                        <p>PSD</p>
+                        <a class="group1" href="http://www.shishirstudio.com/webDevelopment/psdTemplate01/template01_home.jpg"><img src="images/galleryimg.svg" alt="ShishirStudio" title="ShishirStudio" ></a>
+                     </div>
+             
+                    </div>
+                                 </div>
+        <div class="col grid_1_of_5 noMerginPadding">
+                                        <div class="img-hover-effect img-hover-effect-first">
+                     <img src="images/banner01.jpg" alt="scalless" title="scalless" class="imggal">
+                     <div class="mask">
+                        <h2>Theme</h2>
+                        <p>PSD</p>
+                        <a class="group1" href="http://www.shishirstudio.com/webDevelopment/psdTemplate01/template01_home.jpg"><img src="images/galleryimg.svg" alt="ShishirStudio" title="ShishirStudio" ></a>
+                     </div>
+             
+                    </div>
+                                 </div>
+        <div class="col grid_1_of_5 noMerginPadding">
+                                         <div class="img-hover-effect img-hover-effect-first">
+                     <img src="images/banner01.jpg" alt="scalless" title="scalless" class="imggal">
+                     <div class="mask">
+                        <h2>Theme</h2>
+                        <p>PSD</p>
+                        <a class="group1" href="http://www.shishirstudio.com/webDevelopment/psdTemplate01/template01_home.jpg"><img src="images/galleryimg.svg" alt="ShishirStudio" title="ShishirStudio" ></a>
+                     </div>
+             
+                    </div>
+                                 </div>
+        <div class="col grid_1_of_5 noMerginPadding">
+                                      <div class="img-hover-effect img-hover-effect-first">
+                     <img src="images/banner01.jpg" alt="scalless" title="scalless" class="imggal">
+                     <div class="mask">
+                        <h2>Theme</h2>
+                        <p>PSD</p>
+                        <a class="group1" href="http://www.shishirstudio.com/webDevelopment/psdTemplate01/template01_home.jpg"><img src="images/galleryimg.svg" alt="ShishirStudio" title="ShishirStudio" ></a>
+                     </div>
+             
+                    </div>
+                                 </div>
+        <div class="col grid_1_of_5 noMerginPadding">
+                                       <div class="img-hover-effect img-hover-effect-first">
+                     <img src="images/banner01.jpg" alt="scalless" title="scalless" class="imggal">
+                     <div class="mask">
+                        <h2>Theme</h2>
+                        <p>PSD</p>
+                        <a class="group1" href="http://www.shishirstudio.com/webDevelopment/psdTemplate01/template01_home.jpg"><img src="images/galleryimg.svg" alt="ShishirStudio" title="ShishirStudio" ></a>
+                     </div>
+             
+                    </div>
+                                 </div>
                                 </div>
-                                <div class="gallery-feature gallery-feature--fourcol">
-
-                                    <div class="img-hover-effect img-hover-effect-first">
-                                        <div class="gallery-feature date">
-                                            <div class="day">22</div>
-                                            <div class="month">Feb</div>
-                                        </div>
-
-                                        <a href="images/carousel03.jpg" class="photo"><span></span><img src="images/carousel03.jpg" alt="scalless" title="scalless"></a>
-
-
-
-                                    </div>
-                                    <h2>Graphic Design</h2>
-                                    <p>Adobe photoshop</p>
-                                </div>
-
-                                <div class="gallery-feature gallery-feature--fourcol">
-
-                                    <div class="img-hover-effect img-hover-effect-first">
-                                        <div class="gallery-feature date">
-                                            <div class="day">28</div>
-                                            <div class="month">Feb</div>
-                                        </div>
-
-                                        <a href="images/carousel04.jpg" class="photo"><span></span><img src="images/carousel04.jpg" alt="scalless" title="scalless"></a>
-
-
-
-                                    </div>
-                                    <h2>Easy to Use</h2>
-                                    <p>No Framework</p>
-                                </div>
+                                   
 
 
 
 
-                                <div class="gallery-feature gallery-feature--fourcol">
-                                    <div class="img-hover-effect img-hover-effect-first">
-                                        <div class="gallery-feature date">
-                                            <div class="day">09</div>
-                                            <div class="month">Jul</div>
-                                        </div>
-
-                                        <a href="images/carousel05.jpg" class="photo"><span></span><img src="images/carousel05.jpg" alt="scalless" title="scalless"></a>
 
 
 
-                                    </div>
-                                    <h2>Clean Code</h2>
-                                    <p>Wordpress</p>
-                                </div>
-
-
-                                <div class="gallery-feature gallery-feature--fourcol">
-
-                                    <div class="img-hover-effect img-hover-effect-first">
-                                        <div class="gallery-feature date">
-                                            <div class="day">20</div>
-                                            <div class="month">Oct</div>
-                                        </div>
-
-                                        <a href="images/carousel06.jpg" class="photo"><span></span><img src="images/carousel06.jpg" alt="scalless" title="scalless"></a>
-
-
-
-                                    </div>
-                                    <h2>Parallax Background</h2>
-                                    <p>CSS3</p>
-                                </div>
-
-                                <div class="gallery-feature gallery-feature--fourcol">
-
-                                    <div class="img-hover-effect img-hover-effect-first">
-                                        <div class="gallery-feature date">
-                                            <div class="day">16</div>
-                                            <div class="month">Dec</div>
-                                        </div>
-
-                                        <a href="images/carousel07.jpg" class="photo"><span></span><img src="images/carousel07.jpg" alt="scalless" title="scalless"></a>
-
-
-
-                                    </div>
-                                    <h2>Retina Ready</h2>
-                                    <p>REsponsive Layout</p>
-                                </div>
-                                <div class="gallery-feature gallery-feature--fourcol">
-
-                                    <div class="img-hover-effect img-hover-effect-first">
-                                        <div class="gallery-feature date">
-                                            <div class="day">02</div>
-                                            <div class="month">Nov</div>
-                                        </div>
-
-                                        <a href="images/carousel08.jpg" class="photo"><span></span><img src="images/carousel08.jpg" alt="scalless" title="scalless"></a>
-
-
-
-                                    </div>
-                                    <h2>Clean Code</h2>
-                                    <p>SEO Enable</p>
-                                </div>
+                        
+                           
 
 
 
                             </figure>
                         </dd>
-                        <dt class="tab-menu_title title-home"> <i class="fa fa-renren"></i>Projects</dt>
+                        <dt class="tab-menu_title title-home"> <i class="fa fa-renren"></i>HTML5 Banner</dt>
                         <dd class="tab-menu_content">
 
 
@@ -5259,7 +5024,7 @@
 
                         </dd>
                         <dt class="tab-menu_title title-home">
-<i class="fa fa-firefox"></i>Upload</dt>
+<i class="fa fa-firefox"></i>Font End </dt>
                         <dd class="tab-menu_content">
 
                             <h2>We respond directly to a project’s objectives.</h2>
@@ -5278,7 +5043,7 @@
                         </dd>
 
                         <dt class="tab-menu_title title-home">
-<i class="fa fa-apple"></i>Our work</dt>
+<i class="fa fa-apple"></i>Branding</dt>
                         <dd class="tab-menu_content">
 
 
@@ -5406,7 +5171,7 @@
                         </dd>
 
                         <dt class="tab-menu_title title-home">
-<i class="fa fa-lightbulb-o"></i>Gallery</dt>
+<i class="fa fa-lightbulb-o"></i>Print Media</dt>
                         <dd class="tab-menu_content">
 
                             <div class="section group">
@@ -5458,7 +5223,7 @@
                         </dd>
 
                         <dt class="tab-menu_title title-home">
-<i class="fa fa-android"></i>About Us</dt>
+<i class="fa fa-android"></i>Animation</dt>
                         <dd class="tab-menu_content">
 
 
@@ -5496,7 +5261,51 @@
 
         <!--==  Start wrapper04 ==-->
 
-        <div class="wrapper">
+               <div id="con04"  class="wrapper">
+
+            <!--==  Start col01 ==-->
+
+
+
+            <!--==  End col01 ==-->
+
+
+            <div class="clear line">
+                <h1>WHAT PEOPLE SAY ABOUT US</h1>
+                <p>We create interactive</p>
+            </div>
+
+            <!--==  Start col02 ==-->
+
+
+            <div class="section group">
+                <div class="col grid_3_of_5 col02">
+                    <h1> <i class="round-shape-icon effect-1 fa fa-laptop"></i> MORE THAN RESPONSIVE</h1>
+                    <p>Working as Sr. Web Developer in software industry from 13 years.</p>
+                    <p>Professional experiences on websites, web apps & tools using php, mysql, javascript, Jquery, css, less, scss, angu- larJs, Nodejs, glup, and browserify. Proficient on multiple CMS and Frame work like WordPress, Joomla, Opencart, Open text, CodeIgniter .</p>
+                    
+  <p>Professional experiences Web and mobile Served global brand like - HSBC, Microsoft, Dell, Nokia, Nike, Volvo, Dior, HillsPet, Vodafone, pfizer , Colgate,  Head & Shoulder,  Flugger, Adobe and many more. Having a sound knowledge about Rich Media Platform like Google Doubleclick Studio, Sizmek.</p>
+                    <div class="btn">Read More <i class="fa fa-arrow-circle-o-right"></i>
+                    </div>
+                </div>
+
+                <div class="col grid_4_of_10 col02">
+                    <img src="images/about-us-portfolio.jpg" alt="scalless" title="scalless">
+                    <h3><i class="fa fa-quote-left"></i>Creativity often consists of merely turning up what is already there.<i class="fa fa-quote-right"></i></h3>
+                    <h4> -Zakareir Kabir</h4>
+                </div>
+
+            </div>
+
+            <!--==  End col02 ==-->
+
+
+
+            <div class="clear"></div>
+        </div> 
+        
+        
+        <div id="con05"  class="wrapper">
 
           
 
@@ -5515,10 +5324,11 @@
                         <li>
                             <div class="direction-r">
                                 <div class="flag-wrapper">
-                                    <span class="flag">Single Theme</span>
-                                    <span class="time-wrapper"><span class="time">2016 - present</span></span>
+                                    <span class="flag">GraphicPeople | Software people</span>
+                                    <span class="time-wrapper"><span class="time">2009 - present</span></span>
                                 </div>
-                                <div class="desc">My current employment. Way better than the position before!</div>
+                                <div class="desc">Sr. WEB DEVELOPER | TEAM LEAD</div>
+                                <div class="desc">Working with a reputed digital production hub as Sr. Web Developer, leading a team ensuring each knows and executes his or her role, feels empowered and supported in the role. I have been working on rich interactive websites, web apps & tools, Flash & HTML ads with rich media functionalities. Equipped with multidimensional industry oriented skills, designing UI/UX for Web and mobile.</div>
                             </div>
                         </li>
 
@@ -5526,20 +5336,23 @@
                         <li>
                             <div class="direction-l">
                                 <div class="flag-wrapper">
-                                    <span class="flag">Google Inc</span>
-                                    <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+                                    <span class="flag">Sr. WEB DEVELOPER</span>
+                                    <span class="time-wrapper"><span class="time">March ‘2008 to August ’2009.</span></span>
                                 </div>
-                                <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+                                <div class="desc">Sure Soft Technologies</div>
+                                <div class="desc">Mix of interface design and front-end development for International client, and external marketing sites and fundraising campaigns. Helped bring a new awareness and standard for content separation, and semantic, lean HTML5 and CSS3 execu tion.
+</div>
                             </div>
                         </li>
                         <!-- Item 3 -->
                         <li>
                             <div class="direction-r">
                                 <div class="flag-wrapper">
-                                    <span class="flag">Lifetime</span>
-                                    <span class="time-wrapper"><span class="time">2013 - 2015</span></span>
+                                    <span class="flag">WEB DEVELOPER</span>
+                                    <span class="time-wrapper"><span class="time">March ‘2003 to February ’2008</span></span>
                                 </div>
-                                <div class="desc">A description of all the lectures and courses I have taken and my final degree?</div>
+                                   <div class="desc">BDCOM Online Limited.</div>
+                                <div class="desc">BDCOM Online Limited One of the largest ISP in Bangladesh. Main responsibilities Development/Designs web sites and application. 2d animation with flash and action script.</div>
                             </div>
                         </li>
 
@@ -5547,10 +5360,11 @@
                         <li>
                             <div class="direction-l">
                                 <div class="flag-wrapper">
-                                    <span class="flag">Apple Inc.</span>
-                                    <span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+                                    <span class="flag">GRAPHIC DESIGNER</span>
+                                    <span class="time-wrapper"><span class="time">March ‘2002 to February ’2003</span></span>
                                 </div>
-                                <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
+                                <div class="desc">Head Office</div>
+                                <div class="desc">Web sites, Desktop Publication / Printing Media, Logos, Poster, Brochure, Literature, Pad & Tissue Box, Poster, Bags, Hand Tags, Newspaper Adds etc.</div>
                             </div>
                         </li>
                     </ul>
@@ -5617,18 +5431,17 @@
             </p>
             <!-- == copywrite Section END == -->
         </div>
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>  
+  
 
     
 
    
 <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
- <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
     
     
 	<script src="js/utility.js"></script>
@@ -5637,10 +5450,10 @@
     <script src="js/owl.carousel.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/jquery.colorbox.js"></script>
-         <script type="text/javascript" src="js/elements.js"></script>
+    <script type="text/javascript" src="js/elements.js"></script>
 
     
- <script>
+ 	<script>
 			$(document).ready(function(){
 				//Examples of how to assign the Colorbox event to elements
 				$(".group1").colorbox({rel:'group1'});
@@ -5673,53 +5486,7 @@
        
     
     
-    <script>
-var ww = document.body.clientWidth;
-$(document).ready(function() {		
-	$('.toggleMenu').click(function(){
-		$('nav ul.main').toggle();		
-	});
-	$('nav ul.main li a').click(function(){
-		if (ww <= 768) {
-			// $("nav ul ul").css("display", "block");
-			$(this).next().toggle();
-		}
-	});
-	
-});
 
-$(window).bind('resize orientationchange', function() {
-	ww = document.body.clientWidth;
-	
-});
-    </script>
-
-    
-    <script>
-    
-//Sticky nav Section // 
-        
-var offset = $('#sticky-nav').offset();
-         $('#logos').addClass('logoWhite');
-$(window).scroll(function(){
-   //$('#mine').text($(document).scrollTop());
-  $('#sticky-nav').addClass('fixed-nav');
-  $('#logos').addClass('logoblack');
-  
-
-  if($(document).scrollTop() < 90){
-       $('#sticky-nav').removeClass('fixed-nav');
-       $('#logos').removeClass('logoblack');
-      $('#logos').addClass('logoWhite');
-}
-    
-});
-
-
-
-//Sticky nav Section // 
-    
-    </script>
 
     
 
@@ -5763,22 +5530,19 @@ $(window).scroll(function(){
     }(jQuery);
     
     </script>
-        
-           <script>
-   $('document').ready(function(){
-    
- var controller = new ScrollMagic.Controller();
-    
- 
-    
-    
-        
 
+        
+        
+        
+        
+        
+        
+        
       
-
-    
-
-var introTl = new TimelineMax();
+<script>
+$('document').ready(function(){  
+ var controller = new ScrollMagic.Controller();
+ var introTl = new TimelineMax();
 
 	    introTl
 	    	.to($('#intro'), 0.2, {autoAlpha: 0, ease:Power1.easeNone})
@@ -5795,7 +5559,6 @@ var introTl = new TimelineMax();
       // .addIndicators() // add indicators (requires plugin)
 
         
-
 	    // change behaviour of controller to animate scroll instead of jump
 		controller.scrollTo(function (newpos) {
 			TweenMax.to(window, 1, {scrollTo: {y: newpos}, ease:Power1.easeInOut});
@@ -5828,6 +5591,31 @@ var introTl = new TimelineMax();
 });
 
         </script>
+<script type="text/javascript">
+    
+	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/Android/i)) ){	
+	
+	// Make ColorBox responsive
+	jQuery.colorbox.settings.maxWidth  = '95%';
+	jQuery.colorbox.settings.maxHeight = '95%';
+
+	// ColorBox resize function
+	var resizeTimer;
+	function resizeColorBox()
+	{
+		if (resizeTimer) clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(function() {
+				if (jQuery('#cboxOverlay').is(':visible')) {
+						jQuery.colorbox.load(true);
+				}
+		}, 300);
+	}
+
+	// Resize ColorBox when resizing window or changing mobile device orientation
+	jQuery(window).resize(resizeColorBox);
+	window.addEventListener("orientationchange", resizeColorBox, false);
+    }
+</script>
     </div>
 
 </body>

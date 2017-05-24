@@ -18,7 +18,7 @@ var transitionDuration = 1;
 var slideDuration = 15000;
 var slideWidth = 1024;
 var nav = $$('.carouselnav li');
-var tl1, tl2;
+var tl1;
 var allTimeLine;
 var smoke = $("#smoke circle, #smoke path");
 var gear = $("#gear1, #gear2, #gear3, #gear4, #gear5");
@@ -144,9 +144,9 @@ function pageAnimationDefinition(){
 //tl1.add(slideTransition, 2.5); 
 	
     // Slide2
-	tl2 = new TimelineMax();
-	tl2.pause();
-       tl2.to('.rocket', 20,{opacity:1, x:-800, y:-900, ease: Power1.easeIn});
+	//tl2 = new TimelineMax();
+	//tl2.pause();
+     //  tl2.to('.rocket', 20,{opacity:1, x:-800, y:-900, ease: Power1.easeIn});
 	//tl2.fromTo('.slide2-selected-country',.5, { opacity: 0}, { opacity: 1, delay: .5});
 	//tl2.fromTo(['.slide2-selected-country-name', '.slide2-selected-red'],1, { opacity: 0}, { opacity: 1});
 	//tl2.from('#rocket', 3, { opacity: 1});
@@ -230,7 +230,7 @@ function pageAnimationDefinition(){
 	//tl11.staggerFrom($$('.slide11-list-item a'), 1, { opacity: 0}, 3, "slide11+=2");
 
 
-	allTimeLine = [tl1, tl2];
+	allTimeLine = [tl1];
 }
 
 // Run Page Animation
@@ -248,10 +248,7 @@ function runPageAnimation(){
 	     case 1:
 	        tl1.play();
 	        break;
-	    case 2:
-	        tl2.play();
-	        break;
-
+	 
 
 	}
 }

@@ -19,7 +19,7 @@ jQuery('document').ready(function($){
 var skillAnimation = new TimelineMax()
     
     skillAnimation
-        .from(".card", 1,{opacity:0,  })
+        .from(".col07", 1,{opacity:0,  })
         
  new ScrollMagic.Scene({
     triggerElement:'#shishir',
