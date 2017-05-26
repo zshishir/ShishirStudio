@@ -1892,7 +1892,7 @@ Uncomment following if you want to set transition on hexagon color change */
 @media (min-width: 320px) and (max-width: 660px) {
     .direction-l .desc,
     .direction-r .desc {
-        margin: 1em 4em 0 4em;
+        /*margin: 0em 4em 0 4em;*/
     }
 }
 /* ==============================
