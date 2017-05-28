@@ -8,10 +8,8 @@ Last change:  29.03.2016
 Primary use:  MultiPurpose Template  
 -------------------------------------------------------------------*/
 
-@import "animation.css";
+
 @import "font-awesome.css";
-@import "owl.carousel.css";
-@import "owl.transitions.css";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,300|Roboto:400,100,500,700,900,300|Oswald:400,300,700);
 /*------------------------------------------------------------------
 [Table of contents]
@@ -5708,6 +5706,7 @@ Image Hover Effects
     opacity: 0;
     height: 100%;
     width: 100%;
+    transform: scale(0, 0);
     background-color: rgba(0, 0, 0, 0.5);
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -5742,11 +5741,11 @@ Image Hover Effects
     transition: all 0.2s linear;
 }
 .img-hover-effect-first:hover img {
-    -webkit-transform: scale(1.5, 1.5);
-    -moz-transform: scale(1.5, 1.5);
-    -o-transform: scale(1.1, 5.5);
-    -ms-transform: scale(1.5, 1.5);
-    transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.5, 1.1);
+    transform: scale(1.1, 1.1);
 }
 .img-hover-effect-first a.button {
     opacity: 0;
@@ -5758,6 +5757,7 @@ Image Hover Effects
 }
 .img-hover-effect-first:hover .mask {
     opacity: 1;
+     transform: scale(1, 1);
 }
 .img-hover-effect-first:hover h2,
 .img-hover-effect-first:hover p,
