@@ -1664,6 +1664,7 @@ Uncomment following if you want to set transition on hexagon color change */
     height: 100%;
     margin-left: -1px;
     background: rgb(35, 33, 34);
+    
     z-index: 5;
 }
 .timeline li {
@@ -1675,12 +1676,14 @@ Uncomment following if you want to set transition on hexagon color change */
     height: 0;
     clear: both;
     visibility: hidden;
+    
 }
 .direction-l {
     position: relative;
     width: 47.5%;
     float: left;
     text-align: right;
+
 }
 .direction-r {
     position: relative;
@@ -1721,7 +1724,7 @@ Uncomment following if you want to set transition on hexagon color change */
     width: 20px;
     height: 20px;
     margin-top: -10px;
-    background: #fff;
+    background: #111;
     border-radius: 20px;
     border: 6px solid rgb(35, 33, 34);
     ;
@@ -2553,7 +2556,7 @@ Accordion Menu
     box-sizing: border-box;
 }
 .cleargap {
-    height: 100px;
+    height: 40px;
     width: 100%;
     display: block;
     clear: both;
