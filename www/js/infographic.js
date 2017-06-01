@@ -25,7 +25,9 @@ var needle2 = $("#needle2");
 var needle3 = $("#needle3");
 var smoke = $("#smoke circle, #smoke path");
 var handle2 = $("#handle1,#handle2");
+var starslide01 = $("#star01slide1, #star02slide1,#star03slide1,#star04slide1,#star05slide1,star06slide1,#star07slide1,#star08slide1,#star09slide1");
 var gear = $("#gear1, #gear2, #gear3, #gear4, #gear5");
+var gears = $("#gear6, #gear7");
 
 var lighting = $("#css, #photoshop, #animationCC, #opencart, #flashCC, #javascript, #wordpress, #webdev, #jquery, #googleWeb, #sizmek, #mySql, #node, #html5, #anjular, #creativecloud, #scss");
 
@@ -138,9 +140,14 @@ function pageAnimationDefinition(){
    
  
    // tl1.to(handle2, 2, {transformOrigin:"center center",scaleX:3.8, scaleY:3.8, opacity:0,repeat: -1,ease: Linear.easeNone}, "begin");
-   // tl1.staggerFromTo(lighting, 1, {opacity: 1,}, {opacity: .2,repeat: -1,repeatDelay: -2,ease: Circ.easeOut}, 0.1, "begin");
-   tl1.to(gear, 1, {transformOrigin: "50% 50%",rotation: 360,repeat: -1,ease: Linear.easeNone}, 0.1, "begin") ;
+   tl1.staggerFromTo(lighting, 1, {opacity: 1,}, {opacity: .2,repeat: -1,repeatDelay: -2,ease: Circ.easeOut}, 0.1, "begin");
+    tl1.to(gear, 1, {transformOrigin: "50% 50%",rotation: 360,repeat: -1,ease: Linear.easeNone}, 0.1, "begin") ;
+    tl1.to(gears, 1, {transformOrigin: "50% 50%",rotation: -360,repeat: -1,ease: Linear.easeNone}, 0.1, "begin") ;
     tl1.to('#slideTxt01', 2,{opacity:1, y:50}, 0.1, "begin");
+    tl1.to('#rocketwing', .1,{opacity:1, scaleY:1.1,repeat: -1}, 0.1, "begin");
+    // tl1.to(starslide01, 5,{opacity:.5, repeat: -1}, 0.1, "begin");
+    tl1.staggerFromTo(starslide01, 1, {opacity:.2}, {opacity:1, repeat: -1}, 0.1, "begin")
+    
    // tl1.to(needle, 2, {transformOrigin: "50% 50%",rotation: -30,repeat: -1,yoyo: true,ease: Elastic.easeOut}, "begin");
    // tl1.to(needle2, 1, {transformOrigin: "70% 50%",rotation: 40,repeat: -1,yoyo: true,ease: Back.easeOut}, "begin");
    // tl1.to(needle3, 1, {transformOrigin:"center center",rotation: 180,repeat: -1,yoyo: true,ease: Back.easeOut}, "begin");
