@@ -582,6 +582,16 @@
  
     z-index: 999;
 }
+#slideTxt02{
+    
+    top: 30%;
+    width: 100%;
+    opacity: 0;
+
+    position: absolute;
+ 
+    z-index: 999;
+}
 
 .sun{
    top: 10%;

@@ -564,7 +564,7 @@
 
     .contentSlide02{
         
-        bottom:10%;
+       bottom:-5%;
         width: 100% !important;
         height: auto;
         margin: 0 auto;
@@ -581,7 +581,15 @@
     font-size: 2em;
     color: #FFFFFF;
 }
-
+#slideTxt02{
+ top: 20%;
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+    font-size: 2em;
+    color: #FFFFFF;
+}
 .sun{
    top: 10%;
     width: 6% !important;
