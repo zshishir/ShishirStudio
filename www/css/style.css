@@ -10,60 +10,8 @@ Primary use:  MultiPurpose Template
 
 
 @import "font-awesome.css";
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,800,300|Roboto:400,100,500,700,900,300|Oswald:400,300,700);
-/*------------------------------------------------------------------
-[Table of contents]
-1. Common styles
-2. Special Element styles
-3. Color Style    
-3. Typography
-4. Buttons
-5. Forms fields
-6. Common Element Style
-    6.1 Loading
-    6.2 Banner Section
-    6.3 Header Section
-        6.3.1Social Menu
-        6.3.2 Main Top Menu
-    6.4 Common Modal
-    6.5 Hexagon icon
-    6.6 Round Shape Icon
-    6.7 Feature Box
-    6.8 Tab box
-    6.9 Timeline Section
-    6.10 Skill bar Section
-    6.11 Accordion Section
-    6.12 Google Map Section
-    6.13 Video
-    6.14 Accordion menu
+@import url('https://fonts.googleapis.com/css?family=Cuprum&subset=latin-ext,vietnamese');
 
-7. Other Page Style
-
-8. Common style
-
-9. Footer style
-
-/*------------------------------------------------------------------
-# [Color codes]
-
-# Black #232122 head line
-# Black  #111111 text color
-# Dark Lighter #444444 li and span
-
-# Gray BG #f0efea
-# Gray BG Lighter #f5f5f5
-# Mid grey #e6e6e6
-# Borders #f5f5f5
-
-# Button #444444
-
-# Button:hover #f2f2f2
-
-#yallow #fecd1b
-# red #ff2f24
-#green #85c539
-#blue #4eb2d6
-*/
 /* ==============================
  1.  Common styles
    ============================== */
@@ -97,9 +45,7 @@ height: 100%;
 body {
 background-color:rgba(255,255,255,1);
 color: #444444;
-font-family: 'Roboto', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Cuprum', sans-serif;
 line-height: 1.6em;
 font-weight: 400;
 font-size: 1em; 
@@ -637,7 +583,7 @@ header {
     z-index: 999;
     margin-bottom: 0px;
     margin-top: 6px;
-    width: 50%;
+    width: 10%;
 }
 .fixed-nav {
     position: fixed !important;
@@ -736,6 +682,8 @@ header {
     z-index: 999;
     display: block;
     float: left;
+    margin-left: 30px;
+    
     box-sizing: border-box;
 }
 .nav-container {
@@ -1515,6 +1463,7 @@ Uncomment following if you want to set transition on hexagon color change */
 }
 .tab-menu_title {
     text-align: center;
+        background: #f2f2f2;
 }
 .tab-menu_title > i:hover {
     color: #111;
@@ -1522,7 +1471,7 @@ Uncomment following if you want to set transition on hexagon color change */
     font-size: 32px;
 }
 .tab-menu_title:hover {
-    background: #f2f2f2;
+    background: #ffffff;
 }
 .tab-active {
     background: #f2f2f2;
@@ -1532,10 +1481,10 @@ Uncomment following if you want to set transition on hexagon color change */
     height: 80px;
 }
 .tab-menu_title {
-    padding: 10px 10px;
+    padding: 0px 10px;
     color: #222;
     float: left;
-    border: 1px solid #f0f1f3;
+    border: 1px solid #dcd9d9;
     cursor: pointer;
 }
 .tab-menu_content {
@@ -2644,6 +2593,32 @@ Accordion Menu
     float: left;
     box-shadow: 1px 1px 10px 2px #ccc;
 }
+
+
+
+.bg-col02 {
+    position: relative;
+        background-color: rgba(237, 140, 1, .8) !important;
+}
+.bg-col02::after {
+    content: "";
+ 
+    background-image:  url(../images/carousel-bg.jpg);
+    opacity: .8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+
+    background-attachment: fixed;
+    background-position: 50% 0 !important;
+    background-repeat: no-repeat;
+}
+
+
 .col03 {
     min-width: 100%;
     clear: both;
@@ -6131,6 +6106,23 @@ footer {
 .tabicall{
     width: 25%;
     height: auto;
+
+     -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    display: block;
+    padding-top: 10px;
+
+    text-align: center;
+
+}
+
+.tabicall:hover {
+       width: 30%;
+    height: auto;
+
+
 }
 
       
