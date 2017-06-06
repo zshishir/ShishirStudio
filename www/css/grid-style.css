@@ -608,8 +608,9 @@ Primary use:  MultiPurpose Template
         box-sizing: border-box;
     }
     .logos {
-        max-width: 118px;
+        max-width: 30px;
         margin: 0px auto;
+        padding-top: 10px;
     }
     .wraper {
         width: 98%;

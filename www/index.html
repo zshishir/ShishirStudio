@@ -122,9 +122,30 @@
         <header class="nav-trans color-white-text">
             <div id="intro"></div>
 
+            
+         <div id="mySidenav" class="sidenav">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <ul>
+<li><a href="#intro" onclick="closeNav()">Intro</a></li>
+<li><a href="#con02" onclick="closeNav()">What We Do</a></li>
+<li><a href="#con03" onclick="closeNav()">PORTFOLIO</a></li>
+<li><a href="#con04" onclick="closeNav()">About</a></li>
+<li><a href="#con05" onclick="closeNav()">Contact</a></li>
+     
+     
+     </ul>
+</div>     
+            
             <div id="sticky-nav-black">
                 <div class="sticky-nav-black">
+                        <div class="menyIcon">
+                        <span onclick="openNav()"><img src="images/menunew.svg" alt="scalless logo" title="scalless logo" class="menuIcon"></span> 
+                  
+                            </div>
+                   <div class="wrapper">
                     <div class="section group">
+                    
                         <div class="logo-container">
                             <div class="logos">
                                 <a href="index.html"><img src="images/logo.svg" alt="scalless logo" title="scalless logo">
@@ -153,7 +174,8 @@
                  
 
                     </div>
-                </div>
+</div>
+                    </div>
             </div>
         </header>
         
@@ -5799,7 +5821,7 @@
 
             <div id="semi" class="section group">
                 <div class="col grid_3_of_5 col02 aboutUs01">
-                    <h1> <i class="round-shape-icon effect-1 fa fa-laptop"></i> MORE THAN RESPONSIVE</h1>
+                    <h1>MORE <br>THAN <br>RESPONSIVE</h1>
                     <p>Working as Sr. Web Developer in software industry from 13 years.</p>
                     <p>Professional experiences on websites, web apps & tools using php, mysql, javascript, Jquery, css, less, scss, angu- larJs, Nodejs, glup, and browserify. Proficient on multiple CMS and Frame work like WordPress, Joomla, Opencart, Open text, CodeIgniter .</p>
                     
@@ -5905,22 +5927,12 @@
             <div class="section group">
                 <div class="col grid_2_of_2 startaproject">
 
-<h1>Let's make something great together.</h1>
+               <h1 class="mb30">Let's make something great together.</h1>
                     
                      <div class="search-container">
-                            <div class="modal">
-                                <input class="check__box-hide" id="modal" type="checkbox" name="modal" tabindex="1">
-                                <label for="modal"><div class="btn">Sratr a Project</div>
-                                </label>
-                                <div class="modal_overlay">
-                                    <div class="modal_box">
-                                        <label for="modal"><i class="fa fa-times"></i>
-                                        </label>
-                                        <div class="model_content-text">
-                                            <div class="model_content-window">
-                                                <h1 class="mb10">Start a project</h1>
-                                                <p class="mb10">Thanks for your interest in working with us. Please complete the details below and we’ll get back to you within one business day.</p>
-                                                <form>
+                       <span onclick="openNav()">   <div class="btn mb20">Sratr a Project</div></span>
+                           <div id="showFrom" class="sidenav">
+                         <form>
                                                 
                                                     <p>What should we call you?</p>
                                                     <input type="text" class="w70" name="field1" placeholder="Your name here" required />
@@ -5928,21 +5940,17 @@
                                                     <input type="text" class="w70" name="field1" placeholder="Searh the site" required />
                                                     <p>What is the name of your company / organisation?</p>
                                                     <input type="text" class="w70" name="field1" placeholder="Searh the site" required />
-                                                   <pHow shall we contact you?></p> 
+                                                   <p> How shall we contact you? </p> 
                                                    
                                                     <input type="Next" value="Send" class="btn w25" />
                                                 </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>      
+                        </div> 
+                         </div>  
                     
                      
-                    <p>+88 01751539540</p>
-                    <p>zkshishir@gmail.com</p>
-<p>House: 711/5, Road :11, Adabor , Dhaka , Bangladeh.</p>
+                    <p class="mb10">+88 01751539540</p>
+                    <p class="mb10">zkshishir@gmail.com</p>
+                    <p class="mb10">House: 711/5, Road :11, Adabor , Dhaka , Bangladeh.</p>
                    
             </div>
                      
@@ -6163,6 +6171,35 @@ $('document').ready(function(){
 });
 
         </script>
+                    
+                    
+        <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+    
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+            
+function openNav() {
+    document.getElementById("showFrom").style.width = "100%";
+    
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+    document.getElementById("showFrom").style.width = "0";
+}            
+            
+</script>            
+   
+                    
+                    
+                    
+                    
 <script type="text/javascript">
     
 	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/Android/i)) ){	
