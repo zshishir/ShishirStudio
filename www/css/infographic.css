@@ -572,6 +572,12 @@
   
     }
 
+#rocket02{
+    position: absolute;
+    top:1500px;
+    
+}
+
 #slideTxt01{
    top: 20%;
     width: 100%;

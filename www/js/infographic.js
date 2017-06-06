@@ -170,7 +170,7 @@ function pageAnimationDefinition(){
 	tl2.pause();
      tl2.to('#slideTxt02', 2,{opacity:1, y:50});
     
-    tl2.to('#rocket02', 20,{opacity:1, x:-800, y:-900, ease: Power1.easeIn});
+    tl2.to('#rocket02', 50,{opacity:1, x:-800, y:-900, ease: Power1.easeOut},"-=2");
     
      //tl2.to('#slideTxt02', 2,{opacity:1, y:50});
      //  tl2.to('.rocket', 20,{opacity:1, x:-800, y:-900, ease: Power1.easeIn});
