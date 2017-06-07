@@ -564,7 +564,7 @@
 
     .contentSlide02{
         
-       bottom:-5%;
+        bottom:30px;
         width: 100% !important;
         height: auto;
         margin: 0 auto;
