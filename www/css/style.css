@@ -253,7 +253,8 @@ p {
     text-align: center;
 }
 .color-footer {
-    background: #3a3939 !important;
+    background: #131a2d !important;
+    margin: 0px auto;
 }
 /* ==============================
   3. Color Element styles
@@ -265,7 +266,7 @@ p {
 .btn {
     font-size: 0.875em;
     color: #FFFFFF;
-    background: #444444;
+    background: #d83c23;
     text-align: center;
     display: inline-block;
     padding: 10px 25px 10px 25px;
@@ -394,10 +395,11 @@ input[type="submit"],input[type="button"] {
     width: 27.8%;
     padding: 12px 8px;
     text-transform: uppercase;
-    color: #ccc;
+    color: #FFF;
     display: inline-block;
-    border: 1px solid rgb(0, 0, 0);
-    background: #111;
+    border: none;
+    background: #d83c23;
+    font-weight: 600;
 }
 input[type="submit"]:hover,input[type="button"]:hover {
     background: #ddd;
@@ -688,11 +690,10 @@ header {
     z-index: 999;
     width: 1%;
     height: auto;
- 
     box-sizing: border-box;
     position: fixed;
     top:20px;
-    left: 20px;
+    left:5px;
     display: none;
 }
 .logo-container {
@@ -724,7 +725,7 @@ header {
 }   
 
 .menyIcon{
-width: 5%;
+width: 3%;
        display:block;
  
 }    
@@ -785,14 +786,20 @@ width: 5%;
 }
 
 .closebtn {
-    border: 6px solid #fff;
     text-align: center;
     padding: 20px;
+    z-index: 999;
 
 
 }
 
-
+.sratrProjectFrom .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
 
 
 
@@ -1656,7 +1663,7 @@ Uncomment following if you want to set transition on hexagon color change */
         padding: 0px 10px;
         color: #222;
         float: left;
-        border: 1px solid #f0f1f3;
+        border-bottom: 1px solid #c5c5c5;
         cursor: pointer;
         width: 100%;
     }
@@ -2590,12 +2597,12 @@ Accordion Menu
 .wrapperFull {
     max-width: 100%;
     display: block;
-    margin: 0px auto;
+
     -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0px 15px;
+    padding: 0px 0px;
     clear: both;
     position: relative;
 }
@@ -2706,9 +2713,58 @@ border-left: 5px solid #111;
 
 
 
+.biography-col {
+    position: relative;
+        background-color: rgba(244, 244, 244, .8) !important;
+}
+.biography-col::after {
+    content: "";
+ 
+
+    opacity: .8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+
+    background-attachment: fixed;
+    background-position: 50% 0 !important;
+    background-repeat: no-repeat;
+}
+
+
+
+.contact-col {
+    position: relative;
+        background-color: rgba(152, 203, 43, .8) !important;
+}
+.contact-col::after {
+    content: "";
+ 
+    background-image:  url(../images/carousel-bg.jpg);
+    opacity: .8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+
+    background-attachment: fixed;
+    background-position: 50% 0 !important;
+    background-repeat: no-repeat;
+}
+
+
+
+
 .bg-col02 {
     position: relative;
-        background-color: rgba(252, 101, 1, .8) !important;
+        background-color: #f9bc26 !important;
 }
 .bg-col02::after {
     content: "";
@@ -2739,7 +2795,7 @@ border-left: 5px solid #111;
 }
 .bg-col03 {
     position: relative;
-        background-color: rgba(0, 0, 0, .5) !important;
+        background-color: rgba(0, 0, 0, .8) !important;
 }
 .bg-col03::after {
     content: "";
@@ -3565,7 +3621,7 @@ border-left: 5px solid #111;
 }
 .form-tip {
     font-size: .7em;
-    color: #ccc;
+    color: #111;
 }
 /* ==============================
   8. Product Section
@@ -6287,16 +6343,16 @@ font-size: 2.5em;
     display: block;
     transition: 0.3s;
     text-align: center;
-    margin: 40px 0px;
+
 }
 
 /* When you mouse over the navigation links, change their color */
 .sratrProjectFrom a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: #f04d23;
 }
 
 /* Position and style the close button (top right corner) */
-.sratrProjectFrom .closebtn {
+.closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -6305,10 +6361,7 @@ font-size: 2.5em;
 }
 
 .closebtn {
-    border: 6px solid #fff;
-    text-align: center;
-    padding: 20px;
-
+text-align: center;
 
 }
 

@@ -19,6 +19,7 @@ jQuery('document').ready(function($){
 var skillAnimation = new TimelineMax()
     
     skillAnimation
+        .from('.headlinecon02', .5,{opacity:0, y:-50,  ease: Power2.easeOut})
         .from('.graphicDesign', .5,{opacity:0, x:-50,  ease: Power2.easeOut})
         .from('.fontend', .5,{opacity:0, y:-50,  ease: Power2.easeOut},"-=.5")
         .from('.uxui', .5,{opacity:0, x:50,  ease: Power2.easeOut},"-=.5")
