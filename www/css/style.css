@@ -1509,15 +1509,15 @@ Uncomment following if you want to set transition on hexagon color change */
     box-sizing: border-box;
     padding: 10px;
     vertical-align: top;
-    border-right: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #febc35;
+    border-bottom: 1px solid #febc35;
 }
 .feature-box .container-middle {
     width: 33%;
     float: none;
     display: table-cell;
-    border-right: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #febc35;
+    border-bottom: 1px solid #febc35;
     box-sizing: border-box;
     padding: 10px;
 }
@@ -1525,7 +1525,7 @@ Uncomment following if you want to set transition on hexagon color change */
     width: 33%;
     float: none;
     display: table-cell;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid #febc35;
     box-sizing: border-box;
     padding: 10px;
 }
@@ -2764,7 +2764,7 @@ border-left: 5px solid #111;
 
 .bg-col02 {
     position: relative;
-        background-color: #f9bc26 !important;
+        background-color: #ffe88c !important;
 }
 .bg-col02::after {
     content: "";
@@ -2815,15 +2815,17 @@ border-left: 5px solid #111;
     background-repeat: no-repeat;
 }
 .col03 h1 {
-    font-size: 1em;
-    font-weight: 400;
-    margin: 2px 0px 0px 2px;
+    font-size: 2em;
+    font-weight: 800;
+    margin: 2px 0px 20px 2px;
+    color: #fff;
 }
 .col03 p {
-    font-size: .85em;
+    font-size: 1em;
     font-weight: 400;
     padding: 0px;
     margin: 0px;
+       color: #fff;
 }
 .col04 {
     overflow: hidden;

@@ -18,7 +18,7 @@ var transitionDuration = 1;
 var slideDuration = 15000;
 var slideWidth = 1024;
 var nav = $$('.carouselnav li');
-var tl1,tl2, tl3;
+var tl1;
 var allTimeLine;
 var needle = $("#needle1");
 var needle2 = $("#needle2");
@@ -29,7 +29,7 @@ var starslide01 = $("#star01slide1, #star02slide1,#star03slide1,#star04slide1,#s
 var gear = $("#gear1, #gear2, #gear3, #gear4, #gear5");
 var gears = $("#gear6, #gear7");
 
-var lighting = $("#css, #photoshop, #animationCC, #opencart, #flashCC, #javascript, #wordpress, #webdev, #jquery, #googleWeb, #sizmek, #mySql, #node, #html5, #anjular, #creativecloud, #scss");
+var lighting = $("#cssani, #photoshop, #animationCC, #opencart, #flashCC, #javascript, #wordpress, #webdev, #jquery, #googleWeb, #sizmek, #mySql, #node, #html5ani, #anjular, #creativecloud, #scss");
 
 var transitionType = {
 	1: 'fade-out',
@@ -166,11 +166,11 @@ function pageAnimationDefinition(){
 //tl1.add(slideTransition, 2.5); 
 	
     // Slide2
-	tl2 = new TimelineMax();
-	tl2.pause();
-     tl2.to('#slideTxt02', 2,{opacity:1, y:50});
+	//tl2 = new TimelineMax();
+	//tl2.pause();
+   //  tl2.to('#slideTxt02', 2,{opacity:1, y:50});
     
-    tl2.to('#rocket02', 50,{opacity:1, x:-800, y:-900, ease: Power1.easeOut},"-=2");
+   // tl2.to('#rocket02', 50,{opacity:1, x:-800, y:-900, ease: Power1.easeOut},"-=2");
     
      //tl2.to('#slideTxt02', 2,{opacity:1, y:50});
      //  tl2.to('.rocket', 20,{opacity:1, x:-800, y:-900, ease: Power1.easeIn});
@@ -181,9 +181,9 @@ function pageAnimationDefinition(){
 	//tl2.from('.slide2-content', .5, { opacity: 0, x: 100, ease: Power2.easeOut});
 
 	// Slide3
-	tl3 = new TimelineMax();
-	tl3.pause();
-    tl3.to('#slideTxt03', 2,{opacity:1, y:50}, 0.1, "begin");
+	//tl3 = new TimelineMax();
+	//tl3.pause();
+  //  tl3.to('#slideTxt03', 2,{opacity:1, y:50}, 0.1, "begin");
 	//tl3.to('.slide3-bg-mask', .5, { opacity: 0, yoyo: true, repeat: -1, ease: Power0.easeNone}, 'slide3');
 	//tl3.from('.slide3-pie-chart', .5, { scale: 0}, 'slide3+=1');
 	//tl3.from('.slide3-pie-chart-heart', .5, { scale: 0}, 'slide3+=1.5');
@@ -258,7 +258,7 @@ function pageAnimationDefinition(){
 	//tl11.staggerFrom($$('.slide11-list-item a'), 1, { opacity: 0}, 3, "slide11+=2");
 
 
-	allTimeLine = [tl1, tl2, tl3];
+	allTimeLine = [tl1];
 }
 
 // Run Page Animation
@@ -276,13 +276,7 @@ function runPageAnimation(){
 	     case 1:
 	        tl1.play();
 	        break;
-             case 2:
-	        tl2.play();
-	        break;
-              case 3:
-	        tl3.play();
-	        break;
-	 
+       
 	 
 
 	}
