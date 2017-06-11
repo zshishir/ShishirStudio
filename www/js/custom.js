@@ -108,6 +108,7 @@ var skillAnimation = new TimelineMax()
    
      .from('.secone', .5,{opacity:0, x:50,  ease: Power2.easeOut}) 
      .from('.sectwo', .5,{opacity:0, x:-50,  ease: Power2.easeOut},"-=.5") 
+     .from('.secthree', .5,{opacity:0, x:-50,  ease: Power2.easeOut},"-=.5") 
      
     
         

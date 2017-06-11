@@ -29,7 +29,7 @@ var starslide01 = $("#star01slide1, #star02slide1,#star03slide1,#star04slide1,#s
 var gear = $("#gear1, #gear2, #gear3, #gear4, #gear5");
 var gears = $("#gear6, #gear7");
 
-var lighting = $("#cssani, #photoshop, #animationCC, #opencart, #flashCC, #javascript, #wordpress, #webdev, #jquery, #googleWeb, #sizmek, #mySql, #node, #html5ani, #anjular, #creativecloud, #scss");
+var lighting = $("#cssani, #photoshop, #animationCC, #opencart, #flashCC, #javascript, #wordpress, #doubleclick, #jqueryani, #googleWeb, #sizmek, #mySql, #node01, #html5ani, #anjular, #creativecloud, #scss");
 
 var transitionType = {
 	1: 'fade-out',
@@ -145,9 +145,10 @@ function pageAnimationDefinition(){
     tl1.to(gears, 1, {transformOrigin: "50% 50%",rotation: -360,repeat: -1,ease: Linear.easeNone}, 0.1, "begin") ;
     tl1.to('#slideTxt01', 2,{opacity:1, y:50}, 0.1, "begin");
     tl1.to('#rocketwing', .1,{opacity:1, scaleY:1.1,repeat: -1}, 0.1, "begin");
-    // tl1.to(starslide01, 5,{opacity:.5, repeat: -1}, 0.1, "begin");
-    tl1.staggerFromTo(starslide01, 1, {opacity:.2}, {opacity:1, repeat: -1}, 0.1, "begin")
-    
+    tl1.to('#ballon01', 150,{opacity:1, x:-1800, ease: Linear.easeNone ,repeat: -1}, 1, "begin");
+    tl1.to('#ballon02', 150,{opacity:1, x:-1800, ease: Linear.easeNone ,repeat: -1}, 1, "begin");
+   tl1.staggerFromTo(starslide01, 1, {opacity:.2}, {opacity:1, repeat: -1}, 0.1, "begin");
+   
    // tl1.to(needle, 2, {transformOrigin: "50% 50%",rotation: -30,repeat: -1,yoyo: true,ease: Elastic.easeOut}, "begin");
    // tl1.to(needle2, 1, {transformOrigin: "70% 50%",rotation: 40,repeat: -1,yoyo: true,ease: Back.easeOut}, "begin");
    // tl1.to(needle3, 1, {transformOrigin:"center center",rotation: 180,repeat: -1,yoyo: true,ease: Back.easeOut}, "begin");
