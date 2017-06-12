@@ -23,6 +23,7 @@ var allTimeLine;
 var needle = $("#needle1");
 var needle2 = $("#needle2");
 var needle3 = $("#needle3");
+var needle4 = $("#needle4");
 var smoke = $("#smoke circle, #smoke path");
 var handle2 = $("#handle1,#handle2");
 var starslide01 = $("#star01slide1, #star02slide1,#star03slide1,#star04slide1,#star05slide1,star06slide1,#star07slide1,#star08slide1,#star09slide1");
@@ -139,7 +140,7 @@ function pageAnimationDefinition(){
    tl1.staggerFromTo(smoke, 1, {opacity: 0.6, y: 10}, {opacity: 0,y: -80,repeat: -1,repeatDelay: -2,ease: Circ.easeOut}, 0.1, "begin")
    
  
-   // tl1.to(handle2, 2, {transformOrigin:"center center",scaleX:3.8, scaleY:3.8, opacity:0,repeat: -1,ease: Linear.easeNone}, "begin");
+   tl1.to(handle2, 2, {transformOrigin:"center center",scaleX:3.8, scaleY:3.8, opacity:0,repeat: -1,ease: Linear.easeNone}, "begin");
    tl1.staggerFromTo(lighting, 1, {opacity: 1,}, {opacity: .2,repeat: -1,repeatDelay: -2,ease: Circ.easeOut}, 0.1, "begin");
     tl1.to(gear, 1, {transformOrigin: "50% 50%",rotation: 360,repeat: -1,ease: Linear.easeNone}, 0.1, "begin") ;
     tl1.to(gears, 1, {transformOrigin: "50% 50%",rotation: -360,repeat: -1,ease: Linear.easeNone}, 0.1, "begin") ;
@@ -149,9 +150,14 @@ function pageAnimationDefinition(){
     tl1.to('#ballon02', 150,{opacity:1, x:-1800, ease: Linear.easeNone ,repeat: -1}, 1, "begin");
    tl1.staggerFromTo(starslide01, 1, {opacity:.2}, {opacity:1, repeat: -1}, 0.1, "begin");
    
-   // tl1.to(needle, 2, {transformOrigin: "50% 50%",rotation: -30,repeat: -1,yoyo: true,ease: Elastic.easeOut}, "begin");
-   // tl1.to(needle2, 1, {transformOrigin: "70% 50%",rotation: 40,repeat: -1,yoyo: true,ease: Back.easeOut}, "begin");
-   // tl1.to(needle3, 1, {transformOrigin:"center center",rotation: 180,repeat: -1,yoyo: true,ease: Back.easeOut}, "begin");
+    tl1.to(needle, 2, {transformOrigin: "50% 50%",rotation: -30,repeat: -1,yoyo: true,ease: Elastic.easeOut}, "begin");
+    tl1.to(needle2, 1, {transformOrigin: "70% 50%",rotation: 40,repeat: -1,yoyo: true,ease: Back.easeOut}, "begin");
+    tl1.to(needle3, 1, {transformOrigin:"center center",rotation: 180,repeat: -1,yoyo: true,ease: Back.easeOut}, "begin");
+    tl1.to(needle4, 2, {transformOrigin: "50% 70%",rotation: 90,repeat: -1,yoyo: true,ease: Back.easeOut}, "begin");
+    tl1.to('#googlelocation', 1,{opacity:.5, y:8, ease:Expo.easeOut ,repeat: -1}, .1, "begin");
+    
+    
+    
    // tl1.to("#windmills", 1, {transformOrigin: "50% 50%",rotation: 360,repeat: -1,ease: Linear.easeNone}, 0.1, "begin") ;
 	//tl1.to('.slide1-jump', 3, { scale: 1, y: 100},'a');
 	//tl1.to('.slide1-bg', 6, { scale: 2.1, ease: Bounce.easeOut});
