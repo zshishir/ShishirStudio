@@ -127,8 +127,70 @@ var skillAnimation = new TimelineMax()
         
      .setTween(timeline)
      .addIndicators()
-     .addTo(controller)     
+     .addTo(controller)  
+    
+    
+    
+    var contactUs = new TimelineMax()
+     contactUs
+   
+     .from('.mb30', .5,{opacity:0, x:50,  ease: Power2.easeOut}) 
+     .from('.search-container', .5,{opacity:0, x:-50,  ease: Power2.easeOut},"-=.5") 
+     .from('.cpoy', .5,{opacity:0, x:-50,  ease: Power2.easeOut},"-=.5") 
+     
+    
+        
+ new ScrollMagic.Scene({
+    triggerElement:'.contact-col',
+      // start this scene after scrolling for 50px
+   //  duration:'100%',
+     triggerHook:0.7,
+        
+        
+    })
+
+       
+
+           
+        
+     .setTween(contactUs)
+     .addIndicators()
+     .addTo(controller)   
+    
+    
+        var fromcon = new TimelineMax()
+     fromcon
+   
+     .from('.name', .5,{opacity:0, x:50,  ease: Power2.easeOut}) 
+     .from('.email', .5,{opacity:0, x:50,  ease: Power2.easeOut},"-=.5") 
+    .from('.phone', .5,{opacity:0, x:50,  ease: Power2.easeOut},"-=.5") 
+     .from('.address', .5,{opacity:0, x:50,  ease: Power2.easeOut},"-=.5") 
+     .from('.commant', .5,{opacity:0, x:50,  ease: Power2.easeOut},"-=.5") 
+     
+    
+        
+ new ScrollMagic.Scene({
+    triggerElement:'#fromcon',
+      // start this scene after scrolling for 50px
+   //  duration:'100%',
+     triggerHook:0.7,
+        
+        
+    })
+
+       
+
+           
+        
+     .setTween(contactUs)
+     .addIndicators()
+     .addTo(controller) 
+    
+    
     
     
 });
+
+
+
 
