@@ -164,7 +164,7 @@ var skillAnimation = new TimelineMax()
      .from('.name', .5,{opacity:0, x:50,  ease: Power2.easeOut}) 
      .from('.email', .5,{opacity:0, x:50,  ease: Power2.easeOut},"-=.5") 
     .from('.phone', .5,{opacity:0, x:50,  ease: Power2.easeOut},"-=.5") 
-     .from('.address', .5,{opacity:0, x:50,  ease: Power2.easeOut},"-=.5") 
+     
      .from('.commant', .5,{opacity:0, x:50,  ease: Power2.easeOut},"-=.5") 
      
     
