@@ -11,7 +11,7 @@ function finishLoading(){
 jQuery('document').ready(function($){
  var controller = new ScrollMagic.Controller();
         
-        
+
 
 
       
@@ -47,7 +47,10 @@ var skillAnimation = new TimelineMax()
     
     var portfolio = new TimelineMax()
     
-    portfolio.staggerFrom('.noMerginPadding', .5,{opacity:0, ease: Power2.easeOut},0.2)
+    portfolio
+    
+    .from('.headlinecon03', .5,{opacity:0, y:100,  ease: Power2.easeOut})
+    .staggerFrom('.noMerginPadding', .5,{opacity:0, ease: Power2.easeOut},0.2)
        
     
         
@@ -78,7 +81,7 @@ var skillAnimation = new TimelineMax()
 
     var semi = new TimelineMax()
      semi
-   
+    .from('.headlinecon04', .5,{opacity:0, y:100,  ease: Power2.easeOut})
      .from('.aboutUs', .5,{opacity:0, x:50,  ease: Power2.easeOut}) 
      .from('.aboutUs01', .5,{opacity:0, x:-50,  ease: Power2.easeOut},"-=.5") 
     
@@ -105,10 +108,11 @@ var skillAnimation = new TimelineMax()
  
     var timeline = new TimelineMax()
      timeline
-   
+   .from('.headlinecon05', .5,{opacity:0, y:-50,  ease: Power2.easeOut})
      .from('.secone', .5,{opacity:0, x:50,  ease: Power2.easeOut}) 
      .from('.sectwo', .5,{opacity:0, x:-50,  ease: Power2.easeOut},"-=.5") 
      .from('.secthree', .5,{opacity:0, x:-50,  ease: Power2.easeOut},"-=.5") 
+    
      
     
         
@@ -157,23 +161,21 @@ var skillAnimation = new TimelineMax()
      .addIndicators()
      .addTo(controller)   
     
+
+
     
         var fromcon = new TimelineMax()
      fromcon
    
-     .from('.name', .5,{opacity:0, x:50,  ease: Power2.easeOut}) 
-     .from('.email', .5,{opacity:0, x:50,  ease: Power2.easeOut},"-=.5") 
-    .from('.phone', .5,{opacity:0, x:50,  ease: Power2.easeOut},"-=.5") 
      
-     .from('.commant', .5,{opacity:0, x:50,  ease: Power2.easeOut},"-=.5") 
      
-    
+    .staggerFrom('.fromani', .5,{opacity:0, x:-10, ease: Power2.easeOut},0.2)
         
  new ScrollMagic.Scene({
     triggerElement:'#fromcon',
       // start this scene after scrolling for 50px
    //  duration:'100%',
-     triggerHook:0.7,
+     triggerHook:0.9,
         
         
     })
@@ -182,7 +184,7 @@ var skillAnimation = new TimelineMax()
 
            
         
-     .setTween(contactUs)
+     .setTween(fromcon)
      .addIndicators()
      .addTo(controller) 
     

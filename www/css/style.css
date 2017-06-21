@@ -1839,6 +1839,17 @@ Uncomment following if you want to set transition on hexagon color change */
     padding: 10px;
     border-radius: 5px;
 }
+.desc-noneborder{
+  border: none !important; 
+    padding: 0px;
+    font-weight: 600;
+
+
+   
+}
+
+
+}
 .direction-r .desc {
     margin: 1em 0 0 0.75em;
 }
