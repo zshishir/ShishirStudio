@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ad.size" content="width=300,height=250">
+    <title>HTML5 Banner: 300x250</title>
+    <link rel="stylesheet" href="css-js/style.css">       
+</head>
+<body>
+    <div id="ad">        
+        <div id="banner">
+            <canvas id="canvas" width="300" height="250" style="top : 0px; left : 0px; z-index: 1;"></canvas>      
+            <!-- ============== Frame One ============= -->
+            <div id="frame_one">
+               <img src="images/bg.png" alt="" class="bg">
+               <img src="images/mountains.png" alt="" class="mountains">
+               <img src="images/trolley.png" alt="" class="trolley">
+            </div>
+
+            <!-- ============== Frame Two ============= -->
+            <div id="frame_two">
+                <img src="images/product1.png" alt="" class="product1">
+                <img src="images/product2.png" alt="" class="product2">
+                <img src="images/product3.png" alt="" class="product3">
+                <img src="images/discount1.png" alt="" class="discount1">
+                <img src="images/discount2.png" alt="" class="discount2">
+                <img src="images/discount3.png" alt="" class="discount3">
+            </div>
+
+            <!-- ============== Frame Three ============= -->
+            <div id="frame_three">
+                <img src="images/txt1.png" alt="" class="txt1">
+                <img src="images/date.png" alt="" class="date">
+            </div>    
+
+            <!-- ============== Frame Four ============= -->
+            <div id="frame_four">
+                <img src="images/final_frame_bg.png" alt="" class="final_frame_bg">
+                <img src="images/warehouse_white_logo.png" alt="" class="warehouse_white_logo">                    
+                <img src="images/slogan.png" alt="" class="slogan">
+            </div>  
+
+            <!-- ============== Common ============= -->
+            <div id="common">               
+               <img src="images/warehouse_logo.png" alt="" class="warehouse_logo">
+            </div>
+
+        </div>
+
+
+        <!-- Fallback & click tag -->
+        
+        <!--[if lte IE 8]> <img src="fallback.jpg" alt=""> <![endif]-->        
+
+    </div>
+    
+    <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+    <script>
+        var banner = document.getElementById("banner") ;
+        function bgExitHandler(e) {
+            Enabler.exit('Background Exit' , 'http://www.warehouseclub.com.sg/wps/portal/whc/Whats%20New');
+        }
+
+        banner.addEventListener('click', bgExitHandler, false);
+    </script> 
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>     
+    <script src="css-js/snow.js" ></script>
+    <script src="css-js/custom.js" ></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/*-------------------------------------
+    Reset
+---------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#banner * {
+  position: absolute;
+}
+
+#banner br  {
+  position: static;
+}
+
+
+img{
+  border: none;
+}
+
+/*-------------------------------------
+    Layout
+---------------------------------------*/
+
+#ad {
+  width: 300px;
+  height: 250px;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#banner {
+  position: absolute;
+  display: block;
+  background: #ffffff;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  cursor: pointer;
+  visibility: hidden;
+  border: 1px solid #666;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clicktag {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.clicktag img {
+  border: none;
+  outline: none;
+}
+
+#frame_one, #frame_two, #frame_three, #frame_four, #frame_five{
+  width: 100%;
+  height: 100%;
+}
+
+
+/*-------------------------------------
+    Frame One
+---------------------------------------*/
+
+.mountains {
+  left: -230px;
+}
+
+.trolley {
+  left: 300px;
+  z-index: 3;
+}
+
+/*-------------------------------------
+    Frame Three
+---------------------------------------*/
+.product1 {
+  left: 0px;
+  z-index: 2;
+}
+
+.product2 {
+  left: 0px;
+  z-index: 2;
+}
+
+.product3 {
+
+  z-index: 2;
+}
+
+.discount1, .discount2, .discount3{
+  top: -5px;
+  z-index: 4;
+}
+
+.txt1, .date {
+  z-index: 2;
+}
+
+
+/*-------------------------------------
+    Frame Four
+---------------------------------------*/
+.final_frame_bg, .warehouse_white_logo, .slogan {
+  z-index: 10;
+}
+
+/*-------------------------------------
+    Common
+---------------------------------------*/
+.warehouse_logo {
+  z-index: 4;
+}

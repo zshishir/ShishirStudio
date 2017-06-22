@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="ad.size" content="width=728,height=90">
+    <title>HTML5 Banner: 728x90</title>
+    <link rel="stylesheet" href="css-js/style.css">       
+</head>
+<body>
+
+	<div id="ad">
+		<div id="banner">
+        <canvas id="canvas" width="300" height="250" style="top : 0px; left : 0px; z-index: 1;"></canvas>     
+			<!-- ============== Frame One ============= -->
+			<div id="frame_one">
+               <img src="images/bg.gif" alt="" class="bg">
+               <img src="images/mountains.png" alt="" class="mountains">
+               <img src="images/trolley.png" alt="" class="trolley">
+               <img src="images/warehouse_club.png" class="warehouseclub">
+            </div>
+
+
+			<!-- ============== Frame Two ============= -->
+			<div id="frame_two">
+				<img src="images/product3.png" alt="" class="product3">
+                <img src="images/christmas.png" alt="" class="christmas">
+                <img src="images/product1.png" alt="" class="product1">
+                <img src="images/product2.png" alt="" class="product2">
+                <img src="images/slogan.png" alt="" class="slogan">
+            </div>
+		</div>
+
+		<!-- Fallback & click tag -->
+        
+        <!--[if lte IE 8]> <img src="fallback.jpg" alt=""> <![endif]-->
+	</div>
+
+	<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+    <script>
+        var banner = document.getElementById("banner") ;
+        function bgExitHandler(e) {
+            Enabler.exit('Background Exit' , 'http://www.warehouseclub.com.sg/wps/portal/whc/Whats%20New');
+        }
+
+        banner.addEventListener('click', bgExitHandler, false);
+    </script> 
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>     
+    <script src="css-js/snow.js"></script>
+    <script src="css-js/custom.js" ></script>
+</body>
+</html>

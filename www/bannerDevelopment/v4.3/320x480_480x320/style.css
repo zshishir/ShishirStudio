@@ -1,0 +1,74 @@
+@media (max-width: 320px) {
+
+    /* Generel Rules */
+    body            { margin: 0px; font-size: 13px; }
+    div             { display: block; position: absolute; }
+
+    /* AD */
+    #ad-container   { width: 320px; height: 480px; background: #000; }
+    .frame          { width: 100%; height: 100%; }
+    .bg-pic         { width: 100%; height: 100%; background: url('background_320x480.png'); opacity: 0;}
+
+    .flag-container { left: 123px; top: 72px; width: 40px; height: 26px; } /* height = flag-line-height * 13  */
+    .flag-back      { width: 0%; height: inherit; background: #262b69; }
+    .flag-lines     { width: 100%; height: 100%; }
+    .flag-line      { width: 0%; height: 2px; background: #FFF; position: relative; }
+    .half           { width: 0%; }
+    .red            { background: #922427; }
+
+    .logo           { width: 100px; height: 30px; top: 13px; left: 109px; background: url('netflix_logo_320x480.png'); opacity: 0; }
+    .title          { width: 290px; height: 38px; top: 70px; left: 14px; background: url('title_320x480.png'); opacity: 0; }
+    .subtitle       { width: 194px; height: 15px; top: 50px; left: 64px; background: url('subtitle_320x480.png'); opacity: 0; }
+    .txt            { width: 260px; height: 20px; top: 112px; left: 30px; background: url('txt_320x480.png'); opacity: 0; }
+
+    .cta1           { width: 130px; height: 27px; top: 435px; left: 20px; background: url('watch_trailer_btn_320x480.png'); opacity: 0; z-index: 2; cursor: pointer; }
+    .cta1:hover     { background: url('watch_trailer_btn_hover_320x480.png'); }   
+    .cta2           { width: 130px; height: 27px; top: 435px; left: 170px; background: url('watch_now_btn_320x480.png'); opacity: 0; z-index: 2; cursor: pointer; }
+    .cta2:hover     { background: url('watch_now_btn_hover_320x480.png'); }
+
+    .vid-player     { width: 100%; height: 100%; }
+    .vid-close      { top: 10px; left: 290px; width: 20px; height: 20px; background: url('close_btn_320x480.png'); z-index: 2; cursor: pointer; }
+    .vid-close:hover{ background: url('close_btn_hover_320x480.png'); }
+
+    .bg-exit        { width: 100%; height: 100%; cursor: pointer; }
+    .close-btn      { top: 10px; left: 290px; width: 20px; height: 20px; background: url('close_btn_320x480.png'); display: none; cursor: pointer; }
+    .close-btn:hover{ background: url('close_btn_hover_320x480.png'); }
+    
+}
+
+@media (min-width: 321px) {
+
+        /* Generel Rules */
+    body            { margin: 0px; font-size: 13px; }
+    div             { display: block; position: absolute; }
+
+    /* AD */
+    #ad-container   { width: 480px; height: 320px; background: #000; }
+    .frame          { width: 100%; height: 100%; }
+    .bg-pic         { width: 100%; height: 100%; background: url('background_480x320.png'); opacity: 0;}
+
+    .flag-container { left: 201px; top: 131px; width: 51px; height: 26px; } /* height = flag-line-height * 13  */
+    .flag-back      { width: 0%; height: inherit; background: #262b69; }
+    .flag-lines     { width: 100%; height: 100%; }
+    .flag-line      { width: 0%; height: 2px; background: #FFF; position: relative; }
+    .half           { width: 0%; }
+    .red            { background: #922427; }
+
+    .logo           { width: 100px; height: 30px; top: 75px;  left: 109px; background: url('netflix_logo_480x320.png'); opacity: 0;}
+    .title          { width: 190px; height: 90px; top: 128px; left: 62px; background: url('title_480x320.png'); opacity: 0; }
+    .subtitle       { width: 195px; height: 21px; top: 109px; left: 61px; background: url('subtitle_480x320.png'); opacity: 0; }
+    .txt            { width: 215px; height: 15px; top: 226px; left: 52px; background: url('txt_480x320.png'); opacity: 0; } 
+    .cta1           { width: 130px; height: 27px; top: 265px; left: 20px; background: url('watch_trailer_btn_480x320.png'); opacity: 0; z-index: 2; cursor: pointer; }
+    .cta1:hover     { background: url('watch_trailer_btn_hover_480x320.png'); } 
+    .cta2           { width: 130px; height: 27px; top: 265px; left: 170px; background: url('watch_now_btn_480x320.png'); opacity: 0; z-index: 2; cursor: pointer; }
+    .cta2:hover     { background: url('watch_now_btn_hover_480x320.png'); } 
+
+    .vid-player     { width: 100%; height: 100%; }
+    .vid-close      { top: 10px; left: 450px; width: 20px; height: 20px; background: url('close_btn_480x320.png'); z-index: 2; cursor: pointer; }
+    .vid-close:hover{ background: url('close_btn_hover_480x320.png'); }
+
+    .bg-exit        { width: 100%; height: 100%; cursor: pointer; }
+    .close-btn      { top: 10px; left: 450px; width: 20px; height: 20px; background: url('close_btn_480x320.png'); display: none; cursor: pointer; }
+    .close-btn:hover{ background: url('close_btn_hover_480x320.png'); }
+    
+}

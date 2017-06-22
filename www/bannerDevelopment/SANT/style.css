@@ -1,0 +1,366 @@
+body,h1,h2,div{
+  margin:0px;
+  padding: 0px;
+}
+
+
+#ad{
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#banner{  
+  width: 300px; 
+  height: 250px;
+  display: block;  
+  overflow: hidden;
+  position:absolute;
+  z-index: -9999; 
+}
+
+
+
+#banner *{ position: absolute; }
+
+#banner .bg {
+         top: 0; left: 0; width: 300px; height: 250px; opacity: 1;      
+
+         animation-name: bg, bg_appeaared;
+         animation-duration: 2s, 1s;
+         animation-timing-function: linear;
+         animation-delay: 1s, 6.5s;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+
+         -webkit-animation-name: bg, bg_appeaared;
+         -webkit-animation-duration: 2s, 1s;
+         -webkit-animation-timing-function: linear;
+         -webkit-animation-delay: 1s, 6.5s;
+         -webkit-animation-iteration-count: 1;
+         -webkit-animation-fill-mode: forwards;
+
+}
+
+#banner .orange_circle {
+         top: -110px; left: 18px; width: 148px; height: 149px; -webkit-transform: scale(0.3); -ms-transform: scale(0.3); -o-transform: scale(0.3); transform: scale(0.3);
+         animation: orange_circle 2s ease ; -webkit-animation: orange_circle 2s ease ; animation-delay: 0s; -webkit-animation-delay: 0s; 
+         animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+
+#banner .green_circle {
+         top: -110px; left: 18px; width: 148px; height: 149px; -webkit-transform: scale(0.3); -ms-transform: scale(0.3); -o-transform: scale(0.3); transform: scale(0.3);
+         animation: green_circle 2s ease ; -webkit-animation: green_circle 2s ease ; animation-delay: 2s; -webkit-animation-delay: 2s; 
+         animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+
+#banner .shutterstock_bg {
+         top: 0; left: 0; width: 300px; height: 250px; opacity: 1; z-index: -99;       
+         animation: shutterstock_bg 1.2s linear; -webkit-animation: shutterstock_bg 1.2s linear; animation-delay: 4s; -webkit-animation-delay: 4s; 
+         animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+
+#banner .violet_bg {
+         top: 0; left: 0; width: 300px; height: 250px; opacity: 1; z-index: -999;
+         animation: violet_bg 1s ease; -webkit-animation: violet_bg 1s ease; animation-delay: 5.5s; -webkit-animation-delay: 5.5s; 
+         animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+
+#banner .green_bg {
+         top: -300px; left: 0; width: 300px; height: 250px; opacity: 1; z-index: -99;   
+         animation: green_bg 1s ease; -webkit-animation: green_bg 1s ease; animation-delay: 5.5s; -webkit-animation-delay: 5.5s; 
+         animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+
+#banner .green_bg .green_bg_curve { left: 0;
+         animation-name: green_bg_curve, green_bg_curve_up;
+         animation-duration: 0.7s, 0.7s;
+         animation-timing-function: linear;
+         animation-delay: 7s, 9s;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+
+         -webkit-animation-name: green_bg_curve, green_bg_curve_up;
+         -webkit-animation-duration: 0.7s, 0.7s;
+         -webkit-animation-timing-function: linear;
+         -webkit-animation-delay: 7s, 9s;
+         -webkit-animation-iteration-count: 1;
+         -webkit-animation-fill-mode: forwards;
+}
+
+#banner .green_bg .easy_way {
+         bottom: 0px;  width: 274px; height: 59px; left: 13px;
+         animation: easy_way 0.7s linear; -webkit-animation: easy_way 0.7s linear; animation-delay: 9s; -webkit-animation-delay: 9s; 
+         animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+
+#banner .green_bg .together {
+         bottom: -30px; left: 100px; width: 96px; height: 28px; opacity: 0;
+         animation-name: together, together_down;
+         animation-duration: 0.7s, 0.7s;
+         animation-timing-function: linear;
+         animation-delay: 8s, 9s;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+
+         -webkit-animation-name: together, together_down;
+         -webkit-animation-duration: 0.7s, 0.7s;
+         -webkit-animation-timing-function: linear;
+         -webkit-animation-delay: 8s, 9s;
+         -webkit-animation-iteration-count: 1;
+         -webkit-animation-fill-mode: forwards;
+}
+
+#banner .green_bg .jar {
+    height: 102px;
+    left: 99px;
+    top: 74px;
+    width: 102px;
+    z-index: 1;
+    opacity: 1;
+    animation: jar 0.7s ease-in; -webkit-animation: jar 0.7s ease-in; animation-delay: 7s; -webkit-animation-delay: 7s; 
+    animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+.green_body_area{
+  height: 240px;
+  top: 50px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.legal_text{
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.8);
+    bottom: -50px;
+    height: 10px;
+    left: 0;
+    padding: 5px 0 0 5px;
+    width: 300px;
+    z-index: 99;
+}
+
+.kitti{
+  top: -50px;
+  left: 54px;
+  z-index: 3;
+  animation: kitti 0.7s ease; -webkit-animation: kitti 0.7s ease; animation-delay: 9.7s; -webkit-animation-delay: 9.7s; 
+  animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+
+.orange_bg{
+  z-index: 2;
+  opacity: 0;
+  top: 50px;
+  height: 250px;
+  width: 300px;
+  animation: orange_bg 2s linear; -webkit-animation: orange_bg 2s linear; animation-delay: 10.5s; -webkit-animation-delay: 10.5s; 
+  animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+
+
+.download_button{
+  z-index: 2;
+  opacity: 0;
+  bottom: 0px;
+  left: 53px;
+  animation: download_button 2s linear; -webkit-animation: download_button 2s linear; animation-delay: 10.5s; -webkit-animation-delay: 10.5s; 
+  animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+
+.click_link{
+  z-index: -1;
+  top: 50px;
+  height: 250px;
+  width: 300px;
+  animation: click_link 0.1s linear; -webkit-animation: click_link 0.1s linear; animation-delay: 10.5s; -webkit-animation-delay: 10.5s; 
+  animation-fill-mode:forwards;  -webkit-animation-fill-mode: forwards;
+}
+
+#banner .ie-fallback{width: 320px; height: 480px; display: block; position: absolute; z-index: 100; background: url('images/iefallback.jpg');}    
+
+
+
+/* Keyframe animation start */
+
+
+@keyframes bg{
+    0%  {opacity: 1}
+  100%  {opacity: 0} 
+}
+
+@-webkit-keyframes bg{
+    0%  {opacity: 1}
+  100%  {opacity: 0} 
+}
+
+@keyframes orange_circle{
+    0%  {top: -110px; transform: scale(0.3);}
+   40%  {top:   50px; transform: scale(1);}
+   70%  {top:   50px; transform: scale(1);}
+  100%  {top:  200px; transform: scale(0.3);} 
+}
+
+@-webkit-keyframes orange_circle{
+    0%  {top: -110px; transform: scale(0.3);}
+   40%  {top:   50px; transform: scale(1);}
+   70%  {top:   50px; transform: scale(1);}
+  100%  {top:  200px; transform: scale(0.3);}  
+}
+
+@keyframes green_circle{
+    0%  {top: -110px; transform: scale(0.3);}
+   40%  {top:   50px; transform: scale(1);}
+   70%  {top:   50px; transform: scale(1);}
+  100%  {top:  200px; transform: scale(0.3);} 
+}
+
+@-webkit-keyframes green_circle{
+    0%  {top: -110px; transform: scale(0.3);}
+   40%  {top:   50px; transform: scale(1);}
+   70%  {top:   50px; transform: scale(1);}
+  100%  {top:  200px; transform: scale(0.3);}  
+}
+
+@keyframes shutterstock_bg{
+    0%  {opacity: 1}
+  100%  {opacity: 0} 
+}
+
+@-webkit-keyframes shutterstock_bg{
+    0%  {opacity: 1}
+  100%  {opacity: 0} 
+}
+
+@keyframes violet_bg{
+    0%  {top: 0px}
+  100%  {top: 250px} 
+}
+
+@-webkit-keyframes violet_bg{
+    0%  {top: 0px}
+  100%  {top: 250px}
+}
+
+@keyframes green_bg{
+    0%  {top: -300px}
+  100%  {top: -50px} 
+}
+
+@-webkit-keyframes green_bg{
+    0%  {top: -300px}
+  100%  {top: -50px}
+}
+
+@keyframes green_bg_curve{
+    0%  {top: 0px}
+  100%  {top: 150px} 
+}
+
+@-webkit-keyframes green_bg_curve{
+    0%  {top: 0px}
+  100%  {top: 150px}
+}
+
+@keyframes green_bg_curve_up{
+    0%  {top: 150px}
+  100%  {top: 0px} 
+}
+
+@-webkit-keyframes green_bg_curve_up{
+    0%  {top: 150px}
+  100%  {top: 0px}
+}
+
+@keyframes together{
+    0%  {opacity: 0}
+  100%  {opacity: 1} 
+}
+
+@-webkit-keyframes together{
+    0%  {opacity: 0}
+  100%  {opacity: 1}
+}
+
+@keyframes together_down{
+    0%  {bottom: -30px}
+    50%  {bottom: -80px} 
+  100%  {bottom: -80px} 
+}
+
+@-webkit-keyframes together_down{
+    0%  {bottom: -30px}
+    50%  {bottom: -80px} 
+  100%  {bottom: -80px} 
+}
+
+@keyframes bg_appeaared{
+    0%  {opacity: 0; z-index: -99}
+  100%  {opacity: 1; z-index: -999} 
+}
+
+@-webkit-keyframes bg_appeaared{
+    0%  {opacity: 0; z-index: -99}
+  100%  {opacity: 1; z-index: -999}
+}
+
+@keyframes jar{
+    0%  {top: 74px}
+  100%  {top: -70px} 
+}
+
+@-webkit-keyframes jar{
+    0%  {top: 74px}
+  100%  {top: -70px}
+}
+
+@keyframes easy_way{
+    0%  {bottom: 0px}
+  100%  {bottom: -110px} 
+}
+
+@-webkit-keyframes easy_way{
+    0%  {bottom: 0px}
+  100%  {bottom: -110px} 
+}
+
+@keyframes kitti{
+    0%  {top: -50px}
+  100%  {top: 98px} 
+}
+
+@-webkit-keyframes kitti{
+    0%  {top: -50px}
+  100%  {top: 98px} 
+}
+
+
+@keyframes orange_bg{
+  0%  {opacity: 0}
+  100%  {opacity:1} 
+}
+
+@-webkit-keyframes orange_bg{
+  0%  {opacity: 0}
+  100%  {opacity:1}
+}
+
+@keyframes download_button{
+  0%  {opacity: 0}
+  100%  {opacity:1} 
+}
+
+@-webkit-keyframes download_button{
+  0%  {opacity: 0}
+  100%  {opacity:1}
+}
+
+@keyframes click_link{
+  0%  {z-index: -1}
+  100%  {z-index:3} 
+}
+
+@-webkit-keyframes click_link{
+  0%  {z-index: -1}
+  100%  {z-index:3} 
+}

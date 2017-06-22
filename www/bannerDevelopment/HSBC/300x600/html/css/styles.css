@@ -1,0 +1,154 @@
+html, body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+img, #clicktag {
+  position: absolute;
+}
+
+#ad {
+  width: 300px;
+  height: 600px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  cursor: pointer;
+}
+
+#countdown, #shishir {
+  position: absolute;
+  /*z-index:1000;*/
+}
+
+#backimage{
+opacity: 1;
+}
+
+#whiter{
+  position: absolute;
+  width: 300px;
+  height:600px;
+  background-color: white;
+  opacity:0;
+}
+
+#hashtag{
+  opacity: 0;
+}
+
+#cta{
+  opacity: 0;
+}
+
+.text_copy{
+  /*left: 300px;*/
+  /*opacity: 0;*/
+}
+
+.text_copy_small{
+  opacity: 0;
+}
+
+#legals_cta{
+    width: 120px;
+    height: 15px;
+    right: 31px;
+    bottom: 9px;
+  visibility: none;
+  opacity: 0;
+}
+
+
+#legals_explained{
+  width:274px;
+  height:144px;
+  right: 17px;
+  bottom: 152px;
+  visibility: none;
+  opacity: 0;
+}
+
+#holderdday {
+    width: 300px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    overflow: hidden;
+}
+
+#holderdays {
+  width: 300px;
+  height: 60px;
+  z-index:1000;
+  position: absolute;
+  overflow: hidden;
+  top: 106px;
+}
+
+/*****COUNTDOWN****/
+#countdown { 
+  width: 300px;
+  height: 45px;
+  left: 150px;
+ /*top: -3px;*/
+}
+
+
+
+
+#units, #tens, #units2, #units3 {
+  float: left;
+  background-image: url(../img/numbers.png);
+}
+
+#units {
+  width: 36px;
+  height: 62px;
+  background-position: 0px 0px;
+  background-repeat: repeat-y;
+}
+#units2 {
+  width: 36px;
+  height: 62px;
+    left: 30px;
+  background-position: 0px 0px;
+  background-repeat: repeat-y;
+}
+#units3 {
+  width: 36px;
+  height: 62px;
+    left: 30px;
+  background-position: 0px 0px;
+  background-repeat: repeat-y;
+}
+
+#tens {
+  width: 36px;
+  height: 62px;
+  background-position: 0px 0px;
+}
+
+#jminus {
+  /*top: 32px;*/
+}
+
+#jplus {
+  left:20px;
+}
+
+
+#branding{
+    right: 0px;
+}
+
+#branding02{
+    right: 0px;
+}
+
+
+

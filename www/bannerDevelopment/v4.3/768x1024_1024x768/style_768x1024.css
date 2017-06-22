@@ -1,0 +1,32 @@
+/* Generel Rules */
+body            { margin: 0px; font-size: 26px; }
+div             { display: block; position: absolute; }
+
+/* AD */
+#ad-container   { width: 768px; height: 1024px; background: #000; }
+.frame          { width: 100%; height: 100%; }
+.bg-pic         { width: 100%; height: 100%; background: url('background_768x1024.jpg'); opacity: 0;}
+
+.flag-container { left: 311px; top: 800px; width: 79px; height: 52px; } /* height = flag-line-height * 13  */
+.flag-back      { width: 0%; height: inherit; background: #262b69; }
+.flag-lines     { width: 100%; height: 100%; }
+.flag-line      { width: 0%; height: 4px; background: #FFF; position: relative; }
+.half           { width: 0%; }
+.red            { background: #922427; }
+
+.logo           { width: 190px; height: 55px; top: 686px; left: 290px; background: url('netflix_logo_768x1024.png'); opacity: 0;}
+.title          { width: 574px; height: 70px; top: 797px; left: 97px; background: url('title_768x1024.png'); opacity: 0; }
+.subtitle       { width: 381px; height: 31px; top: 757px; left: 193px; background: url('subtitle_768x1024.png'); opacity: 0; }
+.txt            { width: 560px; height: 40px; top: 880px; left: 103px; background: url('txt_768x1024.png'); opacity: 0; } 
+.cta1           { width: 238px; height: 49px; top: 940px; left: 130px; background: url('watch_trailer_btn_768x1024.png'); opacity: 0; z-index: 2; cursor: pointer; } 
+.cta1:hover     { background: url('watch_trailer_btn_hover_768x1024.png'); }
+.cta2           { width: 238px; height: 49px; top: 940px; left: 388px; background: url('watch_now_btn_768x1024.png'); opacity: 0; z-index: 2; cursor: pointer; } 
+.cta2:hover     { background: url('watch_now_btn_hover_768x1024.png'); }
+
+.vid-player     { width: 100%; height: 100%; }
+.vid-close      { top: 10px; left: 10px; width: 30px; height: 30px; background: url('close_btn_768x1024.png'); z-index: 2; cursor: pointer; }
+.vid-close:hover{ background: url('close_btn_hover_768x1024.png'); }
+
+.bg-exit        { width: 100%; height: 100%; cursor: pointer; }
+.close-btn      { top: 10px; left: 728px; width: 30px; height: 30px; background: url('close_btn_768x1024.png'); display: none; cursor: pointer; }
+.close-btn:hover{ background: url('close_btn_hover_768x1024.png'); }

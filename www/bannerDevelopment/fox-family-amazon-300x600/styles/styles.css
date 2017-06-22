@@ -1,0 +1,642 @@
+/*** General styling and positioning ***/
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.transparency {
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	/* IE 5-7 */
+	filter: alpha(opacity=0);
+	/* Netscape */
+	-moz-opacity: 0;
+	/* Safari 1.x */
+	-khtml-opacity: 0;
+	/* Good browsers */
+	opacity: 0;
+}
+
+#main-container {
+	-moz-user-select: -moz-none !important;
+	-khtml-user-select: none !important;
+	-webkit-user-select: none !important;
+	-ms-user-select: none !important;
+	user-select: none !important;
+	position: relative;
+	width: 300px;
+	height: 600px;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	display: none;
+	cursor: pointer;
+}
+
+#click-btn {
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	top: 0;
+	left: 0;
+	z-index: 500;
+}
+
+/*** SET BORDER DIVS TO BE ON TOP OF EVERYTHING = Z-INDEX:900, MOST TOP LEVEL ***/
+.borders {
+	position: absolute;
+	background: #000;
+	z-index: 900;
+}
+
+#top-border {
+	width: 300px;
+	height: 1px;
+	top: 0;
+	left: 0;
+}
+
+#left-border {
+	width: 1px;
+	height: 598px;
+	top: 1px;
+	left: 0;
+}
+
+#right-border {
+	width: 1px;
+	height: 598px;
+	top: 1px;
+	right: 0;
+}
+
+#bottom-border {
+	width: 300px;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+}
+
+/*** END BORDERS ***/
+
+#alvin {
+	width:300px;
+	height:600px;
+	bottom:0;
+	right:0;	
+	background:url("../images/alvin.png") no-repeat;
+	-webkit-transform:translateX(98px);
+	-moz-transform:translateX(98px);
+	-o-transform:translateX(98px);
+	-ms-transform:translateX(98px);
+	transform:translateX(98px);
+}
+
+#copy {
+	width:300px;
+	height:600px;
+	top:0;
+	left:0;
+	background:url("../images/copy.png") no-repeat;	
+	-webkit-transform:translateY(15px);
+	-moz-transform:translateY(15px);
+	-o-transform:translateY(15px);
+	-ms-transform:translateY(15px);
+	transform:translateY(15px);
+}
+
+#birds {
+	width:300px;
+	height:600px;
+	top:0;
+	left:0;
+	background:url("../images/birds.png") no-repeat;	
+	-webkit-transform:translateX(210px);
+	-moz-transform:translateX(210px);
+	-o-transform:translateX(210px);
+	-ms-transform:translateX(210px);
+	transform:translateX(210px);
+
+}
+
+#amazon-logo {
+	width:300px;
+	height:600px;	
+	top:0;
+	left:0;
+	background:url("../images/amazon-logo.png") no-repeat;	
+}
+
+#panda {
+	width:300px;
+	height:600px;
+	left:0;
+	bottom:0;
+	background:url("../images/kung-fu-panda.png") no-repeat;
+	-webkit-transform:translateX(-191px);
+	-moz-transform:translateX(-191px);
+	-o-transform:translateX(-191px);
+	-ms-transform:translateX(-191px);
+	transform:translateX(-191px);	
+}
+
+#legals {
+	width:300px;
+	height:600px;
+	top:0;
+	right:0;	
+	background:url("../images/legals.png") no-repeat;
+}
+
+#green {
+	width:300px;
+	height:600px;
+	top:0;
+	left:0;
+	background:url("../images/green.svg") no-repeat;
+	-webkit-transform:translateX(-154px);
+	-moz-transform:translateX(-154px);
+	-o-transform:translateX(-154px);
+	-ms-transform:translateX(-154px);
+	transform:translateX(-154px);
+}	
+
+#blue {
+    width:300px;
+	height:600px;
+	top:0;
+	left:0;	
+	background:url("../images/blue.svg") no-repeat;
+	-webkit-transform:translateY(190px);
+	-moz-transform:translateY(190px);
+	-o-transform:translateY(190px);
+	-ms-transform:translateY(190px);
+	transform:translateY(190px);
+}
+#purple {
+    width:300px;
+	height:600px;
+	top:0;
+	left:0;	
+	background:url("../images/purple.svg") no-repeat;
+   -webkit-transform:translateY(50px);
+	-moz-transform:translateY(50px);
+	-o-transform:translateY(50px);
+	-ms-transform:translateY(50px);
+	transform:translateY(50px);
+}
+
+#blue01 {
+    width:300px;
+	height:600px;
+	top:0;
+	left:0;	
+	background:url("../images/blue01.svg") no-repeat;
+	-webkit-transform:translateY(-76px);
+	-moz-transform:translateY(-76px);
+	-o-transform:translateY(-76px);
+	-ms-transform:translateY(-76px);
+	transform:translateY(-76px);
+}
+
+
+
+#orange {
+  width:300px;
+	height:600px;
+	top:0px;
+	right:0;	
+	background:url("../images/orange.svg") no-repeat;
+	-webkit-transform:translateX(305px);
+	-moz-transform:translateX(305px);
+	-o-transform:translateX(305px);
+	-ms-transform:translateX(305px);
+	transform:translateX(305px);
+}
+
+#yellow {
+  width:300px;
+	height:600px;
+	top:0;
+	left:0;
+	background:url("../images/yellow.svg") no-repeat;
+	-webkit-transform:translateX(301px);
+	-moz-transform:translateX(301px);
+	-o-transform:translateX(301px);
+	-ms-transform:translateX(301px);
+	transform:translateX(301px);
+}
+
+
+#yellow02 {
+  width:300px;
+	height:600px;
+	top:0;
+	left:0;
+	background:url("../images/yellow02.svg") no-repeat;
+	-webkit-transform:translateX(301px);
+	-moz-transform:translateX(301px);
+	-o-transform:translateX(301px);
+	-ms-transform:translateX(301px);
+	transform:translateX(301px);
+}
+
+
+#background {
+	width:inherit;
+	height:inherit;
+	background:#FFF;	
+}
+
+.elements-3 {
+	position: absolute;
+	z-index: 3;
+}
+
+.elements-2 {
+	position: absolute;
+	z-index: 2;
+}
+
+.elements-1 {
+	position: absolute;
+	z-index: 1;
+}
+
+
+
+/*** Animation keyframes and classes ***/
+
+/** fades **/
+.fadeIn {
+	-webkit-animation: fadeIn 1s ease-in 0s 1 normal forwards;
+	-moz-animation: fadeIn 1s ease-in 0s 1 normal forwards;
+	-o-animation: fadeIn 1s ease-in 0s 1 normal forwards;
+	-ms-animation: fadeIn 1s ease-in 0s 1 normal forwards;
+	animation: fadeIn 1s ease-in 0s 1 normal forwards;
+}
+
+@-webkit-keyframes fadeIn {
+	 from {opacity:0;}
+	 to {opacity:1;}
+}
+ @-moz-keyframes fadeIn {
+ 	from {opacity:0;}
+ 	to {opacity:1;}
+}
+ @-o-keyframes fadeIn {
+ 	from {opacity:0;}
+ 	to {opacity:1;}
+}
+@-ms-keyframes fadeIn {
+ 	from {opacity:0;}
+ 	to {opacity:1;}
+}
+ @keyframes fadeIn {
+ 	from {opacity:0;}
+ 	to {opacity:1;}
+}
+
+
+/** Green block **/
+.animateGreen {
+	-webkit-animation: animateGreen .25s ease-in 0s 1 normal forwards;
+	-moz-animation: animateGreen .25s ease-in 0s 1 normal forwards;
+	-o-animation: animateGreen .25s ease-in 0s 1 normal forwards;
+	-ms-animation: animateGreen .25s ease-in 0s 1 normal forwards;
+	animation: animateGreen .25s ease-in 0s 1 normal forwards;
+}
+
+@keyframes animateGreen {
+	0% {transform:translateX(-154px);}
+	100% {transform:translateX(0px);}
+}
+@-webkit-keyframes animateGreen {
+ 	0% {-webkit-transform:translateX(-154px);}
+ 	100% {-webkit-transform:translateX(0px);}
+}
+ @-moz-keyframes animateGreen {
+ 	0% {-moz-transform:translateX(-154px);}
+ 	100% {-moz-transform:translateX(0px);}
+}
+ @-o-keyframes animateGreen {
+ 	0% {-o-transform:translateX(-154px);}
+ 	100% {-o-transform:translateX(0px);}
+}
+@-ms-keyframes animateGreen {
+ 	0% {-ms-transform:translateX(-154px);}
+	100% {-ms-transform:translateX(0px);}
+}
+
+/** Yellow block **/
+.animateYellow {
+	-webkit-animation: animateYellow .25s ease-in 0s 1 normal forwards;
+	-moz-animation: animateYellow .25s ease-in 0s 1 normal forwards;
+	-o-animation: animateYellow .25s ease-in 0s 1 normal forwards;
+	-ms-animation: animateYellow .25s ease-in 0s 1 normal forwards;
+	animation: animateYellow .25s ease-in 0s 1 normal forwards;
+}
+
+@keyframes animateYellow {
+	0% {transform:translateX(98px);}
+	100% {transform:translateX(0px);}
+}
+@-webkit-keyframes animateYellow {
+ 	0% {-webkit-transform:translateX(98px);}
+ 	100% {-webkit-transform:translateX(0px);}
+}
+ @-moz-keyframes animateYellow {
+ 	0% {-moz-transform:translateX(98px);}
+ 	100% {-moz-transform:translateX(0px);}
+}
+ @-o-keyframes animateYellow {
+ 	0% {-o-transform:translateX(98px);}
+ 	100% {-o-transform:translateX(0px);}
+}
+@-ms-keyframes animateYellow {
+ 	0% {-ms-transform:translateX(98px);}
+	100% {-ms-transform:translateX(0px);}
+}
+
+/********/
+
+
+.animateYellow02 {
+	-webkit-animation: animateYellow .25s ease-in 0s 1 normal forwards;
+	-moz-animation: animateYellow .25s ease-in 0s 1 normal forwards;
+	-o-animation: animateYellow .25s ease-in 0s 1 normal forwards;
+	-ms-animation: animateYellow .25s ease-in 0s 1 normal forwards;
+	animation: animateYellow .25s ease-in 0s 1 normal forwards;
+}
+
+@keyframes animateYellow02 {
+	0% {transform:translateX(305px);}
+	100% {transform:translateX(0px);}
+}
+@-webkit-keyframes animateYellow02 {
+ 	0% {-webkit-transform:translateX(305px);}
+ 	100% {-webkit-transform:translateX(0px);}
+}
+ @-moz-keyframes animateYellow02 {
+ 	0% {-moz-transform:translateX(305px);}
+ 	100% {-moz-transform:translateX(0px);}
+}
+ @-o-keyframes animateYellow02 {
+ 	0% {-o-transform:translateX(305px);}
+ 	100% {-o-transform:translateX(0px);}
+}
+@-ms-keyframes animateYellow02 {
+ 	0% {-ms-transform:translateX(305px);}
+	100% {-ms-transform:translateX(0px);}
+}
+
+
+
+
+/** Blue block **/
+.animateBlue {
+	-webkit-animation: animateBlue .25s ease-in 0s 1 normal forwards;
+	-moz-animation: animateBlue .25s ease-in 0s 1 normal forwards;
+	-o-animation: animateBlue .25s ease-in 0s 1 normal forwards;
+	-ms-animation: animateBlue .25s ease-in 0s 1 normal forwards;
+	animation: animateBlue .25s ease-in 0s 1 normal forwards;
+}
+
+@keyframes animateBlue {
+	0% {transform:translateY(100px);}
+	100% {transform:translateY(0px);}
+}
+@-webkit-keyframes animateBlue {
+ 	0% {-webkit-transform:translateY(190px);}
+	100% {-webkit-transform:translateY(0px);}
+}
+ @-moz-keyframes animateBlue {
+ 	0% {-moz-transform:translateY(190px);}
+	100% {-moz-transform:translateY(0px);}
+}
+ @-o-keyframes animateBlue {
+ 	0% {-o-transform:translateY(190px);}
+	100% {-o-transform:translateY(0px);}
+}
+@-ms-keyframes animateBlue {
+ 	0% {-ms-transform:translateY(190px);}
+	100% {-ms-transform:translateY(0px);}
+}
+
+/* 2nd blue */
+
+.animateBlue01 {
+	-webkit-animation: animateBlue01 .25s ease-in 0s 1 normal forwards;
+	-moz-animation: animateBlue01 .25s ease-in 0s 1 normal forwards;
+	-o-animation: animateBlue01 .25s ease-in 0s 1 normal forwards;
+	-ms-animation: animateBlue01 .25s ease-in 0s 1 normal forwards;
+	animation: animateBlue01 .25s ease-in 0s 1 normal forwards;
+}
+
+@keyframes animateBlue01 {
+	0% {transform:translateY(-76px);}
+	100% {transform:translateY(0px);}
+}
+@-webkit-keyframes animateBlue01 {
+ 	0% {-webkit-transform:translateY(-76px);}
+	100% {-webkit-transform:translateY(0px);}
+}
+ @-moz-keyframes animateBlue01 {
+ 	0% {-moz-transform:translateY(-76px);}
+	100% {-moz-transform:translateY(0px);}
+}
+ @-o-keyframes animateBlue01 {
+ 	0% {-o-transform:translateY(-76px);}
+	100% {-o-transform:translateY(0px);}
+}
+@-ms-keyframes animateBlue01 {
+ 	0% {-ms-transform:translateY(-76px);}
+	100% {-ms-transform:translateY(0px);}
+}
+
+/*******/
+
+.animatePurple {
+
+	-webkit-animation: animatePurple .25s ease-in 0s 1 normal forwards;
+	-moz-animation: animatePurple .25s ease-in 0s 1 normal forwards;
+	-o-animation: animatePurple .25s ease-in 0s 1 normal forwards;
+	-ms-animation: animatePurple .25s ease-in 0s 1 normal forwards;
+	animation: animatePurple .25s ease-in 0s 1 normal forwards;
+}
+
+@keyframes animatePurple {
+	0% {transform:translateY(50px);}
+	100% {transform:translateY(0px);}
+}
+@-webkit-keyframes animatePurple {
+ 	0% {-webkit-transform:translateY(50px);}
+	100% {-webkit-transform:translateY(0px);}
+}
+ @-moz-keyframes animatePurple {
+ 	0% {-moz-transform:translateY(50px);}
+	100% {-moz-transform:translateY(0px);}
+}
+ @-o-keyframes animatePurple {
+ 	0% {-o-transform:translateY(50px);}
+	100% {-o-transform:translateY(0px);}
+}
+@-ms-keyframes animatePurple {
+ 	0% {-ms-transform:translateY(50px);}
+	100% {-ms-transform:translateY(0px);}
+}
+
+/** Panda **/
+.animatePanda {
+	-webkit-animation: animatePanda .25s ease-in 0s 1 normal forwards;
+	-moz-animation: animatePanda .25s ease-in 0s 1 normal forwards;
+	-o-animation: animatePanda .25s ease-in 0s 1 normal forwards;
+	-ms-animation: animatePanda .25s ease-in 0s 1 normal forwards;
+	animation: animatePanda .25s ease-in 0s 1 normal forwards;
+}
+
+@keyframes animatePanda {
+	0% {transform:translateX(-191px);}
+	100% {transform:translateX(0px);}
+}
+@-webkit-keyframes animatePanda {
+ 	0% {-webkit-transform:translateX(-191px);}
+ 	100% {-webkit-transform:translateX(0px);}
+}
+ @-moz-keyframes animatePanda {
+ 	0% {-moz-transform:translateX(-191px);}
+ 	100% {-moz-transform:translateX(0px);}
+}
+ @-o-keyframes animatePanda {
+ 	0% {-o-transform:translateX(-191px);}
+ 	100% {-o-transform:translateX(0px);}
+}
+@-ms-keyframes animatePanda {
+ 	0% {-ms-transform:translateX(-191px);}
+	100% {-ms-transform:translateX(0px);}
+}
+
+
+/** Orange block **/
+.animateOrange {
+	-webkit-animation: animateOrange .25s ease-in 0s 1 normal forwards;
+	-moz-animation: animateOrange .25s ease-in 0s 1 normal forwards;
+	-o-animation: animateOrange .25s ease-in 0s 1 normal forwards;
+	-ms-animation: animateOrange .25s ease-in 0s 1 normal forwards;
+	animation: animateOrange .25s ease-in 0s 1 normal forwards;
+}
+
+@keyframes animateOrange {
+	0% {transform:translateX(305px);}
+	100% {transform:translateX(0px);}
+}
+@-webkit-keyframes animateOrange {
+ 	0% {-webkit-transform:translateX(305px);}
+ 	100% {-webkit-transform:translateX(0px);}
+}
+ @-moz-keyframes animateOrange {
+ 	0% {-moz-transform:translateX(305px);}
+ 	100% {-moz-transform:translateX(0px);}
+}
+ @-o-keyframes animateOrange {
+ 	0% {-o-transform:translateX(305px);}
+ 	100% {-o-transform:translateX(0px);}
+}
+@-ms-keyframes animateOrange {
+ 	0% {-ms-transform:translateX(305px);}
+	100% {-ms-transform:translateX(0px);}
+}
+
+
+/** Alvin **/
+.animateAlvin {
+	-webkit-animation: animateAlvin .25s ease-in 0s 1 normal forwards;
+	-moz-animation: animateAlvin .25s ease-in 0s 1 normal forwards;
+	-o-animation: animateAlvin .25s ease-in 0s 1 normal forwards;
+	-ms-animation: animateAlvin .25s ease-in 0s 1 normal forwards;
+	animation: animateAlvin .25s ease-in 0s 1 normal forwards;
+}
+
+@keyframes animateAlvin {
+	0% {transform:translateX(98px);}
+	100% {transform:translateX(0px);}
+}
+@-webkit-keyframes animateAlvin {
+ 	0% {-webkit-transform:translateX(98px);}
+ 	100% {-webkit-transform:translateX(0px);}
+}
+ @-moz-keyframes animateAlvin {
+ 	0% {-moz-transform:translateX(98px);}
+ 	100% {-moz-transform:translateX(0px);}
+}
+ @-o-keyframes animateAlvin {
+ 	0% {-o-transform:translateX(98px);}
+ 	100% {-o-transform:translateX(0px);}
+}
+@-ms-keyframes animateAlvin {
+ 	0% {-ms-transform:translateX(98px);}
+	100% {-ms-transform:translateX(0px);}
+}
+
+
+/** Copy **/
+.animateCopy {
+	-webkit-animation: animateCopy .5s ease-in 0s 1 normal forwards;
+	-moz-animation: animateCopy .5s ease-in 0s 1 normal forwards;
+	-o-animation: animateCopy .5s ease-in 0s 1 normal forwards;
+	-ms-animation: animateCopy .5s ease-in 0s 1 normal forwards;
+	animation: animateCopy .5s ease-in 0s 1 normal forwards;
+}
+
+@keyframes animateCopy {
+	0% {transform:translateY(15px); opacity:0;}
+	100% {transform:translateY(0px); opacity:1;}
+}
+@-webkit-keyframes animateCopy {
+ 	0% {-webkit-transform:translateY(15px); opacity:0;}
+	100% {-webkit-transform:translateY(0px); opacity:1;}
+}
+ @-moz-keyframes animateCopy {
+ 	0% {-moz-transform:translateY(15px); opacity:0;}
+	100% {-moz-transform:translateY(0px); opacity:1;}
+}
+ @-o-keyframes animateCopy {
+ 	0% {-o-transform:translateY(15px); opacity:0;}
+	100% {-o-transform:translateY(0px); opacity:1;}
+}
+@-ms-keyframes animateCopy {
+ 	0% {-ms-transform:translateY(15px); opacity:0;}
+	100% {-ms-transform:translateY(0px); opacity:1;}
+}
+
+
+
+
+.animateBird {
+	-webkit-animation: animateBird .25s ease-in 0s 1 normal forwards;
+	-moz-animation: animateBird .25s ease-in 0s 1 normal forwards;
+	-o-animation: animateBird .25s ease-in 0s 1 normal forwards;
+	-ms-animation: animateBird .25s ease-in 0s 1 normal forwards;
+	animation: animateBird .25s ease-in 0s 1 normal forwards;
+}
+
+@keyframes animateBird {
+	0% {transform:translateX(205px);}
+	100% {transform:translateX(0px);}
+}
+@-webkit-keyframes animateBird {
+ 	0% {-webkit-transform:translateX(210px);}
+ 	100% {-webkit-transform:translateX(0px);}
+}
+ @-moz-keyframes animateBird {
+ 	0% {-moz-transform:translateX(210px);}
+ 	100% {-moz-transform:translateX(0px);}
+}
+ @-o-keyframes animateBird {
+ 	0% {-o-transform:translateX(210px);}
+ 	100% {-o-transform:translateX(0px);}
+}
+@-ms-keyframes animateBird {
+ 	0% {-ms-transform:translateX(210px);}
+	100% {-ms-transform:translateX(0px);}
+}

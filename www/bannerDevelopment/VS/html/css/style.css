@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+	position:absolute;
+}
+img{
+	border:0;
+}
+body{
+	cursor:pointer;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+#ie-fallback{
+	width:300px;
+	height:250px;
+	z-index:999
+}
+
+/* Contaciner Area */
+#banner {
+	width:300px;
+	height:250px;
+	overflow: hidden;
+ 	border: #666666 1px solid;
+	background:#c0c0c0;
+ 	box-sizing: border-box
+}
+
+/* First Frame */
+#VS-logo{
+	width:300px;
+	height:250px;
+	/* background:url(../images/VS-logo.png);*/
+	z-index:999
+}
+
+#first-frame-img{
+	width:300px;
+	height:250px;
+	left:0;
+	background:url(../images/first-frame-img.png) no-repeat
+}
+#txt1{
+	width:300px;
+	height:250px;
+	background:url(../images/txt1.png) no-repeat
+}
+
+/* Second Frame */
+#second-frame-img{
+	width:300px;
+	height:250px;
+	left:-300px;
+	background:url(../images/second-frame-img.png) no-repeat;
+}
+#txt2{
+	width:300px;
+	height:250px;
+    left: -300px;
+	background:url(../images/txt2.png) no-repeat;
+}
+
+/* Third Frame */
+#third-frame-img{
+	width:300px;
+	height:250px;
+	right:-300px;
+	background:url(../images/third-frame-img.png) no-repeat;
+	z-index:1;
+}
+#txt3{
+	width:300px;
+	height:250px;
+    left: -300px;
+	background:url(../images/txt3.png) no-repeat;
+}
+#txt3-3{
+	width:300px;
+	height:250px;
+    left: -300px;
+	background:url(../images/txt3-3.png) no-repeat;
+}
+
+
+/* Last Frame */
+#last-frame{
+	width:300px;
+	height:250px;
+    left: -300px;
+	background:url(../images/txt4.png) no-repeat;
+}
+#last-frame-2{
+	width:300px;
+	height:250px;
+    left: -300px;
+	background:url(../images/txt4-4.png) no-repeat;
+}
+#cta{
+	width:300px;
+	height:250px;
+	left:300px;
+	background:url(../images/cta.png) no-repeat;
+	z-index:2;
+}
