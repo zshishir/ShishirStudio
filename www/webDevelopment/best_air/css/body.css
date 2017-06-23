@@ -1,0 +1,62 @@
+
+
+BODY {
+	PADDING-RIGHT: 0px;PADDING-LEFT:0px;BACKGROUND: url("../images/bg_g.jpg") #000 ; PADDING-BOTTOM: 0px; MARGIN: 0px auto; FONT: 70%/160% Verdana, Arial, Helvetica, sans-serif; COLOR: #333333; PADDING-TOP: 0px; POSITION: relative
+}
+
+
+
+#body_wrap {
+
+PADDING-TOP:5px;
+PADDING-BOTTOM:5px;
+MARGIN:0px auto;
+WIDTH:965px;
+
+position:relative;
+}
+#header_banner{
+width:960px;
+height:110px;
+BACKGROUND:url("../images/logo.jpg") #CCC000 no-repeat;
+}
+#header_button{
+width:960px;
+height:30px;
+BACKGROUND:url("../images/top_button.jpg") #CCC000;
+}
+#flash_banner{
+width:960px;
+height:300px;
+BACKGROUND:#FFF000;
+}
+#containt_body{
+width:960px;
+BACKGROUND:url("../images/page_bg.jpg") #FFF repeat-y;
+}
+.left_colom{
+width:170px;
+float:left;
+padding:2px;
+}
+.middle_colom{
+width:390px;
+float:left;
+padding:2px;
+}
+.right_colom{
+width:380px;
+float:right;
+padding:2px;
+}
+#footer{
+width:940px;
+height:10px;
+color:#FFFFFF;
+padding:10px;
+text-align:center;
+}
+a{
+color:#FFFFFF;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+}

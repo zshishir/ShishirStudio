@@ -1,0 +1,30 @@
+#mainmenu { 
+font-family: tahoma, sans-serif; 
+position:relative; 
+width:700px;  
+height:15px;
+}
+#mainmenu ul { 
+list-style-type: none; 
+margin: 0px; 
+padding: 0px; 
+font-size:1em;
+
+}
+#mainmenu ul li { 
+display: inline; 
+margin: 0px; 
+padding: 0px; }
+#mainmenu ul li a {  
+border-right:1px solid #ccc; 
+color: #FFF; 
+padding:3px 8px 3px 8px; 
+text-decoration: none; 
+font-weight: bold; 
+}
+#mainmenu ul li.selected a { 
+color:#FFF; 
+}
+#mainmenu ul li a:hover { 
+color:#00CC00 ; 
+}

@@ -1,0 +1,40 @@
+.photo {
+	margin: 10px;
+	position: relative;
+	width: 180px;
+	height: 130px;
+	float: left;
+}
+.photo img {
+	background: #fff;
+	border: solid 1px #ccc;
+	padding: 4px;
+}
+.photo span {
+	width: 20px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	background: url(imges_background/digg-style.gif) no-repeat;
+}
+.photo a {
+	text-decoration: none;
+}
+
+
+
+.sample6 span {
+	width: 189px;
+	height: 137px;
+	display: block;
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	border:1px solid #ccc;
+	background: url(imges_background/cut-corner.png) no-repeat;
+}
+@charset "utf-8";
+/* CSS Document */
+

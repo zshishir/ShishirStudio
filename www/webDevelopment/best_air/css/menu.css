@@ -1,0 +1,49 @@
+#mainmenu {
+	font-family: tahoma, sans-serif;
+	position: relative;
+	width: 300px;
+	height: 30px;
+	background:#273443 url(images/background_menu.jpg);
+	float:right;
+}
+#mainmenu ul { 
+list-style-type: none; 
+margin: 0px; 
+padding: 0px; 
+font-size: 1em; 
+
+}
+#mainmenu ul li { 
+display: inline; 
+margin: 0px; 
+padding: 0px;
+
+ }
+#mainmenu ul li a { 
+float:right; 
+border-right: 1px dotted #FFF; 
+color: #FFF; 
+text-decoration: none; 
+height: 22px;
+}
+#mainmenu ul li.selected a { 
+background: #324355; 
+color: #FFF; 
+
+}
+#mainmenu ul li a:hover { 
+background:#324355; 
+color: #fff; 
+text-decoration: underline; 
+float:right;
+}
+
+#menu1 dl {width: 220px; margin: 0 auto; padding: 0 0 10px 0; background:#1d354e url(bottom.gif) no-repeat bottom left;}
+#menu1 dt {margin:0; padding: 10px; font-size: 1.4em; font-weight:bold; color: #fff; border-bottom:1px solid #fff; background: #1d354e url(top.gif) no-repeat top left;}
+#menu1 dd {margin:0; padding:0; color: #fff; font-size: 1em; border-bottom:1px solid #fff; background: #0f1b28;}
+#gallery a, #gallery a:visited {color:#fff; text-decoration:none; display:block; padding:5px 5px 5px 20px;
+background: #364f68 url(images/arrow.gif) no-repeat 10px 10px; width:195px;
+}
+#gallery a:hover {background: #0f1b28 url(images/arrowr.gif) no-repeat 11px 10px; color:#9cf;}
+
+ol li {font-size:11px;}

@@ -1,0 +1,7 @@
+@charset "utf-8";
+@import url("deafult.css"); /* reset all properties */
+@import url("left_according_menu.css"); /* global properties */
+@import url("jcarousel.css"); /* global properties */
+@import url("style.css"); /* global properties */
+@import url("tab_menu.css"); /* global properties */
+
