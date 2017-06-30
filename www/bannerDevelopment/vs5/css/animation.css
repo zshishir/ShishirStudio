@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+@-webkit-keyframes first-frame-anim{
+	from	{left:0}
+	to		{left:0}
+}
+@keyframes first-frame-anim{
+	from	{left:0}
+	to		{left:0}
+}
+
+
+@keyframes device-fromRight{
+    from	{right:-300px}
+    to		{right:0px}
+}
+@-webkit-keyframes device-fromRight{
+    from	{right:-300px}
+    to		{right:0px}
+}
+
+@keyframes fromLeft{
+    from	{left:-300px}
+    to		{left:0px}
+}
+@-webkit-keyframes fromLeft{
+    from	{left:-300px}
+    to		{left:0px}
+}
+
+@keyframes fromRight{
+    from	{left:300px}
+    to		{left:0px}
+}
+@-webkit-keyframes fromRight{
+    from	{left:300px}
+    to		{left:0px}
+}
+
+@keyframes rightBack{
+    from	{left:0px}
+    to		{left:300px}
+}
+@-webkit-keyframes rightBack{
+    from	{left:0px}
+    to		{left:300px}
+}
+
+@keyframes leftBack{
+    from	{left:0px}
+    to		{left:-300px}
+}
+@-webkit-keyframes leftBack{
+    from	{left:0px}
+    to		{left:-300px}
+}
+
+
+@-webkit-keyframes scalePop{
+    0%      {transform:scale(0,0); left: 133px; opacity: 0 }
+    50%     {transform:scale(1.4,1.4); left: 133px; opacity: 1}
+    100%    {transform:scale(1,1); left: 133px; opacity: 1}
+}
+@keyframes scalePop{
+    0%      {transform:scale(0,0); left: 133px;top:134px; opacity: 0 }
+    50%     {transform:scale(1.4,1.4); left: 133px;top:134px; opacity: 1}
+    100%    {transform:scale(1,1); left: 133px;top:134px; opacity: 1}
+}
+
+
