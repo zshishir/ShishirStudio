@@ -30,7 +30,7 @@ var skillAnimation = new TimelineMax()
     triggerElement:'#shishir',
       // start this scene after scrolling for 50px
    //  duration:'100%',
-     triggerHook:0.7
+     triggerHook:0.8
  
         
         

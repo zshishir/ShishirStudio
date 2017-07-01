@@ -10,7 +10,9 @@ Primary use:  MultiPurpose Template
 
 
 @import "font-awesome.css";
-@import url('https://fonts.googleapis.com/css?family=Cuprum&subset=latin-ext,vietnamese');
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Cuprum|Oswald');
+
 
 /* ==============================
  1.  Common styles
@@ -45,6 +47,8 @@ height: 100%;
 body {
 background-color:rgba(255,255,255,1);
 color: #444444;
+font-family: 'Oswald', sans-serif;
+font-family: 'Anton', sans-serif;
 font-family: 'Cuprum', sans-serif;
 line-height: 1.6em;
 font-weight: 400;
@@ -346,21 +350,15 @@ p {
 input[type="text"],input[type="search"],input[type="email"],input[type="number"],input[type="url"],input[type="tel"],input[type="password"],
 input[type="date"],input[type="color"],textarea,select {
     width: 100%;
-    background: #fff;
+    height: 50px;
+    color: #545b67;
     border: none;
-    padding: 12px 8px;
-    color: #555;
-    display: inline-block;
-    border: 1px solid rgba(0, 0, 0, .1);
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    border-bottom: 1px solid #111;
+    background: none;
+    padding: 0 20px;
+    margin-top: 13px;
+    font-size: 12px;
+
     -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -384,10 +382,9 @@ textarea {
 input[type="text"]:focus,input[type="search"]:focus,input[type="email"]:focus,input[type="number"]:focus,input[type="url"]:focus,
 input[type="tel"]:focus,input[type="password"]:focus,input[type="date"]:focus,input[type="color"]:focus,textarea:focus,select:focus {
     color: #111;
-    border-color: rgba(0, 0, 0, .7);
-    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .3);
-    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+     border: none;
+    border-bottom: 2px solid #111;
+    
     outline: none;
 }
 input[type="submit"],input[type="button"] {
@@ -2682,7 +2679,11 @@ Accordion Menu
 }
 .col02 h1 {
 border-left: 5px solid #111;
-    padding: 0px 0px 0px 10px;
+padding: 0px 0px 0px 10px;
+    font-weight: 800;
+    font-size:1.5em !important;
+    line-height: 20px;
+    letter-spacing: -.5px;
     
 }
 
@@ -2749,12 +2750,12 @@ border-left: 5px solid #111;
 
 .contact-col {
     position: relative;
-        background-color: rgba(152, 203, 43, .8) !important;
+        background-color: rgba(255, 255, 255, .7) !important;
 }
 .contact-col::after {
     content: "";
  
-    background-image:  url(../images/carousel-bg.jpg);
+    background-image:  url(../images/carousel-bg.png);
     opacity: .8;
     top: 0;
     left: 0;
@@ -2963,9 +2964,14 @@ border-left: 5px solid #111;
     color: #fff;
     cursor: pointer;
 }
+
+
 .col07 h1 {
     margin: 20px 0px;
-    font-size: 1em;
+    font-size: 1.2em ! important;
+    font-weight: 900;
+
+
 }
 .col07 p {
     padding: 0px 10px;
@@ -6303,6 +6309,28 @@ footer {
 
 }
 
+.porticon{
+    width: 25%;
+    height: auto;
+
+     -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    display: block;
+    padding-top: 10px;
+
+    text-align: center;
+
+}
+
+.porticon:hover {
+       width:55%;
+    height: auto;
+
+
+}
+
 .margin20px{
  margin: 10px 0px 20px 0;   
 }
@@ -6312,16 +6340,30 @@ text-align: center;
 }
 
 .startaproject h1{
-font-size: 2.5em; 
+font-size: 1.5em; 
+    letter-spacing: -.5px;
+    line-height: 24px;
+
+    font-weight:900; 
 
 }
+.phone{
+    text-align: left;
+    padding-bottom: 50px;
+    font-size: 1.2em;
+}
 
-.startaproject > .btn{
+.email{
+    text-align: right;
+    padding-bottom: 50px;
+    font-size: 1.2em;
+}
+.startaproject .btn{
     
     background: #db0011;
-    padding: 20px 50px;
-    border-radius: 50px;
+    padding: 20px 100px;
     margin: 0px 0px 30px 0;
+    text-align: center;
 }
 
 .startaproject > p{
