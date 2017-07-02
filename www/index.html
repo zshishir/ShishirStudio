@@ -14,10 +14,12 @@
     <!-- Responsive and mobile friendly stuff -->
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/core.css" media="all">
     <link rel="stylesheet" href="css/grid-style.css" media="all">
     <link rel="stylesheet" href="css/infographic.css" media="all">
     <link rel="stylesheet" href="css/colorbox.css" media="all">
+    <link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
 
 <style>
 .panel1 {
@@ -72,7 +74,7 @@
         width: 100%;
     transform: translate(-0%, -50%);
 }
-    .tests{
+.tests{
 
         height: auto;
         display: inline-block;
@@ -91,12 +93,8 @@
         position: absolute;
   
     }
-        .noMerginPadding{
-            margin: 0 !important;
-            padding: 0px !important;
-            overflow: hidden !important;
-        }
-        .whatdoicon{
+
+ .whatdoicon{
             width: 50%;
         }
         .hideele{
@@ -127,6 +125,23 @@
   max-width: 1200px;
 }
     
+ .noMP{
+   
+margin: 0 !important;
+padding: 0px !important;
+overflow: hidden !important;   
+    
+}
+   
+.noMerginPadding{
+
+   
+margin: 0 !important;
+padding: 0px !important;
+overflow: hidden !important;   
+    
+}
+
     </style>
 </head>
 
@@ -552,7 +567,7 @@
 	
 		<line opacity="0.5" fill="none" stroke="#FFFFFF" stroke-width="0.25" stroke-miterlimit="10" x1="305" y1="544.2" x2="296" y2="544.2"/>
 </g>
-        <g id="Sun">
+        <g id="sun">
 	<g>
 		<g>
 			<path fill="#F47831" d="M386.9,321.3c0-0.2,0-0.2,0-0.2c0-0.2,1-0.7,2.3-1.1c1.3-0.4,2.3-1.5,2.2-2.4s-1.6-3.3-2.9-3.4
@@ -1559,13 +1574,23 @@
     
     
 	<rect x="925.5" y="827.5" fill="#527693" stroke="#383838" stroke-miterlimit="10" width="39" height="9"/>
-	<rect x="1168" y="832" fill="#F22613" width="3" height="10"/>
+	
+    
+    
+    <g id="equlizer">
+    
+    <rect x="1168" y="832" fill="#F22613" width="3" height="10"/>
 	<rect x="1184" y="832" fill="#F22613" width="3" height="10"/>
 	<rect x="1176" y="829" width="3" height="13"/>
 	<rect x="1193" y="829" width="3" height="13"/>
 	<rect x="1209" y="829" width="3" height="13"/>
 	<rect x="1201" y="832" fill="#F22613" width="3" height="10"/>
 	<rect x="1217" y="832" fill="#F22613" width="3" height="10"/>
+    
+    </g>
+    
+    
+    
 	<path fill="#3D566E" stroke="#383838" stroke-miterlimit="10" d="M1191.5,814.4c0,1.2-1,2.1-2.1,2.1h-9.7c-1.2,0-2.1-1-2.1-2.1
 		v-26.7c0-1.2,1-2.1,2.1-2.1h9.7c1.2,0,2.1,1,2.1,2.1V814.4z"/>
 	<path fill="#3D566E" stroke="#383838" stroke-miterlimit="10" d="M1213.5,814.4c0,1.2-1,2.1-2.1,2.1h-9.7c-1.2,0-2.1-1-2.1-2.1
@@ -1584,9 +1609,19 @@
 	<rect x="1232" y="699" fill="#3D566E" width="3" height="54"/>
 	<rect x="1213" y="699" fill="#3D566E" width="5" height="54"/>
 	<rect x="1198" y="699" fill="#3D566E" width="3" height="54"/>
-	<circle fill="#F22613" cx="1233.8" cy="741" r="6.8"/>
-	<circle fill="#F22613" cx="1215.5" cy="726" r="6.8"/>
-	<circle fill="#F22613" cx="1199.4" cy="712" r="6.8"/>
+	     <g id="redoval03">
+    <circle fill="#F22613" cx="1233.8" cy="741" r="6.8"/>
+	</g>
+    
+    
+     <g id="redoval03">
+    <circle fill="#F22613" cx="1215.5" cy="726" r="6.8"/>
+	</g>
+   
+    <g id="redoval">
+    <circle fill="#F22613" cx="1199.4" cy="712" r="6.8"/>
+    </g>
+    
 	<path fill="#3D566E" stroke="#383838" stroke-miterlimit="10" d="M1184.5,749.4c0,1.2-1,2.1-2.1,2.1h-31.7c-1.2,0-2.1-1-2.1-2.1
 		v-44.7c0-1.2,1-2.1,2.1-2.1h31.7c1.2,0,2.1,1,2.1,2.1V749.4z"/>
 	<path fill="#FFFFFF" d="M1181,732.2c0,1-0.8,1.8-1.8,1.8h-25.5c-1,0-1.8-0.8-1.8-1.8v-25.5c0-1,0.8-1.8,1.8-1.8h25.5
@@ -3327,13 +3362,13 @@
 <div id="con02" class="wrapper">
       <div class="cleargap"></div>
           <div class="cleargap"></div>
-          <div class="cleargap"></div>
             <div class="clear line">
-                <h1 class="headlinecon02">WHAT WE CAN DO FOR YOU</h1>
+                
+                <h1 class="headlinecon02">WHAT I CAN DO FOR YOU</h1>
                 <p class="headlinecon02 col02">As an agency working with agencies, we have designed our services to fully meet your demand for a reliable coding partner. Here are just 3 of the values shaping our corporate culture.</p>
             </div>
 
-            <div id="shishir" class="section group">
+            <div class="section group">
                 <div class="col grid_2_of_2">
                     <div class="feature-box clearfix">
                         <div class="container clearfix">
@@ -3383,7 +3418,6 @@
         </div>
             <div class="clear"></div>
             <div class="clear"></div>
-          <div class="cleargap"></div>
      <div class="clear"></div>
         </div>  
     
@@ -3424,17 +3458,19 @@
     <div class="mask">
     <h2>Theme</h2>
     <p>PSD</p>
+      
     <a class="iframe" href="http://www.shishirstudio.com/"><img src="images/galleryimg.svg" alt="ShishirStudio" title="ShishirStudio" ></a>
     </div>
     </div>
-                                 </div>
+    </div>
+        
         <div class="col grid_1_of_5 noMerginPadding">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="webdevelopment/fullscreenscalless.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
                         <h2>Theme</h2>
                         <p>PSD</p>
-                        <a class="iframe" href="http://www.shishirstudio.com/webDevelopment/psdTemplate01/template01_home.jpg"><img src="images/galleryimg.svg" alt="ShishirStudio" title="ShishirStudio" ></a>
+                        <a class="fancebox" href="http://www.shishirstudio.com/webDevelopment/psdTemplate01/template01_home.jpg"><img src="images/galleryimg.svg" alt="ShishirStudio" title="ShishirStudio" ></a>
                      </div>
              
                     </div>
@@ -3503,20 +3539,20 @@
 
                
                             <figure>
-    <div id="portfolio" class="section group">
-                                <div class="col grid_1_of_4 noMerginPadding">
+    <div class="section group">
+                                <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="webDevelopment/scalless.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
                         <h2>Theme</h2>
                         <p>PSD</p>
-                        <a class="group1" href="http://www.shishirstudio.com/webDevelopment/psdTemplate01/template01_home.jpg"><img src="images/galleryimg.svg" alt="ShishirStudio" title="ShishirStudio" ></a>
+                        <a class="iframe" href="http://www.shishirstudio.com/webDevelopment/psdTemplate01/template01_home.jpg"><img src="images/galleryimg.svg" alt="ShishirStudio" title="ShishirStudio" ></a>
                      </div>
              
                     </div>
                                  </div>
        
-        <div class="col grid_1_of_4 noMerginPadding">
+        <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="webDevelopment/shishirstudio_old.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3529,7 +3565,7 @@
                                  </div>
   
         
-                <div class="col grid_1_of_4 noMerginPadding">
+                <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="webDevelopment/bestairbd.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3545,7 +3581,7 @@
         
         
         
-            <div class="col grid_1_of_4 noMerginPadding">
+            <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="webDevelopment/blogscalless.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3560,7 +3596,7 @@
         
         
         
-            <div class="col grid_1_of_4 noMerginPadding">
+            <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="webDevelopment/bazaarforhome.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3575,7 +3611,7 @@
                     
 
         
-   <div class="col grid_1_of_4 noMerginPadding">
+   <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="webDevelopment/galleryjolrong.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3590,7 +3626,7 @@
                           
         
         
-         <div class="col grid_1_of_4 noMerginPadding">
+         <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="webDevelopment/whitebricks.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3625,7 +3661,7 @@
             
                             <figure>
     <div id="portfolio" class="section group">
-                                <div class="col grid_1_of_4 noMerginPadding">
+                                <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="bannerDevelopment/boxfamily.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3639,7 +3675,7 @@
    
         
         
-                             <div class="col grid_1_of_4 noMerginPadding">
+                             <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="bannerDevelopment/adcouncill.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3651,7 +3687,7 @@
                     </div>
                                  </div>
         
-                        <div class="col grid_1_of_4 noMerginPadding">
+                        <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="bannerDevelopment/sant.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3668,7 +3704,7 @@
         
         
         
-        <div class="col grid_1_of_4 noMerginPadding">
+        <div class="col grid_1_of_4 noMP">
                                         <div class="img-hover-effect img-hover-effect-first">
                      <img src="bannerDevelopment/birdbanner.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3679,7 +3715,7 @@
              
                     </div>
                                  </div>
-        <div class="col grid_1_of_4 noMerginPadding">
+        <div class="col grid_1_of_4 noMP">
                                          <div class="img-hover-effect img-hover-effect-first">
                      <img src="bannerDevelopment/dell.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3691,7 +3727,7 @@
                     </div>
                                  </div>
         
-            <div class="col grid_1_of_4 noMerginPadding">
+            <div class="col grid_1_of_4 noMP">
                                          <div class="img-hover-effect img-hover-effect-first">
                      <img src="bannerDevelopment/vs5.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3721,7 +3757,7 @@
                             <figure>
                                 
     <div id="portfolio" class="section group">
-                                <div class="col grid_1_of_4 noMerginPadding">
+                                <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="uxui/template02_s.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3736,7 +3772,7 @@
         
         
        
-                     <div class="col grid_1_of_4 noMerginPadding">
+                     <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="uxui/get_donate_sm_02.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3750,7 +3786,7 @@
         
         
         
-               <div class="col grid_1_of_4 noMerginPadding">
+               <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="uxui/template_10_sm.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3764,7 +3800,7 @@
         
         
         
-               <div class="col grid_1_of_4 noMerginPadding">
+               <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="uxui/template03_sm.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3777,7 +3813,7 @@
                     </div>
         
         
-            <div class="col grid_1_of_4 noMerginPadding">
+            <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="uxui/template04_sm.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3811,7 +3847,7 @@
                           
                             <figure>
     <div id="portfolio" class="section group">
-                                <div class="col grid_1_of_4 noMerginPadding">
+                                <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="print_media/print_media_3_s.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3822,7 +3858,7 @@
              
                     </div>
                                  </div>
-        <div class="col grid_1_of_4 noMerginPadding">
+        <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="print_media/print_media_5_s.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3833,7 +3869,7 @@
              
                     </div>
                                  </div>
-        <div class="col grid_1_of_4 noMerginPadding">
+        <div class="col grid_1_of_4 noMP">
                                         <div class="img-hover-effect img-hover-effect-first">
                      <img src="print_media/engenersbd_s.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3844,7 +3880,7 @@
              
                     </div>
                                  </div>
-        <div class="col grid_1_of_4 noMerginPadding">
+        <div class="col grid_1_of_4 noMP">
                                          <div class="img-hover-effect img-hover-effect-first">
                      <img src="print_media/print_media_1_s.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3855,7 +3891,7 @@
              
                     </div>
                                  </div>
-          <div class="col grid_1_of_4 noMerginPadding">
+          <div class="col grid_1_of_4 noMP">
                                          <div class="img-hover-effect img-hover-effect-first">
                      <img src="print_media/print_media_2_s.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3885,7 +3921,7 @@
 
                             <figure>
     <div id="portfolio" class="section group">
-                                <div class="col grid_1_of_4 noMerginPadding">
+                                <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="animation/screensaver.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3902,7 +3938,7 @@
                                  </div>
         
         
-             <div class="col grid_1_of_4 noMerginPadding">
+             <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="animation/pringel.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3920,7 +3956,7 @@
         
         
         
-                     <div class="col grid_1_of_4 noMerginPadding">
+                     <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="animation/infographic01.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3938,7 +3974,7 @@
         
         
         
-       <div class="col grid_1_of_4 noMerginPadding">
+       <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="animation/fifafootball.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3956,7 +3992,7 @@
         
         
         
-             <div class="col grid_1_of_4 noMerginPadding">
+             <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="animation/retirment.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3973,7 +4009,7 @@
                                  </div>
         
         
-           <div class="col grid_1_of_4 noMerginPadding">
+           <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="animation/crystel.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -3990,7 +4026,7 @@
                                  </div>
         
 
-        <div class="col grid_1_of_4 noMerginPadding">
+        <div class="col grid_1_of_4 noMP">
                                     <div class="img-hover-effect img-hover-effect-first">
                      <img src="animation/infographics_1.jpg" alt="scalless" title="scalless" class="imggal">
                      <div class="mask">
@@ -4030,8 +4066,7 @@
         <div class="cleargap"></div>
         <div class="cleargap"></div>
      <div class="cleargap"></div>
-         <div class="cleargap"></div>
-        <div class="cleargap"></div>
+
       
         </div>
     
@@ -4046,7 +4081,7 @@
      <div class="cleargap"></div>
 
             <div class="clear line">
-                <h1 class="headlinecon04">WHAT PEOPLE SAY ABOUT US</h1>
+                <h1 class="headlinecon04">ABOUT</h1>
                 <p class="headlinecon04">We create interactive</p>
             </div>
 
@@ -4059,7 +4094,7 @@
                     <p>Working as Sr. Web Developer in software industry from 13 years.</p>
                     <p>Professional experiences on websites, web apps & tools using php, mysql, javascript, Jquery, css, less, scss, angu- larJs, Nodejs, glup, and browserify. Proficient on multiple CMS and Frame work like WordPress, Joomla, Opencart, Open text, CodeIgniter .</p>
 
-                    <a href="resume/resumeZakareirKabir.pdf"><div class="btn">Read More <i class="fa fa-arrow-circle-o-right"></i>
+                    <a href="resume/resumeZakareirKabir.pdf" target="_blank"><div class="btn">Read More <i class="fa fa-arrow-circle-o-right"></i>
                     </div></a>
                 </div>
 
@@ -4089,7 +4124,7 @@ with brilliant functionality.<i class="fa fa-quote-right"></i></h3>
 
             <!--==  End col10 ==-->
             <div class="clear line">
-                <h1 class="headlinecon05">About your company</h1>
+                <h1 class="headlinecon05">Biography</h1>
                 <p class="headlinecon05">We create interactive</p>
             </div>
             <!--==  Start col11 ==-->
@@ -4101,7 +4136,7 @@ with brilliant functionality.<i class="fa fa-quote-right"></i></h3>
                         <li>
                             <div class="direction-r secone">
                                 <div class="flag-wrapper">
-                                    <span class="flag">Sr.WEB DEVELOPER | TEAM LEAD</span>
+                                    <span class="flag">Sr.WEB DEVELOPER</span>
                                     <span class="time-wrapper"><span class="time">2009 - present</span></span>
                                 </div>
                                 <div class="desc desc-noneborder">GraphicPeople | Software people</div>
@@ -4159,46 +4194,35 @@ with brilliant functionality.<i class="fa fa-quote-right"></i></h3>
     </div>
     
     
+
+    <!-- contact Us Start -->
+
+        <div class="contact-col contactUs"> 
+
+<div id="con05" class="wrapper">
+
+       <div class="clear"></div>
+       <div class="clear"></div>
     
     
-    
-        <div class="contact-col"> 
-  
-                    <div id="con05" class="wrapper">
-  
+<div class="section group">
+<div class="col grid_2_of_2 startaproject">
+<h1 class="startaprojectTitle"><span>Do you have an interesting project?</span><span> Let's talk about that!</span></h1>
+<div class="col grid_1_of_2">
 
-           <div class="cleargap"></div>
-        <div class="cleargap"></div>
-        <div class="cleargap"></div>
+<p class="phone">
+phone
+    <span><a href="tel:+12252235484"> +1 225 223-5484</a></span></p>  
+</div>
 
-     
-
-     
-
-            <div class="section group">
-                <div class="col grid_2_of_2 startaproject">
-
-               <h1 class="mb30">Do you have an interesting project?<br>
-                                Let's talk about that!</h1>
-                   
-                   
-                    
-                    
-                      <div class="col grid_1_of_2">
-                    <p class="cpoy phone">
-                        phone<br>
-                          +880 1751539540</p>  
-                        </div>
-                 <div class="col grid_1_of_2">
-                    <p class="cpoy email">email<br>zkshishir@gmail.com</p>
-                        </div>
+    <div class="col grid_1_of_2">
+        <p class="email">email<span><a href="mailto:zkshishir@gmail.com?Subject=Hello%20again" target="_top">zkshishir@gmail.com</a></span></p> 
+    </div>
                     
 
-                    
-                     <div class="search-container">
-                       <span onclick="openFrom()">   <div class="btn mb20">Sratr a Project</div></span>
-                    
-                         </div>  
+ <div class="search-container">
+<span onclick="openFrom()">   <div class="btn mb20">Sratr a Project</div></span>
+ </div>  
        
                    
             </div>
@@ -4224,10 +4248,10 @@ with brilliant functionality.<i class="fa fa-quote-right"></i></h3>
                                                 </form>
                                    </div>
                         </div> 
-    <!-- End Contact -->
+    <!-- From Contact Start -->
     
 
-<div class="wrapper">
+<div class="wrapper mb100">
             <div class="clear line">
                 <h1>Have a new project or
 support task? Let’s talk
@@ -4238,26 +4262,26 @@ about this!</h1>
                  
                       <div class="section group">
 
-                <div id="fromcon" class="col grid_2_of_1">
+                <div id="fromcon" class="col grid_1_of_2">
                   
                     <form>
-                        <input type="text" class="mb20 fromani" name='name' required placeholder='Name *' />
-                        <input type="email" class="mb20 fromani" name='Email' required placeholder='Email *' />
+                        <input type="text" class="contactfrom fromani" name='name' required placeholder='Name *' />
+                        <input type="email" class="contactfrom fromani" name='Email' required placeholder='Email *' />
                        
-                        <input type="text" class="mb20 fromani" name='PhoneNumber' placeholder='Phone Number' />
+                        <input type="text" class="contactfrom fromani" name='PhoneNumber' placeholder='Phone Number' />
                        
-                        <textarea class="fromani" name='Message' required placeholder='Message *'></textarea>
+                        <textarea type="text" class="fromani contactfrom" name='Message' required placeholder='Message *'></textarea>
                         <div class="form-tip fromani">
                             <i class="fa fa-info-circle"></i> All the fields are required
                         </div>
-                        <input type="submit" value="Send" class="fromani">
+                        <input type="submit" value="Send" class="fromani btn contactbtn">
                     </form>
                 </div>
 
         
 
 
-                <div class="col grid_2_of_1">
+                <div class="col grid_1_of_2">
                     
                     sdasd
             </div>
@@ -4267,16 +4291,15 @@ about this!</h1>
     </div>
             
     
-   <div class="clear"></div>
-               <div class="clear"></div>
-               <div class="clear"></div>
-               <div class="clear"></div>
+    <!-- From Contact End -->
+    
     
         </div>
     
+
+<!-- contact Us End -->
     
-    
-    
+<!-- Footer Start -->
     
        <div class="wrapperFull">
 
@@ -4333,9 +4356,7 @@ about this!</h1>
             <!-- == copywrite Section END == -->
         </div> 
     
-    
-    
-    
+<!-- Footer End -->   
     
     
     
@@ -4347,46 +4368,30 @@ about this!</h1>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
 
 
 <script src="js/infographic.js"></script> 
 <script src="js/custom.js"></script> 
-<script src="js/jquery.colorbox.js"></script>
+<script src="js/jquery.fancybox.js"></script> 
 <script type="text/javascript" src="js/elements.js"></script>
 
     
- 	<script>
-			$(document).ready(function(){
-				//Examples of how to assign the Colorbox event to elements
-				$(".group1").colorbox({rel:'group1'});
-				$(".group2").colorbox({rel:'group2', transition:"fade"});
-				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
-				$(".group4").colorbox({rel:'group4', slideshow:true});
-				$(".ajax").colorbox();
-				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
-				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
-				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
-				$(".inline").colorbox({inline:true, width:"50%"});
-				$(".callbacks").colorbox({
-					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
-					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
-					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
-					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
-					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
-				});
-
-				$('.non-retina').colorbox({rel:'group5', transition:'none'})
-				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
-				
-				//Example of preserving a JavaScript event for inline calls.
-				$("#click").click(function(){ 
-					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-					return false;
-				});
-			});
-		</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+    
+$(".iframe").fancybox({
+    'width'         : '75%',
+    'height'        : '75%',
+    'autoScale'     : false,
+    'transitionIn'  : 'none',
+    'transitionOut' : 'none',
+    'type'          : 'iframe'
+});
+</script>
  
       
 <script>
@@ -4457,32 +4462,7 @@ function closeFrom() {
 }                      
 </script>   
     
-    
-<script type="text/javascript">
-    
-	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/Android/i)) ){	
-	
-	// Make ColorBox responsive
-	jQuery.colorbox.settings.maxWidth  = '95%';
-	jQuery.colorbox.settings.maxHeight = '95%';
 
-	// ColorBox resize function
-	var resizeTimer;
-	function resizeColorBox()
-	{
-		if (resizeTimer) clearTimeout(resizeTimer);
-		resizeTimer = setTimeout(function() {
-				if (jQuery('#cboxOverlay').is(':visible')) {
-						jQuery.colorbox.load(true);
-				}
-		}, 300);
-	}
-
-	// Resize ColorBox when resizing window or changing mobile device orientation
-	jQuery(window).resize(resizeColorBox);
-	window.addEventListener("orientationchange", resizeColorBox, false);
-    }
-</script>
     
 </div>
 </body>

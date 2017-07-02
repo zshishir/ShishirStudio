@@ -27,9 +27,7 @@ var skillAnimation = new TimelineMax()
     
         
  new ScrollMagic.Scene({
-    triggerElement:'#shishir',
-      // start this scene after scrolling for 50px
-   //  duration:'100%',
+    triggerElement:'#con02',
      triggerHook:0.8
  
         
@@ -41,7 +39,7 @@ var skillAnimation = new TimelineMax()
            
         
      .setTween(skillAnimation)
-     .addIndicators()
+    // .addIndicators()
      .addTo(controller) 
     
     
@@ -51,14 +49,12 @@ var skillAnimation = new TimelineMax()
     portfolio
     
     .from('.headlinecon03', .5,{opacity:0, y:100,  ease: Power2.easeOut})
-    //.staggerFrom('.noMerginPadding', .5,{opacity:0, ease: Power2.easeOut},0.2)
+    .staggerFrom('.noMerginPadding', .5,{opacity:0, ease: Power2.easeOut},0.2)
        
     
         
  new ScrollMagic.Scene({
     triggerElement:'#portfolio',
-      // start this scene after scrolling for 50px
-   //  duration:'100%',
      triggerHook:0.7,
         
         
@@ -69,7 +65,7 @@ var skillAnimation = new TimelineMax()
            
         
      .setTween(portfolio)
-     .addIndicators()
+    // .addIndicators()
      .addTo(controller)  
     
     
@@ -89,8 +85,6 @@ var skillAnimation = new TimelineMax()
         
  new ScrollMagic.Scene({
     triggerElement:'#semi',
-      // start this scene after scrolling for 50px
-   //  duration:'100%',
      triggerHook:0.7,
         
         
@@ -101,7 +95,7 @@ var skillAnimation = new TimelineMax()
            
         
      .setTween(semi)
-     .addIndicators()
+   //  .addIndicators()
      .addTo(controller)  
     
     
@@ -119,8 +113,6 @@ var skillAnimation = new TimelineMax()
         
  new ScrollMagic.Scene({
     triggerElement:'#timeline',
-      // start this scene after scrolling for 50px
-   //  duration:'100%',
      triggerHook:0.7,
         
         
@@ -131,7 +123,7 @@ var skillAnimation = new TimelineMax()
            
         
      .setTween(timeline)
-     .addIndicators()
+     //.addIndicators()
      .addTo(controller)  
     
     
@@ -139,16 +131,14 @@ var skillAnimation = new TimelineMax()
     var contactUs = new TimelineMax()
      contactUs
    
-     .from('.mb30', .5,{opacity:0, x:50,  ease: Power2.easeOut}) 
-     .from('.search-container', .5,{opacity:0, x:-50,  ease: Power2.easeOut},"-=.5") 
-     .from('.cpoy', .5,{opacity:0, x:-50,  ease: Power2.easeOut},"-=.5") 
-     
+     .from('.startaprojectTitle', .5,{opacity:0, x:50,  ease: Power2.easeOut}) 
+     .from('.phone', .5,{opacity:0, y:-50,  ease: Power2.easeOut},"-=.5") 
+      .from('.email', .5,{opacity:0, y:-50,  ease: Power2.easeOut},"-=.5")  
+    .from('.search-container', .5,{opacity:0, x:-50,  ease: Power2.easeOut},"-=.5") 
     
         
  new ScrollMagic.Scene({
-    triggerElement:'.contact-col',
-      // start this scene after scrolling for 50px
-   //  duration:'100%',
+     triggerElement:'.contact-col',
      triggerHook:0.7,
         
         
@@ -159,7 +149,7 @@ var skillAnimation = new TimelineMax()
            
         
      .setTween(contactUs)
-     .addIndicators()
+   // .addIndicators()
      .addTo(controller)   
     
 
@@ -174,8 +164,6 @@ var skillAnimation = new TimelineMax()
         
  new ScrollMagic.Scene({
     triggerElement:'#fromcon',
-      // start this scene after scrolling for 50px
-   //  duration:'100%',
      triggerHook:0.9,
         
         
@@ -186,7 +174,6 @@ var skillAnimation = new TimelineMax()
            
         
      .setTween(fromcon)
-     .addIndicators()
      .addTo(controller) 
     
     

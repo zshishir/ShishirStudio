@@ -28,8 +28,11 @@ var smoke = $("#smoke circle, #smoke path");
 var handle2 = $("#handle1,#handle2");
 var starslide01 = $("#star01slide1, #star02slide1,#star03slide1,#star04slide1,#star05slide1,star06slide1,#star07slide1,#star08slide1,#star09slide1");
 var gear = $("#gear1, #gear2, #gear3, #gear4, #gear5");
+var sun =$("#sun");
 var gears = $("#gear6, #gear7");
-
+var redoval = $("#redoval");
+var redoval02 = $("#redoval02");
+var redoval03 = $("#redoval03 ");
 var lighting = $("#cssani, #photoshop, #animationCC, #opencart, #flashCC, #javascript, #wordpress, #doubleclick, #jqueryani, #googleWeb, #sizmek, #mySql, #node01, #html5ani, #anjular, #creativecloud, #scss");
 
 var transitionType = {
@@ -154,9 +157,15 @@ function pageAnimationDefinition(){
     tl1.to(needle2, 1, {transformOrigin: "70% 50%",rotation: 40,repeat: -1,yoyo: true,ease: Back.easeOut}, "begin");
     tl1.to(needle3, 1, {transformOrigin:"center center",rotation: 180,repeat: -1,yoyo: true,ease: Back.easeOut}, "begin");
     tl1.to(needle4, 2, {transformOrigin: "50% 70%",rotation: 90,repeat: -1,yoyo: true,ease: Back.easeOut}, "begin");
-    tl1.to('#googlelocation', 1,{opacity:.5, y:8, ease:Expo.easeOut ,repeat: -1}, .1, "begin");
+     tl1.to(sun, 20, {transformOrigin: "50% 50%",rotation: 360,repeat: -1,ease: Linear.easeNone}, 0.1, "begin") ;
+  
+    tl1.fromTo(redoval, 2, {y:30}, {y:0,repeat: -1,yoyo: true}, 0.1, "begin");
+    tl1.fromTo(redoval02, 2.2, {y:10}, {y:0,repeat: -1,yoyo: true}, 0.1, "begin");
+    tl1.fromTo(redoval03, 2.5, {y:-20}, {y:0,repeat: -1,yoyo: true}, 0.1, "begin");
+
+ tl1.to('#googlelocation', 1,{opacity:.5, y:8, ease:Expo.easeOut ,repeat: -1}, .1, "begin");
     
-    
+     tl1.staggerFromTo('#equlizer', 1, {opacity:.2}, {opacity:1, repeat: -1}, 0.1, "begin");
     
    // tl1.to("#windmills", 1, {transformOrigin: "50% 50%",rotation: 360,repeat: -1,ease: Linear.easeNone}, 0.1, "begin") ;
 	//tl1.to('.slide1-jump', 3, { scale: 1, y: 100},'a');
