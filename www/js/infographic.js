@@ -35,6 +35,7 @@ var redoval02 = $("#redoval02");
 var redoval03 = $("#redoval03 ");
 var lighting = $("#cssani, #photoshop, #animationCC, #opencart, #flashCC, #javascript, #wordpress, #doubleclick, #jqueryani, #googleWeb, #sizmek, #mySql, #node01, #html5ani, #anjular, #creativecloud, #scss, #adobecc01");
 var equlizer = $("#equlizer01,#equlizer02, #equlizer03, #equlizer04, #equlizer05, #equlizer06,#equlizer07")
+var star = $("#star01,#star02, #star03, #star04, #star05, #star06")
 var transitionType = {
 	1: 'fade-out',
 	2: 'fade-out',
@@ -176,7 +177,7 @@ function pageAnimationDefinition(){
     // Slide2
 	tl2 = new TimelineMax();
 tl2.pause();
-   tl2.to('#slideTxt02', 2,{opacity:1, x:50}, .1, "begin");
+   tl2.to('#slideTxt02', 2,{opacity:1, y:50}, .1, "begin");
      tl2.to('#rocket04', 50,{opacity:0, x:700, y:-500, ease: Power1.easeOut}, .1, "begin");
      tl2.to('#rocket02tail',  .1,{opacity:.5, scaleY:1.1,scaleX:1.1,repeat: -1}, 0.1, "begin");
     
@@ -184,9 +185,18 @@ tl2.pause();
     
        tl2.to('#rocket4tail', .1,{opacity:.5, scaleY:1.1,scaleX:1.1,repeat: -1}, 0.1, "begin");
    tl2.to('#rocket02', 50,{opacity:1, x:-800, y:-900, ease: Power1.easeOut}, .1, "begin");
-  
-   
     
+        
+       tl2.to('#rocket03tail', .1,{opacity:.5, scaleY:1.1,scaleX:1.1,repeat: -1}, 0.1, "begin");
+   tl2.to('#rocket03', 50,{opacity:1, x:-800,  ease: Power1.easeOut}, .1, "begin");
+  
+   tl2.to('#dumkatu', 60,{opacity:1, x:800, y:900, ease: Power1.easeOut}, .1, "begin");
+     tl2.to('#dumkato01', 100,{opacity:1, x:-800, y:900, ease: Power1.easeOut}, .1, "begin");
+    
+    tl2.to("#satalight", 50, {bezier:[{x:150, y:150}, {x:0, y:250}, {x:-150, y:150}, {x:0, y:0}], ease:Linear.easeNone}, .1, "begin");
+    
+     tl2.fromTo("#star", 2, {opacity:1,}, {opacity:.2,repeat: -1,yoyo: true}, 0.1, "begin");
+ 
     
    // tl2.to('#slideTxt02', 2,{opacity:1, y:50});
     // tl2.to('.rocket', 20,{opacity:1, x:-800, y:-900, ease: Power1.easeIn});

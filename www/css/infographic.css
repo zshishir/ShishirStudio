@@ -202,16 +202,23 @@
     z-index: 999;
     font-size: 2em;
     color: #FFFFFF;
+    font-family: 'Archivo Black', sans-serif;
 }
 #slideTxt02{
  top: 20%;
     width: 100%;
-    opacity: 1;
+    opacity: 0;
     position: absolute;
     z-index: 999;
-    font-size: 2em;
-    color: #FFFFFF;
+    
 }
+#slideTxt02 h1{
+   font-size: 3em;
+    line-height: 24px;
+    padding-bottom: 24px;
+    color: #FFFFFF; 
+}
+
 #slideTxt03{
  top: 20%;
     width: 100%;

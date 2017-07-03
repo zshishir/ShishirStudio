@@ -10,9 +10,13 @@ Primary use:  MultiPurpose Template
 
 
 @import "font-awesome.css";
-<style>
+
 @import url('https://fonts.googleapis.com/css?family=Cuprum');
-</style>
+
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:900');
 
 
 /* ==============================
@@ -49,7 +53,7 @@ body {
 background-color:rgba(255,255,255,1);
 color: #444444;
 font-family: 'Cuprum', sans-serif;
-
+font-family: 'Playfair Display SC', serif;
 line-height: 1.6em;
 font-weight: 400;
 font-size: 1em; 
@@ -116,7 +120,7 @@ h1 {
     font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display SC', serif;
 }
 h2 {
     font-size: 1.125em;
