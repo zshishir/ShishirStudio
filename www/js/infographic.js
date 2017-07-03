@@ -33,7 +33,7 @@ var gears = $("#gear6, #gear7");
 var redoval = $("#redoval");
 var redoval02 = $("#redoval02");
 var redoval03 = $("#redoval03 ");
-var lighting = $("#cssani, #photoshop, #animationCC, #opencart, #flashCC, #javascript, #wordpress, #doubleclick, #jqueryani, #googleWeb, #sizmek, #mySql, #node01, #html5ani, #anjular, #creativecloud, #scss");
+var lighting = $("#cssani, #photoshop, #animationCC, #opencart, #flashCC, #javascript, #wordpress, #doubleclick, #jqueryani, #googleWeb, #sizmek, #mySql, #node01, #html5ani, #anjular, #creativecloud, #scss, #adobecc01");
 var equlizer = $("#equlizer01,#equlizer02, #equlizer03, #equlizer04, #equlizer05, #equlizer06,#equlizer07")
 var transitionType = {
 	1: 'fade-out',

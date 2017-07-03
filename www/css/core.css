@@ -1555,8 +1555,8 @@ Uncomment following if you want to set transition on hexagon color change */
 }
 .tab-menu_title {
     text-align: center;
-        background: #f2f2f2;
-    font-size: 1em;
+    background: #f2f2f2;
+    font-size: .8em;
 }
 
 .tab-menu_title:hover {
@@ -1565,12 +1565,18 @@ Uncomment following if you want to set transition on hexagon color change */
 .tab-active {
     background: #f2f2f2;
 }
+
+.title-home {
+    width: 16.491%;
+    height: 80px;
+}
+
+
 .title-home {
     width: 16.491%;
     height: 80px;
 }
 .tab-menu_title {
-    padding: 0px 0px;
     color: #222;
     float: left;
     border: 1px solid #dcd9d9;
@@ -1615,6 +1621,15 @@ Uncomment following if you want to set transition on hexagon color change */
 .tab-menu_title.active {
     color: #111;
 }
+@media only screen and (max-width: 768px) {
+ 
+    .title-home {
+        width: 16%;
+    height: 80px;
+    }
+}
+
+
 .tab-menu_title.active {} @media (max-width: 767px) {
     .tab-menu {
         display: block;
@@ -1657,7 +1672,7 @@ Uncomment following if you want to set transition on hexagon color change */
     }
     .tab-menu_title:before {
         content: " ";
-        text-align: center;
+ 
         display: inline-block;
     }
     .tab-menu_title.active:before {
@@ -1677,7 +1692,21 @@ Uncomment following if you want to set transition on hexagon color change */
         content: '';
     }
     .tabicall{
-        display: none !important;
+           width: 5% !important;
+        float: left;
+        padding-right: 10px;
+        margin-top: -10px;
+        display: inline-block !important;
+
+
+    }
+
+    
+    .tab-menu_title {
+    text-align: left !important;
+        padding:20px 0px 0px 10px;
+         display: inline-block !important;
+      
     }
 }
 /* ==============================
