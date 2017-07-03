@@ -18,7 +18,7 @@ var transitionDuration = 1;
 var slideDuration = 15000;
 var slideWidth = 1024;
 var nav = $$('.carouselnav li');
-var tl1;
+var tl1,tl2;
 var allTimeLine;
 var needle = $("#needle1");
 var needle2 = $("#needle2");
@@ -34,7 +34,7 @@ var redoval = $("#redoval");
 var redoval02 = $("#redoval02");
 var redoval03 = $("#redoval03 ");
 var lighting = $("#cssani, #photoshop, #animationCC, #opencart, #flashCC, #javascript, #wordpress, #doubleclick, #jqueryani, #googleWeb, #sizmek, #mySql, #node01, #html5ani, #anjular, #creativecloud, #scss");
-
+var equlizer = $("#equlizer01,#equlizer02, #equlizer03, #equlizer04, #equlizer05, #equlizer06,#equlizer07")
 var transitionType = {
 	1: 'fade-out',
 	2: 'fade-out',
@@ -149,8 +149,11 @@ function pageAnimationDefinition(){
     tl1.to(gears, 1, {transformOrigin: "50% 50%",rotation: -360,repeat: -1,ease: Linear.easeNone}, 0.1, "begin") ;
     tl1.to('#slideTxt01', 2,{opacity:1, y:50}, 0.1, "begin");
     tl1.to('#rocketwing', .1,{opacity:1, scaleY:1.1,repeat: -1}, 0.1, "begin");
-    tl1.to('#ballon01', 150,{opacity:1, x:-1800, ease: Linear.easeNone ,repeat: -1}, 1, "begin");
-    tl1.to('#ballon02', 150,{opacity:1, x:-1800, ease: Linear.easeNone ,repeat: -1}, 1, "begin");
+   // tl1.to('#ballon01', 250,{opacity:1, x:-1800, ease: Linear.easeNone ,repeat: -1}, 1, "begin");
+    
+   
+        tl1.to('#ballon01', 250,{opacity:1, x:-1800, ease: Linear.easeNone ,repeat: -1}, 1, "begin");
+    tl1.to('#ballon02', 200,{opacity:1, x:-1800, ease: Linear.easeNone ,repeat: -1}, 1, "begin");
    tl1.staggerFromTo(starslide01, 1, {opacity:.2}, {opacity:1, repeat: -1}, 0.1, "begin");
    
     tl1.to(needle, 2, {transformOrigin: "50% 50%",rotation: -30,repeat: -1,yoyo: true,ease: Elastic.easeOut}, "begin");
@@ -165,35 +168,32 @@ function pageAnimationDefinition(){
 
  tl1.to('#googlelocation', 1,{opacity:.5, y:8, ease:Expo.easeOut ,repeat: -1}, .1, "begin");
     
-     tl1.staggerFromTo('#equlizer', 1, {opacity:.2}, {opacity:1, repeat: -1}, 0.1, "begin");
+     tl1.staggerFromTo(equlizer, 1, { transformOrigin: "50% 100%", scaleY:1.2}, { scaleY:1, repeat: -1}, 0.1, "begin");
     
-   // tl1.to("#windmills", 1, {transformOrigin: "50% 50%",rotation: 360,repeat: -1,ease: Linear.easeNone}, 0.1, "begin") ;
-	//tl1.to('.slide1-jump', 3, { scale: 1, y: 100},'a');
-	//tl1.to('.slide1-bg', 6, { scale: 2.1, ease: Bounce.easeOut});
-	//tl1.add(slideTransition, 5.5); 
-    
-   // tl1.from('.cloud', 1, {alpha: 0});
-	//tl1.to('.rocket-wrapper', 3, { y: -400, ease:Expo.easeIn });
-	//tl1.to('.cloud', 3, { attr:{ cy: 185}, ease:Expo.easeIn }, "-=3");
-	//tl1.set('.cloud', {clearProps:"all"});
-	//tl1.set('.rocket-wrapper', { y: 450 });
-	//tl1.to('.rocket-wrapper', 4, { y:0, ease:Elastic.easeOut.config(0.5, 0.4) });
-	//tl1.to('.trail-wrapper', 2.5, { scaleX:0.5, scaleY:0, alpha:0, ease:Expo.easeOut }, "-=2.0");
+
 //tl1.add(slideTransition, 2.5); 
 	
     // Slide2
-	//tl2 = new TimelineMax();
-	//tl2.pause();
-   //  tl2.to('#slideTxt02', 2,{opacity:1, y:50});
+	tl2 = new TimelineMax();
+tl2.pause();
+   tl2.to('#slideTxt02', 2,{opacity:1, y:50}, .1, "begin");
+     tl2.to('#rocket04', 50,{opacity:0, x:700, y:-500, ease: Power1.easeOut}, .1, "begin");
+     tl2.to('#rocket02tail',  .1,{opacity:.5, scaleY:1.1,scaleX:1.1,repeat: -1}, 0.1, "begin");
     
-   // tl2.to('#rocket02', 50,{opacity:1, x:-800, y:-900, ease: Power1.easeOut},"-=2");
     
-     //tl2.to('#slideTxt02', 2,{opacity:1, y:50});
-     //  tl2.to('.rocket', 20,{opacity:1, x:-800, y:-900, ease: Power1.easeIn});
+    
+       tl2.to('#rocket4tail', .1,{opacity:.5, scaleY:1.1,scaleX:1.1,repeat: -1}, 0.1, "begin");
+   tl2.to('#rocket02', 50,{opacity:1, x:-800, y:-900, ease: Power1.easeOut}, .1, "begin");
+  
+   
+    
+    
+   // tl2.to('#slideTxt02', 2,{opacity:1, y:50});
+    // tl2.to('.rocket', 20,{opacity:1, x:-800, y:-900, ease: Power1.easeIn});
 	//tl2.fromTo('.slide2-selected-country',.5, { opacity: 0}, { opacity: 1, delay: .5});
 	//tl2.fromTo(['.slide2-selected-country-name', '.slide2-selected-red'],1, { opacity: 0}, { opacity: 1});
-	//tl2.from('#rocket', 3, { opacity: 1});
-    //tl2.from('.rocket', 1,{opacity:0, y:-50});
+	//tl2.from('#rocket04', 50,{opacity:1, x:-800, y:-900, ease: Power1.easeOut},"-=2");
+   // tl2.from('.rocket', 1,{opacity:0, y:-50});
 	//tl2.from('.slide2-content', .5, { opacity: 0, x: 100, ease: Power2.easeOut});
 
 	// Slide3
@@ -274,7 +274,7 @@ function pageAnimationDefinition(){
 	//tl11.staggerFrom($$('.slide11-list-item a'), 1, { opacity: 0}, 3, "slide11+=2");
 
 
-	allTimeLine = [tl1];
+	allTimeLine = [tl1, tl2];
 }
 
 // Run Page Animation
@@ -291,6 +291,10 @@ function runPageAnimation(){
 	
 	     case 1:
 	        tl1.play();
+	        break;
+            
+        case 2:
+	        tl2.play();
 	        break;
        
 	 
