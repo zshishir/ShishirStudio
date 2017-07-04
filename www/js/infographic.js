@@ -138,7 +138,7 @@ function pageAnimationDefinition(){
 	// slide1
 	tl1 = new TimelineMax();
 	tl1.pause();
-      
+ 
    tl1.staggerFromTo(smoke, 1, {opacity:1,scale: 0}, {scale: 1}, 0.1, "begin")
    tl1.staggerFromTo(smoke, 1, {opacity: 0.6, y: 10}, {opacity: 0,y: -80,repeat: -1,repeatDelay: -2,ease: Circ.easeOut}, 0.1, "begin")
    
@@ -176,7 +176,7 @@ function pageAnimationDefinition(){
     // Slide2
 	tl2 = new TimelineMax();
 tl2.pause();
-   tl2.to('#slideTxt02', 2,{opacity:1, y:50}, .1, "begin");
+   tl2.to('#slideTxt02', 2,{opacity:1, x:50}, .1, "begin");
      tl2.to('#rocket04', 50,{opacity:0, x:700, y:-500, ease: Power1.easeOut}, .1, "begin");
      tl2.to('#rocket02tail',  .1,{opacity:.5, scaleY:1.1,scaleX:1.1,repeat: -1}, 0.1, "begin");
     

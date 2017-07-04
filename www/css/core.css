@@ -437,6 +437,7 @@ label {
     text-align: center;
     font-size: 3.5em;
     font-weight: 900;
+    background: #111;
 }
 .is-showing {
     width: 100%;
@@ -1544,15 +1545,7 @@ Uncomment following if you want to set transition on hexagon color change */
     font-size: 1em;
     position: relative;
 }
-.tab-menu_title i {
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    display: block;
-    padding-top: 5px;
-    text-align: center;
-}
+
 .tab-menu_title {
     text-align: center;
     background: #f2f2f2;
@@ -1621,10 +1614,10 @@ Uncomment following if you want to set transition on hexagon color change */
 .tab-menu_title.active {
     color: #111;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1180px) {
  
     .title-home {
-        width: 16%;
+    width: 16%;
     height: 80px;
     }
 }
