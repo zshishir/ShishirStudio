@@ -15,7 +15,7 @@ var amazon;
 var legals;
 var clickBtn;
 var birds;
-var clickTag = "http://www.amazon.co.uk/";
+var clickTag = "#";
 
 //Timer vars
 var tick = 0;

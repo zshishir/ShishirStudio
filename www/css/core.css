@@ -11,13 +11,7 @@ Primary use:  MultiPurpose Template
 
 @import "font-awesome.css";
 
-@import url('https://fonts.googleapis.com/css?family=Cuprum');
-
-
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
-
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:900');
-
+@import url('https://fonts.googleapis.com/css?family=Anton|Archivo+Black|Cuprum');
 
 /* ==============================
  1.  Common styles
@@ -52,8 +46,11 @@ height: 100%;
 body {
 background-color:rgba(255,255,255,1);
 color: #444444;
-font-family: 'Cuprum', sans-serif;
-font-family: 'Playfair Display SC', serif;
+
+
+font-family: 'Archivo Black', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Cuprum', sans-serif;
 line-height: 1.6em;
 font-weight: 400;
 font-size: 1em; 
@@ -117,10 +114,10 @@ input,select {
     vertical-align: middle;
 }
 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 700;
     text-transform: uppercase;
-font-family: 'Playfair Display SC', serif;
+
 }
 h2 {
     font-size: 1.125em;
@@ -594,6 +591,7 @@ header {
     margin-bottom: 0px;
     margin-top: 6px;
     width: 10%;
+    padding: 3px;
 }
 .fixed-nav {
     position: fixed !important;
@@ -1564,13 +1562,13 @@ Uncomment following if you want to set transition on hexagon color change */
 }
 
 .title-home {
-    width: 16.491%;
+    width: 16.66666%;
     height: 80px;
 }
 
 
 .title-home {
-    width: 16.491%;
+    width: 16.6666%;
     height: 80px;
 }
 .tab-menu_title {
@@ -1618,13 +1616,7 @@ Uncomment following if you want to set transition on hexagon color change */
 .tab-menu_title.active {
     color: #111;
 }
-@media only screen and (max-width: 1180px) {
- 
-    .title-home {
-    width: 16%;
-    height: 80px;
-    }
-}
+
 
 
 .tab-menu_title.active {} @media (max-width: 767px) {
@@ -2814,7 +2806,7 @@ font-size:1.5em !important;
 }
 .bg-col03 {
     position: relative;
-        background-color: rgba(0, 0, 0, .8) !important;
+        background-color: rgba(0, 0, 0, .85) !important;
 }
 .bg-col03::after {
     content: "";
@@ -6374,31 +6366,3 @@ text-align: center;
 }
 
 
-#slideTxt01{
-    top: 20%;
-    width: 100%;
-    opacity: 0;
-    position: absolute;
-    z-index: 999;
-    
-}
-
-#slideTxt01 h1{
-    font-size: 1.5em !important;
-    color: #fff;
-
-    letter-spacing: -2px;
-    line-height:50px;
-
-    
-}
-
-#slideTxt01 p{
-    font-size: .75em !important;
-    color: #fff;
-
- 
-
-    
-    
-}
