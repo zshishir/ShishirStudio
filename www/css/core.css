@@ -438,6 +438,8 @@ label {
     text-align: center;
     font-size: 3.5em;
     font-weight: 900;
+
+    background: #000;
  
 }
 .is-showing {
