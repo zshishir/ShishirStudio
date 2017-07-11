@@ -1683,7 +1683,7 @@ Uncomment following if you want to set transition on hexagon color change */
         content: '';
     }
     .tabicall{
-           width: 5% !important;
+        width: 5% !important;
         float: left;
         padding-right: 10px;
         margin-top: -10px;
