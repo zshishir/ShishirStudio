@@ -2728,7 +2728,7 @@ font-size:1.5em !important;
 
 .biography-col {
     position: relative;
-        background-color: rgba(244, 244, 244, .8) !important;
+        background-color: rgba(244, 244, 244, 1) !important;
 }
 .biography-col::after {
     content: "";
@@ -2752,7 +2752,7 @@ font-size:1.5em !important;
 
 .contact-col {
     position: relative;
-        background-color: rgba(255, 255, 255, .7) !important;
+        background-color: rgba(255, 255, 255, 1) !important;
 }
 .contact-col::after {
     content: "";
@@ -2808,19 +2808,21 @@ font-size:1.5em !important;
 }
 .bg-col03 {
     position: relative;
-        background-color: rgba(0, 0, 0, .85) !important;
+        background-color: rgba(0, 0, 0, 1) !important;
+     z-index: 1;
+    
 }
 .bg-col03::after {
     content: "";
  
     background-image:  url(../images/carousel-bg.jpg);
-    opacity: .8;
+    opacity: .1;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     background-size: cover;
 
     background-attachment: fixed;
@@ -3278,8 +3280,9 @@ font-size:1.5em !important;
     font-size: .75em;
     color: #444444;
     text-align: right;
-    margin-top: 10px;
+
     letter-spacing: 10px;
+    background: #fff;
 }
 /* ==============================
    Common Section

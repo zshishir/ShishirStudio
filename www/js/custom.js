@@ -1,19 +1,18 @@
-
-function finishLoading(){
-    $('.is-showing').css('visibility','visible');
-	$('.loader-content').fadeOut();
-}
-
-
-
-
-
 jQuery('document').ready(function($){
+    
+    
  var controller = new ScrollMagic.Controller();
         
-
-
-
+ new ScrollMagic.Scene({
+    triggerElement:'.biography',
+     triggerHook:0
+ 
+        
+        
+    })
+						.setPin(".biography")
+						//.addIndicators({name: "2 (duration: 0)"}) // add indicators (requires plugin)
+						.addTo(controller);
       
 
 var skillAnimation = new TimelineMax()
@@ -49,7 +48,7 @@ var skillAnimation = new TimelineMax()
     portfolio
     
     .from('.headlinecon03', .5,{opacity:0, y:100,  ease: Power2.easeOut})
-    .staggerFrom('.noMerginPadding', .5,{opacity:0, ease: Power2.easeOut},0.2)
+    .staggerFrom('.noMerginPadding', .5,{opacity:0, y:100, ease: Power2.easeOut},0.3)
        
     
         

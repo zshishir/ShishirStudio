@@ -188,4 +188,85 @@ var pageSection = $(".home-section");
     }(jQuery);
     
 //Sticky Fullwidth // 
+
+(function(){
+    
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+    
+}
+
+/* Close/hide the sidenav */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+            
+function openFrom() {
+    document.getElementById("showFrom").style.width = "100%";
+    
+}
+
+/* Close/hide the sidenav */
+function closeFrom() {
+    document.getElementById("showFrom").style.width = "0";
+}     
+ 
+    
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+    
+$(".iframe").fancybox({
+    'width'         : '75%',
+    'height'        : '75%',
+    'autoScale'     : false,
+    'transitionIn'  : 'none',
+    'transitionOut' : 'none',
+    'type'          : 'iframe'
+});    
+    
+    
+    
+    $('document').ready(function(){  
+ var controller = new ScrollMagic.Controller();
+ var introTl = new TimelineMax();
+
+	    introTl
+	    	.to($('#intro'), 0.2, {autoAlpha: 0, ease:Power1.easeNone})
+	    	.to($('#intro'), 1.4, {y: '20%', ease:Power1.easeOut}, '-=0.2')
+	    	.to($('#intro'), 0.7, {autoAlpha: 0.5, ease:Power1.easeNone}, '-=1.4');
+
+		var introScene = new ScrollMagic.Scene({
+	        triggerElement: '#intro', 
+	        triggerHook: 0,
+	        duration: "100%"
+	    })
+	    .setTween(introTl)
+	    .addTo(controller);
+      // .addIndicators() // add indicators (requires plugin)
+
+        
+	    // change behaviour of controller to animate scroll instead of jump
+		controller.scrollTo(function (newpos) {
+			TweenMax.to(window, 1, {scrollTo: {y: newpos}, ease:Power1.easeInOut});
+		});
+
+		//  bind scroll to anchor links
+		$(document).on("click", "a[href^='#']", function (e) {
+			var id = $(this).attr("href");
+			if ($(id).length > 0) {
+				e.preventDefault();
+
+				// trigger scroll
+				controller.scrollTo(id);
+
+					// if supported by the browser we can even update the URL.
+				if (window.history && window.history.pushState) {
+					history.pushState("", document.title, id);
+				}
+			}
+		});
+   
+});
+})();
     
