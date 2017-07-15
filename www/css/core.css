@@ -283,7 +283,7 @@ p {
     transition-timing-function: linear;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
-    border-radius: 0;
+    border-radius: 50px;
 }
 .btn a {
     color: #FFFFFF;
@@ -591,8 +591,8 @@ header {
 .logos {
     z-index: 999;
     margin-bottom: 0px;
-    margin-top: 6px;
-    width: 25%;
+    margin-top: 3px;
+    width: 20%;
     padding: 3px;
 }
 .fixed-nav {
@@ -2750,21 +2750,25 @@ font-size:1.5em !important;
 
 
 
+
 .contact-col {
     position: relative;
-        background-color: rgba(255, 255, 255, 1) !important;
+     background-color: rgba(255, 255, 255, 1) !important;
+      z-index: 1;
+    
 }
 .contact-col::after {
     content: "";
- 
-    background-image:  url(../images/carousel-bg.png);
-    opacity: .8;
+
+       background-image:  url(../images/carousel-bg.png);
+
+    opacity: .2;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
-    z-index: -1;
+      z-index: -1;
     background-size: cover;
 
     background-attachment: fixed;
