@@ -48,7 +48,7 @@ var skillAnimation = new TimelineMax()
     portfolio
     
     .from('.headlinecon03', .5,{opacity:0, y:100,  ease: Power2.easeOut})
-    .staggerFrom('.noMerginPadding', .5,{opacity:0, y:100, ease: Power2.easeOut},0.3)
+    .staggerFrom('.noMerginPadding', .2,{opacity:0, y:50, ease: Power2.easeOut},0.2)
        
     
         

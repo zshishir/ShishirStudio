@@ -191,25 +191,7 @@ var pageSection = $(".home-section");
 
 (function(){
     
-    function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
     
-}
-
-/* Close/hide the sidenav */
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-            
-function openFrom() {
-    document.getElementById("showFrom").style.width = "100%";
-    
-}
-
-/* Close/hide the sidenav */
-function closeFrom() {
-    document.getElementById("showFrom").style.width = "0";
-}     
  
     
 	$(document).ready(function() {
