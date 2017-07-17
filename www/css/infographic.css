@@ -216,6 +216,7 @@
 #slideTxt01 p{
     
     color: #db0011;
+    font-size: 1.2em !important;
    
 }
 
@@ -236,7 +237,7 @@
 }
 
 #slideTxt02 p{
-    
+        font-size: 1.2em !important;
     color: #db0011;
    
 }
